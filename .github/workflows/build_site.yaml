@@ -1,0 +1,70 @@
+name: CI
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+      - name: Checkout themes
+        uses: actions/checkout@v2
+        with:
+          repository: coderqs/hugo-theme-stack
+          ref: personalization
+          path: .
+
+      - name: Checkout config
+        uses: actions/checkout@v2
+        with:
+          ref: themes-stack
+          path: ./tmp
+          
+      - name: Copy config
+        run: |
+          ls -a .
+          echo "--------------------"
+          ls -a ./tmp/
+          cp -R ./tmp/.HUGO_VERSION .
+          cp -R ./tmp/config.yaml .
+          cp -R ./tmp/content .
+          rm -rf ./tmp
+
+      - name: Git checkout article
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: main
+          submodules: true
+          path: ./content/post
+      
+      - name: Read Hugo info
+        id: hugo-info
+        run: |
+          . ./.HUGO_VERSION
+          echo "HUGO_VERSION=${HUGO_VERSION}">> $GITHUB_OUTPUT
+          echo "HUGO_EXTENDED=${HUGO_EXTENDED}">> $GITHUB_OUTPUT
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '${{ steps.hugo-info.outputs.HUGO_VERSION }}' #"latest"
+          extended: ${{ steps.hugo-info.outputs.HUGO_EXTENDED }} #true 
+
+      - name: Build
+        run: hugo --minify --gc
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          external_repository: coderqs/article
+          publish_dir: ./public
+          #   keep_files: true
+          user_name: coderqs
+          user_email: <coderqs@coderqs.com>
+          publish_branch: gh-pages
+          cname: blog.coderqs.com

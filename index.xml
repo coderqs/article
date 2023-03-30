@@ -17,24 +17,7 @@
 &lt;p>Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p>
 &lt;p>Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p>
 &lt;p>Learn more and contribute on &lt;a class="link" href="https://github.com/gohugoio" target="_blank" rel="noopener"
->GitHub&lt;/a>.&lt;/p></description></item><item><title/><link>https://coderqs.github.io/1/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/1/01/</guid><description>&lt;h1 id="使用-cloudflare-后网站无限-301-跳转">使用 Cloudflare 后网站无限 301 跳转&lt;/h1>
-&lt;h2 id="原因分析">原因分析&lt;/h2>
-&lt;p>出现这个故障的大部分服务器都是因为服务器端使用了强制 HTTPS，而 CloudFlare 的 Flexible 策略原理是：用户访问时使用 HTTPS 访问到 CF 的节点，然后 CF通过HTTP方式回源到你的服务器去读取数据，这个时候对于你的服务器来说，CF 就是访客，所以服务器返回的状态都是 301。&lt;/p>
-&lt;h3 id="解决方法">解决方法&lt;/h3>
-&lt;p>将 CloudFlare 的 SSL 策略设为 Full 或者 Full(strict) 就能解决。&lt;/p>
-&lt;h3 id="扩展">扩展&lt;/h3>
-&lt;h4 id="cloudflare-的-ssl-可选模式">CloudFlare 的 SSL 可选模式&lt;/h4>
-&lt;ol>
-&lt;li>Off：关闭SSL，全程使用 HTTP；&lt;/li>
-&lt;li>Flexible：A 使用 HTTPS，B 使用 HTTP，称为灵活加密；&lt;/li>
-&lt;li>Full：AB全程使用 HTTPS，允许 B 程服务端使用自签名证书；&lt;/li>
-&lt;li>Full(strict)：全程使用 HTTPS，与 Full 的区别在于服务端必须使用有效的可信任证书；&lt;/li>
-&lt;/ol>
-&lt;h2 id="参考资料">参考资料&lt;/h2>
-&lt;p>&lt;a class="link" href="https://developer.aliyun.com/article/749187" target="_blank" rel="noopener"
->CDN访问异常篇之重定向的次数过多&lt;/a>&lt;br>
-&lt;a class="link" href="https://vzone.me/897/" target="_blank" rel="noopener"
->Cloudflare开启HTTPS/SSL后无限301跳转的解决方法&lt;/a>&lt;/p></description></item><item><title>Links</title><link>https://coderqs.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+>GitHub&lt;/a>.&lt;/p></description></item><item><title>Links</title><link>https://coderqs.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
 &lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -60,4 +43,21 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#666"> &lt;/span>&lt;span style="color:#6ab825;font-weight:bold">image&lt;/span>:&lt;span style="color:#666"> &lt;/span>ts-logo-128.jpg&lt;span style="color:#666">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://coderqs.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/search/</guid><description/></item></channel></rss>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://coderqs.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/search/</guid><description/></item><item><title>使用 Cloudflare 后网站无限 301 跳转</title><link>https://coderqs.github.io/1/01/%E4%BD%BF%E7%94%A8-cloudflare-%E5%90%8E%E7%BD%91%E7%AB%99%E6%97%A0%E9%99%90-301-%E8%B7%B3%E8%BD%AC/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/1/01/%E4%BD%BF%E7%94%A8-cloudflare-%E5%90%8E%E7%BD%91%E7%AB%99%E6%97%A0%E9%99%90-301-%E8%B7%B3%E8%BD%AC/</guid><description>&lt;h1 id="使用-cloudflare-后网站无限-301-跳转">使用 Cloudflare 后网站无限 301 跳转&lt;/h1>
+&lt;h2 id="原因分析">原因分析&lt;/h2>
+&lt;p>出现这个故障的大部分服务器都是因为服务器端使用了强制 HTTPS，而 CloudFlare 的 Flexible 策略原理是：用户访问时使用 HTTPS 访问到 CF 的节点，然后 CF通过HTTP方式回源到你的服务器去读取数据，这个时候对于你的服务器来说，CF 就是访客，所以服务器返回的状态都是 301。&lt;/p>
+&lt;h3 id="解决方法">解决方法&lt;/h3>
+&lt;p>将 CloudFlare 的 SSL 策略设为 Full 或者 Full(strict) 就能解决。&lt;/p>
+&lt;h3 id="扩展">扩展&lt;/h3>
+&lt;h4 id="cloudflare-的-ssl-可选模式">CloudFlare 的 SSL 可选模式&lt;/h4>
+&lt;ol>
+&lt;li>Off：关闭SSL，全程使用 HTTP；&lt;/li>
+&lt;li>Flexible：A 使用 HTTPS，B 使用 HTTP，称为灵活加密；&lt;/li>
+&lt;li>Full：AB全程使用 HTTPS，允许 B 程服务端使用自签名证书；&lt;/li>
+&lt;li>Full(strict)：全程使用 HTTPS，与 Full 的区别在于服务端必须使用有效的可信任证书；&lt;/li>
+&lt;/ol>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://developer.aliyun.com/article/749187" target="_blank" rel="noopener"
+>CDN访问异常篇之重定向的次数过多&lt;/a>&lt;br>
+&lt;a class="link" href="https://vzone.me/897/" target="_blank" rel="noopener"
+>Cloudflare开启HTTPS/SSL后无限301跳转的解决方法&lt;/a>&lt;/p></description></item></channel></rss>

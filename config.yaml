@@ -1,0 +1,263 @@
+baseurl: https://coderqs.github.io
+languageCode: zh-cn
+theme: stack
+paginate: 10
+title: 清松小站
+
+TimeZone: Asia/Shanghai
+
+enableGitInfo: true
+
+# Change it to your Disqus shortname before using
+disqusShortname: hugo-theme-stack
+
+# GA Tracking ID
+googleAnalytics: G-WXXWLT4GSM
+
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
+DefaultContentLanguage: zh-cn
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+permalinks:
+    post: /:year/:month/:slug/
+    page: /:slug/
+
+# whether to use emoji code
+enableEmoji: true
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:
+
+    toc: true
+
+    footer:
+        since: 2020
+        customText: 
+        ccLicenseIcon: true
+        RunDays:
+            enabled: true
+            launchDate: "2022-01-01"
+        articleTotalStatistics: 
+            enabled: true
+            totalArticleWordEmoji: ⌨
+            totalArticleEmoji: 🧠
+
+    dateFormat:
+        published: 2006-01-02
+        lastUpdated: 2006-01-02 15:04 CTS
+
+    sidebar:
+        emoji: 🍥
+        subtitle: 不积跬步，无以至千里
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.jpg
+
+    article:
+        math: true
+        toc: true
+        styleUniform: true
+        readingTime: true
+        showHeaderImage: false
+        permaLinks: true
+        license:
+            enabled: false
+            default: Licensed under CC BY-NC-SA 4.0
+        edit:
+            enabled: true
+
+    comments:
+        enabled: true
+        provider: utterances
+
+        disqusjs:
+            shortname:
+            apiUrl:
+            apiKey:
+            admin:
+            adminLabel:
+
+        utterances:
+            repo: coderqs/Comments_utterances
+            issueTerm: pathname
+            label: utterances 
+
+        remark42:
+            host:
+            site:
+            locale:
+
+        vssue:
+            platform:
+            owner:
+            repo:
+            clientId:
+            clientSecret:
+            autoCreateIssue: false
+
+        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+        waline:
+            serverURL:
+            lang:
+            visitor:
+            avatar:
+            emoji:
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+            requiredMeta:
+                - name
+                - email
+                - url
+            placeholder:
+            locale:
+                admin: Admin
+
+        twikoo:
+            envId:
+            region:
+            path:
+            lang:
+
+        giscus:
+            repo:
+            repoID:
+            category:
+            categoryID:
+            mapping:
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 1
+            emitMetadata: 0
+
+        gitalk:
+            owner: 
+            admin:  
+            repo: 
+            clientID: 
+            clientSecret: 
+        
+        cusdis:
+            host: 
+            id: 
+
+    widgets:
+        enabled:
+            - search
+            - categories
+            - archives
+            - tag-cloud
+
+        archives:
+            limit: 10
+
+        tagCloud:
+            limit: 100
+
+        categoriesCloud:
+            limit: 20
+            
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site:
+
+            # Available values: summary, summary_large_image
+            card: summary_large_image
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+              ### For demonstration purpose, the home link will be open in a new tab
+              newTab: false
+              icon: home
+        - identifier: rss
+          name: RSS
+          url: /index.xml
+          weight: -10
+          pre: RSS
+          params:
+              newTab: true
+              icon: rss
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/coderqs
+          params:
+            icon: brand-github
+        - identifier: mail
+          name: Email
+          url: coderqs@coderqs.com
+          params:
+            icon: mail
+        - identifier: wiki
+          name: wiki
+          url: https://wiki.coderqs.com
+          params:
+            icon: book
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        codeFences: true
+        noClasses: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        style: native
+        tabWidth: 4 
+
+frontmatter:
+    lastmod: [":git", "lastmod"]

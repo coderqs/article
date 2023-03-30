@@ -26,13 +26,15 @@ jobs:
           
       - name: Copy config
         run: |
+          echo "------ ls / -----------"
           ls -a .
-          echo "--------------------"
+          echo "------ ls ./tmp -------"
           ls -a ./tmp/
           cp -R ./tmp/.HUGO_VERSION .
-          cp -R ./tmp/config.yaml .
+          cp -rf ./tmp/config.yaml .
           cp -R ./tmp/content .
           rm -rf ./tmp
+          echo "------ ls ./assets ----"
 
       - name: Git checkout article
         uses: actions/checkout@v2

@@ -15,6 +15,7 @@ jobs:
         with:
           repository: coderqs/hugo-theme-stack
           ref: personalization
+          submodules: true
           path: .
 
       - name: Checkout config

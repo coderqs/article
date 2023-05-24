@@ -70,7 +70,10 @@ jobs:
           extended: ${{ steps.hugo-info.outputs.HUGO_EXTENDED }} #true 
 
       - name: Build
-        run: hugo --minify --gc
+        run: |
+          hugo --minify --gc
+          hugo config | grep lastmod
+      
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

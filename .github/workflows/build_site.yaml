@@ -18,6 +18,9 @@ jobs:
           submodules: true
           path: .
 
+      - name: Install Git
+        run: sudo apt-get update && sudo apt-get install -y git
+        
       - name: Checkout config
         uses: actions/checkout@v2
         with:

@@ -18,9 +18,11 @@ jobs:
           submodules: true
           path: .
 
-      - name: Install Git
-        run: sudo apt-get update && sudo apt-get install -y git
-        
+
+      - name: Get last commit date
+        id: commit_date
+        run: echo "::set-output name=date::$(git log -1 --pretty=format:'%cd' --date=iso8601-strict)"
+          
       - name: Checkout config
         uses: actions/checkout@v2
         with:

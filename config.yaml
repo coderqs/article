@@ -36,8 +36,6 @@ params:
     rssFullContent: true
     favicon:
 
-    toc: true
-
     footer:
         since: 2020
         customText: 
@@ -55,6 +53,7 @@ params:
         lastUpdated: 2006-01-02 15:04 CTS
 
     sidebar:
+        compact: false
         emoji: 🍥
         subtitle: 不积跬步，无以至千里
         avatar:
@@ -149,20 +148,23 @@ params:
             id: 
 
     widgets:
-        enabled:
-            - search
-            - categories
-            - archives
-            - tag-cloud
-
-        archives:
-            limit: 10
-
-        tagCloud:
-            limit: 100
-
-        categoriesCloud:
-            limit: 20
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 10
+            - type: categories
+              params:
+                  limit: 20
+            - type: tag-cloud
+              params:
+                  limit: 100
+        page:
+            - type: toc
+            - type: archives
+              params:
+                  limit: 5
+            
             
     opengraph:
         twitter:

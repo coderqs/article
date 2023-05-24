@@ -261,5 +261,15 @@ markup:
         style: native
         tabWidth: 4 
 
+#frontmatter:
+#    lastmod: [":git", "lastmod"]
 frontmatter:
-    lastmod: [":git", "lastmod"]
+  date:
+  - date
+  - publishDate
+  - lastmod
+  lastmod:
+  - lastmod
+  - ":git"
+  - date
+  - publishDate

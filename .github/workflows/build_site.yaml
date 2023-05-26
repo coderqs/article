@@ -86,3 +86,4 @@ jobs:
           user_email: <coderqs@coderqs.com>
           publish_branch: gh-pages
           cname: blog.coderqs.com
+          timezone: 'Asia/Shanghai'

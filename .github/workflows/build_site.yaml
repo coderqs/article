@@ -71,7 +71,7 @@ jobs:
 
       - name: Build
         run: |
-          hugo --minify --gc
+          hugo --minify --gc --cleanDestinationDir
           hugo config | grep lastmod
       
 

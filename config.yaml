@@ -4,7 +4,7 @@ theme: stack
 paginate: 10
 title: 清松小站
 
-TimeZone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 enableGitInfo: true
 

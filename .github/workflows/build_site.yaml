@@ -21,7 +21,7 @@ jobs:
 
       - name: Get last commit date
         id: commit_date
-        run: echo "::set-output name=date::$(git log -1 --pretty=format:'%cd' --date=iso8601-strict)"
+        run: echo "::set-output name=date::$(git log -1 --pretty=format:'%cd' --date='local')"
           
       - name: Checkout config
         uses: actions/checkout@v2

@@ -17,11 +17,12 @@ jobs:
           ref: personalization
           submodules: true
           path: .
-      
+
+
       - name: Get last commit date
-          id: commit_date
-          run: echo "::set-output name=date::$(git log -1 --pretty=format:'%cd' --date=iso8601-strict)"
-  
+        id: commit_date
+        run: echo "::set-output name=date::$(git log -1 --pretty=format:'%cd' --date='local')"
+          
       - name: Checkout config
         uses: actions/checkout@v2
         with:
@@ -69,9 +70,7 @@ jobs:
           extended: ${{ steps.hugo-info.outputs.HUGO_EXTENDED }} #true 
 
       - name: Build
-        run: |
-          hugo --minify --gc
-          hugo config | grep lastmod
+        run: hugo --minify --gc
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -84,3 +83,4 @@ jobs:
           user_email: <coderqs@coderqs.com>
           publish_branch: gh-pages
           cname: blog.coderqs.com
+          timezone: 'Asia/Shanghai'

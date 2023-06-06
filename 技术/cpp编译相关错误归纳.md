@@ -1,3 +1,17 @@
+---
+title: "C++ 编译相关的错误整理"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - C/C++
+categories:
+  - 技术
+series:
+---
+
 # C++ 编译相关的错误整理
 
 ## undefined reference to XXX

@@ -1,3 +1,17 @@
+---
+title: "Visual Studio 的一些实用功能"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Visual Studio
+categories:
+  - 技术
+series:
+---
+
 # Visual Studio 的一些实用功能
 ## 代码编辑
 ### 代码格式化

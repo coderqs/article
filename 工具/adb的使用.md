@@ -1,3 +1,17 @@
+---
+title: "adb 的使用"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Android
+categories:
+  - 工具
+series:
+---
+
 # adb 的使用
 ## 简介
 Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。它是一种客户端-服务器程序，包括以下三个组件：  

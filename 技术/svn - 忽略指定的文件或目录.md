@@ -1,3 +1,17 @@
+---
+title: "SVN 忽略指定的文件或目录"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - SVN
+categories:
+  - 技术
+series:
+---
+
 # SVN 忽略指定的文件或目录
 和 Git 中的 `.gitignore` 的功能基本一致。
 

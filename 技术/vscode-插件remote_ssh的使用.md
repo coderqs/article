@@ -1,3 +1,17 @@
+---
+title: "[VSCode]插件 - remote_ssh 的使用"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - VSCode
+categories:
+  - 技术
+series:
+---
+
 # 插件 Remote-SSH 的使用
 ## 安装
 - 在 vscode 的扩展里搜索 `Remote-SSH`  

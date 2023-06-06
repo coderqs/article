@@ -1,3 +1,18 @@
+---
+title: "[dokuwiki]使用主题与插件列表"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - dokuwiki
+categories:
+  - 工具
+series:
+  - dokuwiki
+---
+
 ## 当前使用的主题
 ### Bootstrap3
 [文档](https://www.dokuwiki.org/template:bootstrap3)  

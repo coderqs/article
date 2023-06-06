@@ -1,3 +1,19 @@
+---
+title: "使用 cmake 生成 XCode 工程"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - CMake
+  - XCode
+  - MAC/IOS
+categories:
+  - 技术
+series:
+---
+
 # 使用 cmake 生成 XCode 工程
 ## 方法
 cmake 的构建命令增加参数 \`-G "Xcode"\`，例如  

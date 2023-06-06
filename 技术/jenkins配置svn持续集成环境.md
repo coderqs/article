@@ -1,3 +1,18 @@
+---
+title: "Jenkins 配置 SVN 持续集成环境"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Jenkins
+  - CI/CD
+categories:
+  - 技术
+series:
+---
+
 # Jenkins 配置 SVN 持续集成环境
 ## 准备
 安装 Jenkins 插件 Subversion

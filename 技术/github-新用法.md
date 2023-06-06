@@ -1,3 +1,18 @@
+---
+title: "Github 的各种新用法"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Github
+  - Git
+categories:
+  - 技术
+series:
+---
+
 # Github 的各种新用法
 ## 作为图床
 本站就是使用的 github 作为图床。

@@ -1,3 +1,17 @@
+---
+title: "Markdown 语法指南"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - makrdown 
+categories:
+  - 技术
+series:
+---
+
 # Markdown 语法指南
 
 > Markdown是为网络书写者而生的方便“text-to-HTML”工具，它允许人们用一种易读易写的纯文本格式进行书写，然后将其转化成XHTML（或HTML）。

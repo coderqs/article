@@ -1,3 +1,19 @@
+---
+title: "在系统服务中执行 Shell 脚本报错"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - shell
+  - Linux
+  - 故障排除
+categories:
+  - 技术
+series:
+---
+
 # 脚本可单独执行，在 .service 文件中使用就报错
 ## 背景
 想要给树莓派添加个服务，每次开机后把 ip 发送到指定邮箱。结果配置好了后总是启动不起来，查看日志发现没有权限 `Failed to execute command: Permission denied`  

@@ -1,3 +1,18 @@
+---
+title: "Gitea 安装与部署"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Gitea
+  - Git
+categories:
+  - 技术
+series:
+---
+
 # Gitea 安装与部署
 ## 准备
 ### 下载文件

@@ -1,3 +1,18 @@
+---
+title: "C++ 注释风格"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - C/C++
+  - 规范
+categories:
+  - 技术
+series:
+---
+
 # C++ 注释风格
 个人比较认同的三种注释风格
 

@@ -1,3 +1,17 @@
+---
+title: "Shell 基础语法"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - shell
+categories:
+  - 技术
+series:
+---
+
 # Shell 基础语法
 ## 注释
 ### 单行注释

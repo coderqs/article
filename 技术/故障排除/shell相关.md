@@ -1,6 +1,18 @@
----  
-title: "Shell 脚本相关的问题的解决方法"  
----  
+---
+title: "Shell 脚本相关的问题的解决方法"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - shell
+  - 故障排除
+categories:
+  - 技术
+series:
+---
+
 # Shell 脚本相关的问题的解决方法
 ## "-bash: !": event not found
 #### 原因

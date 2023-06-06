@@ -1,3 +1,17 @@
+---
+title: "C 的 errno 错误码说明 "
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - C/C++
+categories:
+  - 技术
+series:
+---
+
 # errno 错误码说明 
 关于 errno 的相关定义都在头文件 `/usr/include/asm/errno.h` 中，下面是从文件中拷出来方便查询 
 ```

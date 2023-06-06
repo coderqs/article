@@ -1,3 +1,17 @@
+---
+title: "Python 内置错误集合"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - python 
+categories:
+  - 技术
+series:
+---
+
 # Python 内置错误集合
 
 ### BaseException—\>所有异常的基类

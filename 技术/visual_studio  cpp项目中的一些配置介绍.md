@@ -1,3 +1,17 @@
+---
+title: "Visual Studio 的 C++ 项目中的一些配置的介绍"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Visual Studio
+categories:
+  - 技术
+series:
+---
+
 # Visual Studio 的 C++ 项目中的一些配置的介绍
 ## VC++包含目录和 C++ 附加包含目录的区别
 c/c++ 附加包含目录，代表的是c/c++文件编译时所需要的头文件，而资源编译时也是需要附加包含库目录的，而

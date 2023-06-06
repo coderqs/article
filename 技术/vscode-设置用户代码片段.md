@@ -1,3 +1,17 @@
+---
+title: "[VSCode]设置用户代码片段"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - VSCode
+categories:
+  - 技术
+series:
+---
+
 # 设置用户代码片段
 ## 设置方式
 **以 Markdown 为例**  

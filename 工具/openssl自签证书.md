@@ -1,15 +1,19 @@
----  
-title: "OpenSSL 自签证书"  
-date: "2021/09/15 23:37"  
-description: ""  
-slug: ""  
-image: ""  
-categories:  
-    - 工具
-tags:  
-    - SSL 
-    - OpenSSL
----  
+---
+title: "OpenSSL 自签证书"
+description: ""
+date: "2021-09-15 23:37"
+draft: false
+authors:
+  - "清松"
+tags:
+    - ssl 
+    - openssl
+categories:
+  - 工具
+series:
+---
+
+
 # OpenSSL 自签证书
 ## 检查OpenSSL
 

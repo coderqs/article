@@ -1,3 +1,17 @@
+---
+title: "[Mediasoup]安装与部署"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Mediasoup
+categories:
+  - 工具
+series:
+---
+
 # Mediasoup 的安装与部署
 ## 环境要求
 官方要求：

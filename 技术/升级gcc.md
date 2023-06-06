@@ -1,3 +1,17 @@
+---
+title: "升级 GCC"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - gcc/g++
+categories:
+  - 技术
+series:
+---
+
 # 升级 GCC
 ## 编译 GCC
 ### 下载源码

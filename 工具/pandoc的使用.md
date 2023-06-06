@@ -1,14 +1,18 @@
----  
-title: "Pandoc 的使用"  
-date: "2021/09/15 23:37"  
-description: ""  
-slug: ""  
-image: ""  
-categories:  
-    - 工具
-tags:  
-    - Pandoc
----  
+---
+title: "Pandoc 的使用"
+description: ""
+date: "2021-09-15 23:37"
+draft: false
+authors:
+  - "清松"
+tags:
+  - Pandoc
+categories:
+  - 工具
+series:
+---
+
+
 # Pandoc 的使用
 提供多种标记语言之间的转换的功能，**但不完全是双向的，部分是单向的**，可转换的关系请参考[此页面](https://www.pandoc.org/index.html)。
 

@@ -1,3 +1,17 @@
+---
+title: "Centos7 挂载 windows 的共享目录"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Linux
+categories:
+  - 技术
+series:
+---
+
 # Centos7 挂载 windows 的共享目录
 ## 步骤
 ### 1. 在windows上创建一个共享目录

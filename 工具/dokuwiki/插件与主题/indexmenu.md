@@ -1,3 +1,18 @@
+---
+title: "[dokuwiki]插件使用 - indexmenu"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - dokuwiki
+categories:
+  - 工具
+series:
+  - dokuwiki
+---
+
 # indexmenu
 [indexmenu](https://www.dokuwiki.org/plugin:indexmenu)
 可以插入完全可自定义的索引或从指定名称空间开始的页面列表。

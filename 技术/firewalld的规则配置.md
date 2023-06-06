@@ -1,3 +1,18 @@
+---
+title: "firewalld的规则配置"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Linux
+  - 防火墙
+categories:
+  - 技术
+series:
+---
+
 # firewalld的规则配置
 ## 基本功能
 #### 查看防火墙

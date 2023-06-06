@@ -1,3 +1,18 @@
+---
+title: "Git 配置代理"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Git
+  - 代理
+categories:
+  - 技术
+series:
+---
+
 在 "科学上网" 后使用 git 克隆 github 上的项目速度还是很慢。后来发现 git clone 时并没有走 "科学上网" 的代理，需要在 git 中设置一下代理才会使用。
 
 ## 设置方法

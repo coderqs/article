@@ -1,3 +1,17 @@
+---
+title: "CMake 介绍与安装"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - CMake
+categories:
+  - 技术
+series:
+---
+
 # CMake 介绍与安装
 
 ## CMake 介绍

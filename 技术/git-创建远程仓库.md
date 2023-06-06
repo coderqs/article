@@ -1,3 +1,17 @@
+---
+title: "Git 创建远程仓库"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Git
+categories:
+  - 技术
+series:
+---
+
 # Git 创建远程仓库
 ## 本地远程仓库
 ### 创建目录

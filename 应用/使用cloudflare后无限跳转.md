@@ -1,14 +1,17 @@
-+++
-title = "使用 Cloudflare 后网站无限 301 跳转"
-description = ""
-author = "清松"
-tags = ["CloudFlare"]
-categories = ["应用"]
-[[images]]
-  src = "img/"
-  alt = ""
-  stretch = "stretchH"
-+++
+---
+title: "使用 Cloudflare 后网站无限 301 跳转"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - CloudFlare
+categories:
+  - 应用
+series:
+---
+
 # 使用 Cloudflare 后网站无限 301 跳转
 ## 原因分析
 出现这个故障的大部分服务器都是因为服务器端使用了强制 HTTPS，而 CloudFlare 的 Flexible 策略原理是：用户访问时使用 HTTPS 访问到 CF 的节点，然后 CF通过HTTP方式回源到你的服务器去读取数据，这个时候对于你的服务器来说，CF 就是访客，所以服务器返回的状态都是 301。

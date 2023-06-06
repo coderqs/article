@@ -1,3 +1,18 @@
+---
+title: "Mailx 安装与使用"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Linux
+  - mailx
+categories:
+  - 技术
+series:
+---
+
 # Mailx 安装与使用
 ## Mailx 安装
 ### 安装

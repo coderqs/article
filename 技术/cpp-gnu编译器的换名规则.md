@@ -1,3 +1,18 @@
+---
+title: "GNU C++ 编译器的换名规则"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - C/C++
+  - gcc/g++
+categories:
+  - 技术
+series:
+---
+
 # GNU C++ 编译器的换名规则
 ### 全局变量
 不做任何修改

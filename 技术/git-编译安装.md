@@ -1,3 +1,17 @@
+---
+title: "git 编译安装"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Git
+categories:
+  - 技术
+series:
+---
+
 # git 编译安装
 ## 准备
 ### 安装依赖

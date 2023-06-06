@@ -1,3 +1,18 @@
+---
+title: "Jenkins 的安装与部署"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - Jenkins
+  - CI/CD
+categories:
+  - 技术
+series:
+---
+
 # Jenkins 的安装与部署
 ## 准备
 ### 硬件要求

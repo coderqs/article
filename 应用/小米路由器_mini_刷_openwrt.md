@@ -1,3 +1,17 @@
+---
+title: "小米路由器 mini 刷 openwrt"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - openwrt 
+  - v2ray
+categories:
+  - 应用
+series:
+---
 # 小米路由器 mini 刷 openwrt
 
 ## 将系统刷成开发版

@@ -1,3 +1,17 @@
+---
+title: "V2ray 的安装与配置"
+description: ""
+date: '2019-03-11'
+draft: false
+authors:
+  - "清松"
+tags:
+  - V2ray
+  - 代理
+categories:
+  - 应用
+series:
+---
 # V2ray 的安装与配置
 ## V2ray 安装
 ### 下载安装脚本

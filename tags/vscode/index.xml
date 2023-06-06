@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VSCode on 清松小站</title><link>https://coderqs.github.io/tags/vscode/</link><description>Recent content in VSCode on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>[VSCode]插件 - remote_ssh 的使用</title><link>https://coderqs.github.io/2019/03/vscode%E6%8F%92%E4%BB%B6-remote_ssh-%E7%9A%84%E4%BD%BF%E7%94%A8/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/vscode%E6%8F%92%E4%BB%B6-remote_ssh-%E7%9A%84%E4%BD%BF%E7%94%A8/</guid><description>&lt;h1 id="插件-remote-ssh-的使用">插件 Remote-SSH 的使用&lt;/h1>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;ul>
+&lt;li>在 vscode 的扩展里搜索 &lt;code>Remote-SSH&lt;/code>&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E6%89%A9%E5%B1%95%E4%B8%AD%E6%90%9C%E7%B4%A2remote-ssh.PNG"
+loading="lazy"
+alt="扩展中搜索remote-ssh"
+>&lt;/li>
+&lt;li>点击安装，等待安装完成即可，安装完成后会在左侧的侧边栏多出一个图标。&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%90%8E%E5%A4%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E4%BE%A7%E8%BE%B9%E6%A0%8F.PNG"
+loading="lazy"
+alt="安装完成后多出来的侧边栏"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置">配置&lt;/h2>
+&lt;ul>
+&lt;li>按顺序点击图中 1、2 的图标;
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A5.png"
+loading="lazy"
+alt="新建连接"
+>&lt;/li>
+&lt;li>在图中 3 的位置输出要远程连接的机器的用户名和地址，例如：&lt;code>ssh root@192.168.13.97&lt;/code>;&lt;/li>
+&lt;li>输入完成后回车，点击 &lt;code>C:\User\xxx\.ssh\config&lt;/code> 就可以看到连接已添加进来了，如果没有点击图中 4 的位置刷新;&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E6%89%93%E5%BC%80config.png"
+loading="lazy"
+alt="打开config"
+>&lt;/li>
+&lt;li>在已添加的连接上右键，选择 &lt;code>Connect to Host in New Windows&lt;/code>;&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E6%89%93%E5%BC%80%E8%BF%9E%E6%8E%A5.jpg"
+loading="lazy"
+alt="打开连接"
+>&lt;/li>
+&lt;li>选择目标机器的系统类型（当无法识别目标机器的系统时会弹出该选项）;&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E9%80%89%E6%8B%A9%E7%9B%AE%E6%A0%87%E6%9C%BA%E5%99%A8%E7%9A%84%E7%B3%BB%E7%BB%9F.jpg"
+loading="lazy"
+alt="选择目标机器的系统"
+>&lt;/li>
+&lt;li>选择 &lt;code>Connect&lt;/code>;&lt;/li>
+&lt;li>输入密码;&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81.png"
+loading="lazy"
+alt="输入密码"
+>&lt;/li>
+&lt;li>输完密码后右下角有提示在下载安装 VS Code Server，等待其完成即可;&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E5%90%8E%E7%AD%89%E5%BE%85%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.jpg"
+loading="lazy"
+alt="等待安装完成"
+>&lt;/li>
+&lt;li>左下角这里类似这样的显示就是连接完成了;&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png"
+loading="lazy"
+alt="连接成功"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://code.visualstudio.com/docs/remote/ssh#_getting-started" target="_blank" rel="noopener"
+>使用 SSH 进行远程开发&lt;/a>&lt;br>
+&lt;a class="link" href="https://www.cnblogs.com/liyufeia/p/11405779.html" target="_blank" rel="noopener"
+>玩转VSCode插件之Remote-SSH&lt;/a>&lt;br>
+&lt;a class="link" href="https://blog.csdn.net/sixdaycoder/article/details/89947893" target="_blank" rel="noopener"
+>VSCode:Remote-SSH配置实录&lt;/a>&lt;/p></description></item><item><title>[VSCode]设置用户代码片段</title><link>https://coderqs.github.io/2019/03/vscode%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/vscode%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</guid><description>&lt;h1 id="设置用户代码片段">设置用户代码片段&lt;/h1>
+&lt;h2 id="设置方式">设置方式&lt;/h2>
+&lt;p>&lt;strong>以 Markdown 为例&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>文件 &amp;gt; 首选项 &amp;gt; 用户代码片段&lt;/code> 输入 &lt;code>markdown&lt;/code>，编辑 &lt;code>markdown.json&lt;/code>:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">35
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // same ids are connected.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // Example:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // &amp;#34;Print to console&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // &amp;#34;prefix&amp;#34;: &amp;#34;log&amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // &amp;#34;body&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // &amp;#34;console.log(&amp;#39;$1&amp;#39;);&amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // &amp;#34;$2&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // ],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // &amp;#34;description&amp;#34;: &amp;#34;Log output to console&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;blog-header&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> //&amp;#34;scope&amp;#34;: &amp;#34;markdown&amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;prefix&amp;#34;: &amp;#34;blog-header&amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;body&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;+++ &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;author = \&amp;#34;\&amp;#34; &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;title = \&amp;#34;\&amp;#34; &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;date = \&amp;#34;\&amp;#34; &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;description = \&amp;#34;\&amp;#34; &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;tags = [\&amp;#34;\&amp;#34;] &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;categories = [\&amp;#34;\&amp;#34;]&amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;url = \&amp;#34;/blog/ &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;[[images]] &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;src = \&amp;#34;/img/ &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;alt = \&amp;#34;\&amp;#34; &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;stretch = \&amp;#34;stretchH\&amp;#34; &amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;+++ &amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;description&amp;#34;: &amp;#34;博客文件的头，内置标签、分类、标题等信息&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol>
+&lt;li>&lt;code>文件 &amp;gt; 首选项 &amp;gt; 设置&lt;/code>，设置窗口打开后点击左侧的**文本编辑器(Text Editor)**菜单，在右侧出现的设置界面中下滑，找到并点击 &lt;strong>(Edit in settings.json)&lt;/strong> 即可打开 &lt;code>settings.json&lt;/code>，在其中添加下面的代码:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>&amp;#34;[markdown]&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;editor.quickSuggestions&amp;#34;: true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>保存好了以后重启一下 VSCode.&lt;/li>
+&lt;/ol></description></item></channel></rss>

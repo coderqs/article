@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>代理 on 清松小站</title><link>https://coderqs.github.io/tags/%E4%BB%A3%E7%90%86/</link><description>Recent content in 代理 on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 配置代理</title><link>https://coderqs.github.io/2019/03/git-%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/git-%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86/</guid><description>&lt;p>在 &amp;ldquo;科学上网&amp;rdquo; 后使用 git 克隆 github 上的项目速度还是很慢。后来发现 git clone 时并没有走 &amp;ldquo;科学上网&amp;rdquo; 的代理，需要在 git 中设置一下代理才会使用。&lt;/p>
+&lt;h2 id="设置方法">设置方法&lt;/h2>
+&lt;ol>
+&lt;li>查看 &amp;ldquo;科学上网&amp;rdquo; 开放的端口号与协议是什么，我的端口是 1080，协议是 socks。&lt;/li>
+&lt;li>打开 git bash&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>只代理 github&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git config --global http.https://github.com.proxy socks://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global https.https://github.com.proxy socks://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>全局代理&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git config --global http.proxy socks://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global https.proxy socks://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>如果 &amp;ldquo;科学上网&amp;rdquo; 使用的协议是 https，则需要将命令中参数 &lt;strong>&lt;a class="link" href="socks://127.0.0.1:1080" >socks://127.0.0.1:1080&lt;/a>&lt;/strong> 替换成 &lt;strong>&lt;a class="link" href="https://127.0.0.1:1080" target="_blank" rel="noopener"
+>https://127.0.0.1:1080&lt;/a>&lt;/strong>&lt;/li>
+&lt;li>socks5 与上同理&lt;/li>
+&lt;/ol>
+&lt;h2 id="取消代理">取消代理&lt;/h2>
+&lt;ul>
+&lt;li>取消 github 的代理&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span> git config --global --unset http.https://github.com.proxy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> git config --global --unset https.https://github.com.proxy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>取消全局代理&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git config --global --unset http.proxy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global --unset https.proxy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="查看当前设置的代理">查看当前设置的代理&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git config --global --get http.proxy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global --get https.proxy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.zhihu.com/question/27159393" target="_blank" rel="noopener"
+>知乎 - git clone一个github上的仓库，太慢，经常连接失败，但是github官网流畅访问，为什么？@汪小九&lt;/a>&lt;/p></description></item><item><title>V2ray 的安装与配置</title><link>https://coderqs.github.io/2019/03/v2ray-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/v2ray-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid><description>&lt;h1 id="v2ray-的安装与配置">V2ray 的安装与配置&lt;/h1>
+&lt;h2 id="v2ray-安装">V2ray 安装&lt;/h2>
+&lt;h3 id="下载安装脚本">下载安装脚本&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>其中 &lt;code>install-release.sh&lt;/code> 用于安装最新版本的 V2ray 的程序，&lt;code>install-dat-release.sh&lt;/code> 用于安装geoip.dat和geosite.dat的最新版本。&lt;/p>
+&lt;h3 id="安装-v2ray">安装 V2ray&lt;/h3>
+&lt;ul>
+&lt;li>执行下面命令安装 V2ray&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>bash install-release.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>安装的文件结构如下&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> /usr/local/bin/v2ray
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /usr/local/bin/v2ctl
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /usr/local/share/v2ray/geoip.dat
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /usr/local/share/v2ray/geosite.dat
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /usr/local/etc/v2ray/config.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /var/log/v2ray/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /var/log/v2ray/access.log
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /var/log/v2ray/error.log
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /etc/systemd/system/v2ray.service
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /etc/systemd/system/v2ray@.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>安装更新 geo 相关的文件&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> bash install-dat-release.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="非官方安装脚本">非官方安装脚本&lt;/h3>
+&lt;p>脚本的安装命令如下：&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>wget -P /root -N --no-check-certificate &amp;#34;https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh&amp;#34; &amp;amp;&amp;amp; chmod 700 /root/install.sh &amp;amp;&amp;amp; /root/install.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个脚本在很多教程中看到过，安装起来确实也方便很多，还支持自动配置常用的几种科学上网方式，其支持的安装类型如下&lt;/p>
+&lt;ul>
+&lt;li>VLESS+TCP+TLS&lt;/li>
+&lt;li>VLESS+TCP+xtls-rprx-direct&lt;/li>
+&lt;li>VLESS+WS+TLS【支持CDN、IPv6】&lt;/li>
+&lt;li>VMess+TCP+TLS&lt;/li>
+&lt;li>VMess+WS+TLS【支持CDN、IPv6】&lt;/li>
+&lt;li>Trojan&lt;/li>
+&lt;li>Trojan-Go+WS【支持CDN、不支持IPv6】&lt;/li>
+&lt;/ul>
+&lt;p>关于脚本的详细内容可以参考其在 Github 上的项目&lt;br>
+&lt;img src="https://github.com/mack-a/v2ray-agent"
+loading="lazy"
+alt="v2ray-agent"
+>。&lt;/p>
+&lt;h2 id="v2ray-配置">V2ray 配置&lt;/h2>
+&lt;p>可以参考官方在 GitHub 上给出的示例&lt;img src="https://github.com/v2fly/v2ray-examples"
+loading="lazy"
+alt="v2ray-examples"
+>。&lt;/p>
+&lt;h2 id="创建为系统服务">创建为系统服务&lt;/h2>
+&lt;p>在目录 &lt;code>/usr/lib/systemd/system/&lt;/code> 下创建文件 &lt;code>v2ray.service&lt;/code>，在其中添加如下内容&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> [Unit]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Description=V2Ray - A unified platform for anti-censorship
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Documentation=https://v2ray.com https://guide.v2fly.org
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> After=network.target nss-lookup.target
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Wants=network-online.target
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [Service]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Type=simple
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> User=root
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_NET_RAW
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NoNewPrivileges=yes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ExecStart=/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Restart=on-failure
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> RestartPreventExitStatus=23
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [Install]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> WantedBy=multi-user.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注：以上是一个示例，程序的路径与配置文件根据自己实际情况来更改。&lt;img src="https://coderqs.github.io/%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f/linux/%e7%b3%bb%e7%bb%9f%e6%9c%8d%e5%8a%a1"
+loading="lazy"
+alt="系统服务文件"
+>的编写与说明请参阅对应的页面。&lt;/p></description></item></channel></rss>

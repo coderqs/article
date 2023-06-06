@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>shell on 清松小站</title><link>https://coderqs.github.io/tags/shell/</link><description>Recent content in shell on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml"/><item><title>Shell 基础语法</title><link>https://coderqs.github.io/2019/03/shell-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/shell-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid><description>&lt;h1 id="shell-基础语法">Shell 基础语法&lt;/h1>
+&lt;h2 id="注释">注释&lt;/h2>
+&lt;h3 id="单行注释">单行注释&lt;/h3>
+&lt;p>使用 &lt;code>#&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#999;font-style:italic"># echo &amp;#34;hello&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="多行注释">多行注释&lt;/h3>
+&lt;h4 id="方法一">方法一&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span> : &amp;lt;&amp;lt; !
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> !
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="方法二">方法二&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span> :&lt;span style="color:#ed9d13">&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ed9d13"> 这是注释1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ed9d13"> 这是注释2
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ed9d13"> 这是注释3
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ed9d13"> &amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="方法三">方法三&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span> : &amp;lt;&amp;lt; 字符 &lt;span style="color:#999;font-style:italic">#这里的字符可以是数字或者是字符都可以&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 字符 &lt;span style="color:#999;font-style:italic">#这里的字符要和一开始的一样&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="方法四">方法四&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6ab825;font-weight:bold">if&lt;/span> false; &lt;span style="color:#6ab825;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6ab825;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="方法五">方法五&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span> ((0))&amp;amp;&amp;amp;{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 这是注释3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/lansesl2008/article/details/20558369/" target="_blank" rel="noopener"
+>shell中的单行注释和多行注释&lt;/a>&lt;/p></description></item><item><title>Shell 脚本相关的问题的解决方法</title><link>https://coderqs.github.io/2019/03/shell-%E8%84%9A%E6%9C%AC%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/shell-%E8%84%9A%E6%9C%AC%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid><description>&lt;h1 id="shell-脚本相关的问题的解决方法">Shell 脚本相关的问题的解决方法&lt;/h1>
+&lt;h2 id="-bash--event-not-found">&amp;ldquo;-bash: !&amp;rdquo;: event not found&lt;/h2>
+&lt;h4 id="原因">原因&lt;/h4>
+&lt;p>&lt;code>!&lt;/code> 是 bash 的特殊字符，用于引用之前以!后面字符串开头的最后一个的命令。&lt;br>
+&lt;code>!$&lt;/code> 是获取上一条命令的最后一个参数。&lt;br>
+&lt;strong>注意&lt;/strong>：在脚本中，所有历史命令都被禁用，因为它们只在交互式 shell 中才有意义&lt;/p>
+&lt;h4 id="解决方法">解决方法&lt;/h4>
+&lt;h5 id="方法一">方法一&lt;/h5>
+&lt;p>执行 &lt;code>set +H&lt;/code> 临时关闭该功能&lt;/p>
+&lt;h5 id="方法二">方法二&lt;/h5>
+&lt;p>将该字符串用单引号括起来，双引号不可以&lt;/p>
+&lt;h5 id="方法三">方法三&lt;/h5>
+&lt;p>在 &lt;code>!&lt;/code> 前添加&lt;code>\&lt;/code>或后面添加空格，&lt;strong>但这种方法有额外的字符混进去&lt;/strong>，所以如果是输入密码的时候出现的问题，这种方法是不可用的。&lt;/p>
+&lt;p>参考自&lt;a class="link" href="https://serverfault.com/questions/208265/what-is-bash-event-not-found" target="_blank" rel="noopener"
+>What is “-bash: !”: event notfound&amp;quot;&lt;/a>&lt;/p></description></item><item><title>在系统服务中执行 Shell 脚本报错</title><link>https://coderqs.github.io/2019/03/%E5%9C%A8%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E4%B8%AD%E6%89%A7%E8%A1%8C-shell-%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/%E5%9C%A8%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E4%B8%AD%E6%89%A7%E8%A1%8C-shell-%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/</guid><description>&lt;h1 id="脚本可单独执行在-service-文件中使用就报错">脚本可单独执行，在 .service 文件中使用就报错&lt;/h1>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>想要给树莓派添加个服务，每次开机后把 ip 发送到指定邮箱。结果配置好了后总是启动不起来，查看日志发现没有权限 &lt;code>Failed to execute command: Permission denied&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>-- Unit send_ip.service has begun starting up.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[11178]: send_ip.service: Failed to execute command: Permission denied
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[11178]: send_ip.service: Failed at step EXEC spawning /usr/bin/script/send_ip.sh: Permission denied
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Subject: Process /usr/bin/script/send_ip.sh could not be executed
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Defined-By: systemd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Support: https://access.redhat.com/support
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>--
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- The process /usr/bin/script/send_ip.sh could not be executed and failed.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>--
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- The error number returned by this process is 13.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[1]: send_ip.service: Control process exited, code=exited status=203
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[1]: send_ip.service: Failed with result &amp;#39;exit-code&amp;#39;.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[1]: Failed to start 开机后向管理员发送本机的ip.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Subject: Unit send_ip.service has failed
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Defined-By: systemd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Support: https://access.redhat.com/support
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>--
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Unit send_ip.service has failed.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>已确认脚本确实是正确的，service 文件如下&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-service" data-lang="service">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Unit]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Description&lt;/span>=&lt;span style="color:#ed9d13">开机后向管理员发送本机的ip&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">After&lt;/span>=&lt;span style="color:#ed9d13">network.target&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Service]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Type&lt;/span>=&lt;span style="color:#ed9d13">forking&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">User&lt;/span>=&lt;span style="color:#ed9d13">root&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">ExecStart&lt;/span>=&lt;span style="color:#ed9d13">/usr/bin/script/send_ip.sh&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">PrivateTmp&lt;/span>=&lt;span style="color:#ed9d13">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Install]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">WantedBy&lt;/span>=&lt;span style="color:#ed9d13">multi-user.target&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查了下 &lt;code>code=exited status=203&lt;/code> 表示 &lt;a class="link" href="https://blog.csdn.net/shangyexin/article/details/80968202" target="_blank" rel="noopener"
+>systemctl 执行脚本时需要知道脚本的解释器&lt;/a>，可脚本前面明明有写 &lt;code>#!/bin/bash&lt;/code>&lt;/p>
+&lt;h2 id="原因">原因&lt;/h2>
+&lt;p>203 的错误提示没有错，确实是系统不知道脚本的解释，只是这里不应该是在脚本开头加 &lt;code>#!/bin/bash&lt;/code>，而是在 &lt;code>ExecStart&lt;/code> 里声明使用的解释器，将 &lt;code>ExecStart=/usr/bin/script/send_ip.sh&lt;/code> 修改为 &lt;code>ExecStart=/bin/bash /usr/bin/script/send_ip.sh&lt;/code>&lt;br>
+修改后的 service 文件应该如下&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-service" data-lang="service">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Unit]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Description&lt;/span>=&lt;span style="color:#ed9d13">开机后向管理员发送本机的ip&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">After&lt;/span>=&lt;span style="color:#ed9d13">network.target&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Service]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Type&lt;/span>=&lt;span style="color:#ed9d13">forking&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">User&lt;/span>=&lt;span style="color:#ed9d13">root&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">ExecStart&lt;/span>=&lt;span style="color:#ed9d13">/bin/bash /usr/bin/script/send_ip.sh&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">PrivateTmp&lt;/span>=&lt;span style="color:#ed9d13">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Install]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">WantedBy&lt;/span>=&lt;span style="color:#ed9d13">multi-user.target&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://stackoverflow.com/questions/45776003/fixing-a-systemd-service-203-exec-failure-no-such-file-or-directory" target="_blank" rel="noopener"
+>修复systemd服务203 EXEC故障（无此类文件或目录）&lt;/a>&lt;/p></description></item></channel></rss>

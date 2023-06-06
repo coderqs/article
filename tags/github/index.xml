@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 清松小站</title><link>https://coderqs.github.io/tags/github/</link><description>Recent content in Github on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Github 的各种新用法</title><link>https://coderqs.github.io/2019/03/github-%E7%9A%84%E5%90%84%E7%A7%8D%E6%96%B0%E7%94%A8%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/github-%E7%9A%84%E5%90%84%E7%A7%8D%E6%96%B0%E7%94%A8%E6%B3%95/</guid><description>&lt;h1 id="github-的各种新用法">Github 的各种新用法&lt;/h1>
+&lt;h2 id="作为图床">作为图床&lt;/h2>
+&lt;p>本站就是使用的 github 作为图床。&lt;/p>
+&lt;h3 id="操作步骤">操作步骤&lt;/h3>
+&lt;ul>
+&lt;li>在 github 创建一个仓库，&lt;strong>一定要创建公开的仓库，如果是私有的会访问不了&lt;/strong>。&lt;/li>
+&lt;li>克隆该仓库到本地，添加一张图片，提交后推送到 github。&lt;/li>
+&lt;li>在仓库中找到刚刚推送的图片进入预览。&lt;/li>
+&lt;li>点击下载，会跳转到一个页面，这个页面就是这张图片的外链地址，这个地址就可以在其他地方访问了。&lt;/li>
+&lt;li>还有一种方法，在预览页面的地址后面加上 &lt;code>?raw=true&lt;/code> 后缀&lt;/li>
+&lt;/ul></description></item></channel></rss>

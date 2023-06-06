@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Clang-Tidy on 清松小站</title><link>https://coderqs.github.io/tags/clang-tidy/</link><description>Recent content in Clang-Tidy on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/clang-tidy/index.xml" rel="self" type="application/rss+xml"/><item><title>Clang-Tidy 使用</title><link>https://coderqs.github.io/2019/03/clang-tidy-%E4%BD%BF%E7%94%A8/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/clang-tidy-%E4%BD%BF%E7%94%A8/</guid><description>&lt;h1 id="clang-tidy">Clang-Tidy&lt;/h1>
+&lt;h2 id="简介">简介&lt;/h2>
+&lt;p>clang-tidy 是一个基于 clang 的 C++ “linter” 工具。其目的是提供一个可扩展的框架，用于诊断和修复典型的编程错误，例如样式违规、接口滥用或可以通过静态分析推断出的错误。clang-tidy 是模块化的，并提供了一个方便的界面来编写新的检查。&lt;/p>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;h3 id="ubuntu">Ubuntu&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo apt-get install clang-tidy-5.0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="centos">Centos&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo yum install -y centos-release-scl
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo yum install -y llvm-toolset-7
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo yum install -y llvm-toolset-7-clang-analyzer llvm-toolset-7-clang-tools-extra
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="启动">启动&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>scl &lt;span style="color:#24909d">enable&lt;/span> llvm-toolset-7 &lt;span style="color:#ed9d13">&amp;#39;clang -v&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>scl &lt;span style="color:#24909d">enable&lt;/span> llvm-toolset-7 &lt;span style="color:#ed9d13">&amp;#39;lldb -v&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>scl &lt;span style="color:#24909d">enable&lt;/span> llvm-toolset-7 bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用">使用&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>clang-tidy -list-checks -checks=&lt;span style="color:#ed9d13">&amp;#39;google&amp;#39;&lt;/span> test.cpp --
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>-checks='google'&lt;/code>: 表示检测是否违反google code style;&lt;/li>
+&lt;li>&lt;code>test.cpp&lt;/code>: 被检测的文件;&lt;/li>
+&lt;li>&lt;code>--&lt;/code>: 表示这个文件不在compilation database里面，可以直接单独编译;&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://clang.llvm.org/extra/clang-tidy/" target="_blank" rel="noopener"
+>clang-tidy&lt;/a>&lt;br>
+&lt;a class="link" href="https://zhuanlan.zhihu.com/p/102248131" target="_blank" rel="noopener"
+>深入研究Clang(十三)clang-tidy简介&lt;/a>&lt;br>
+&lt;a class="link" href="https://blog.csdn.net/ypshowm/article/details/100040729" target="_blank" rel="noopener"
+>clang-tidy使用总结&lt;/a>&lt;br>
+&lt;a class="link" href="https://blog.csdn.net/snsn1984/article/details/104220921" target="_blank" rel="noopener"
+>深入研究Clang(十四)clang-tidy的使用&lt;/a>&lt;/p></description></item></channel></rss>

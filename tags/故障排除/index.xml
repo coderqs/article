@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>故障排除 on 清松小站</title><link>https://coderqs.github.io/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</link><description>Recent content in 故障排除 on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>inux 下用户相关的的问题解决方法</title><link>https://coderqs.github.io/2019/03/inux-%E4%B8%8B%E7%94%A8%E6%88%B7%E7%9B%B8%E5%85%B3%E7%9A%84%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/inux-%E4%B8%8B%E7%94%A8%E6%88%B7%E7%9B%B8%E5%85%B3%E7%9A%84%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid><description>&lt;h1 id="linux-下用户相关的的问题解决方法">Linux 下用户相关的的问题解决方法&lt;/h1>
+&lt;h2 id="登录用户出现-bash-42">登录用户出现&lt;code>-bash-4.2$&lt;/code>&lt;/h2>
+&lt;h3 id="原因">原因&lt;/h3>
+&lt;p>用户家目录下的环境变量文件（&lt;code>.bash_profile&lt;/code> 和 &lt;code>.bashrc&lt;/code>）丢失了&lt;/p>
+&lt;h3 id="解决方法">解决方法&lt;/h3>
+&lt;p>从主默认文件/etc/skel/下重新拷贝一份配置信息到此用户的家目录下，命令如下&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>cp /etc/skel/.bashrc /home/user/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cp /etc/skel/.bash_profile /home/user
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>拷贝完后注销并重新登录用户即可。&lt;/p></description></item><item><title>Linux 系统相关的问题及解决方法</title><link>https://coderqs.github.io/2019/03/linux-%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/linux-%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid><description>&lt;h1 id="linux-系统相关的问题及解决方法">Linux 系统相关的问题及解决方法&lt;/h1>
+&lt;h2 id="防火墙已开启但没有开放-22-端口却依然可以使用-ssh-连接">防火墙已开启但没有开放 22 端口，却依然可以使用 ssh 连接&lt;/h2>
+&lt;h4 id="原因">原因&lt;/h4>
+&lt;p>防火墙开放了 ssh 服务，服务把 22
+端口开放了。相关的操作可参考防火墙的&lt;a class="link" href="https://coderqs.github.io/%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f/Linux/firewalld%e7%9a%84%e8%a7%84%e5%88%99%e9%85%8d%e7%bd%ae#%e6%9c%8d%e5%8a%a1%e7%ae%a1%e7%90%86" >firewalld的规则配置#服务管理&lt;/a>&lt;/p>
+&lt;h2 id="ifconfig-获取不到ip">ifconfig 获取不到ip&lt;/h2>
+&lt;h4 id="原因-1">原因&lt;/h4>
+&lt;p>NetworkManager 断开或没有管理网卡设备。使用 &lt;code>nmcli d status&lt;/code> 可以查看 NetworkManager 状态。添加管理和启动的方法请查看《&lt;a class="link" href="https://support.huaweicloud.com/trouble-ecs/ecs_trouble_0313.html" target="_blank" rel="noopener"
+>CentOS7重启后dhclient未运行，导致IP未获取问题处理&lt;/a>》&lt;/p>
+&lt;h2 id="systemctl-报错-codeexited-status203">systemctl 报错 code=exited status=203&lt;/h2>
+&lt;h4 id="原因-2">原因&lt;/h4>
+&lt;p>systemctl 执行脚本时需要知道脚本的解释器。&lt;/p>
+&lt;h4 id="解决方法">解决方法&lt;/h4>
+&lt;p>脚本启动命令前指定脚本的解释器，可以参考实例记录: &lt;a class="link" href="https://coderqs.github.io/%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f/linux/%e6%95%85%e9%9a%9c%e6%8e%92%e9%99%a4/%e6%95%85%e9%9a%9c%e8%ae%b0%e5%bd%95/linux%e8%84%9a%e6%9c%ac%e8%87%aa%e5%b7%b1%e5%8f%af%e4%bb%a5%e5%8d%95%e7%8b%ac%e6%89%a7%e8%a1%8c%e4%bd%86%e5%9c%a8service%e6%96%87%e4%bb%b6%e4%b8%ad%e4%bd%bf%e7%94%a8%e5%b0%b1%e9%94%99%e8%af%af" >linux脚本自己可以单独执行但在service文件中使用就错误&lt;/a>。&lt;/p></description></item><item><title>Shell 脚本相关的问题的解决方法</title><link>https://coderqs.github.io/2019/03/shell-%E8%84%9A%E6%9C%AC%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/shell-%E8%84%9A%E6%9C%AC%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid><description>&lt;h1 id="shell-脚本相关的问题的解决方法">Shell 脚本相关的问题的解决方法&lt;/h1>
+&lt;h2 id="-bash--event-not-found">&amp;ldquo;-bash: !&amp;rdquo;: event not found&lt;/h2>
+&lt;h4 id="原因">原因&lt;/h4>
+&lt;p>&lt;code>!&lt;/code> 是 bash 的特殊字符，用于引用之前以!后面字符串开头的最后一个的命令。&lt;br>
+&lt;code>!$&lt;/code> 是获取上一条命令的最后一个参数。&lt;br>
+&lt;strong>注意&lt;/strong>：在脚本中，所有历史命令都被禁用，因为它们只在交互式 shell 中才有意义&lt;/p>
+&lt;h4 id="解决方法">解决方法&lt;/h4>
+&lt;h5 id="方法一">方法一&lt;/h5>
+&lt;p>执行 &lt;code>set +H&lt;/code> 临时关闭该功能&lt;/p>
+&lt;h5 id="方法二">方法二&lt;/h5>
+&lt;p>将该字符串用单引号括起来，双引号不可以&lt;/p>
+&lt;h5 id="方法三">方法三&lt;/h5>
+&lt;p>在 &lt;code>!&lt;/code> 前添加&lt;code>\&lt;/code>或后面添加空格，&lt;strong>但这种方法有额外的字符混进去&lt;/strong>，所以如果是输入密码的时候出现的问题，这种方法是不可用的。&lt;/p>
+&lt;p>参考自&lt;a class="link" href="https://serverfault.com/questions/208265/what-is-bash-event-not-found" target="_blank" rel="noopener"
+>What is “-bash: !”: event notfound&amp;quot;&lt;/a>&lt;/p></description></item><item><title>VMware 遇见的问题及解决方法</title><link>https://coderqs.github.io/2019/03/vmware-%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/vmware-%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid><description>&lt;h1 id="vmware-遇见的问题及解决方法">VMware 遇见的问题及解决方法&lt;/h1>
+&lt;h2 id="虚拟机繁忙无法关机">虚拟机繁忙无法关机&lt;/h2>
+&lt;p>这种问题出现的原因不明（有看到一些说法是 Windows 10 的某些版本和 VMware 兼容性的问题导致的，但也没找到明确的证据证明，都是凭感觉m(）&lt;/p>
+&lt;h3 id="解决方法">解决方法&lt;/h3>
+&lt;ol>
+&lt;li>在任务管理器中关闭 &lt;code>vmware workstation vmx.exe&lt;/code> 进程&lt;/li>
+&lt;li>但我在这个地方遇到了问题：就是这个进程根本关不掉！！尝试了各种方法都关不掉！！网上有帖子说&lt;a class="link" href="https://bbs.pcbeta.com/forum.php?mod=viewthread&amp;amp;tid=1811242" target="_blank" rel="noopener"
+>是1903版本与vmware的兼容性&lt;/a>问题，但也没有给出解决方案。&lt;/li>
+&lt;li>通过 Windows 程序与功能将 VMware 修复(没有必要重装，一定不要动原来的虚拟机文件）。修复完成后，虚拟机就可以重新启动了。&lt;/li>
+&lt;/ol>
+&lt;p>参考自：&lt;a class="link" href="https://blog.csdn.net/longmenshenhua/article/details/92230175" target="_blank" rel="noopener"
+>Vmware Workstation虚拟机繁忙导致无法关机&lt;/a>&lt;/p></description></item><item><title>Wireshark 遇见的问题的解决办法</title><link>https://coderqs.github.io/2019/03/wireshark-%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/wireshark-%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid><description>&lt;h1 id="wireshark-遇见的问题的解决办法">Wireshark 遇见的问题的解决办法&lt;/h1>
+&lt;h2 id="选择网卡时卡死无响应">选择网卡时卡死无响应&lt;/h2>
+&lt;p>在选择网卡后 Wireshark 就会卡死，然后进程未响应，重新打开又重复的卡死无响应的过程。打开任务管理器发现 Wireshark 内存占用迅速上涨，我这里是上涨了 1G 多。&lt;br>
+这个跟 TLS 有关。因为我之前弄 webrtc 的时候配置了 https 的解密，&lt;strong>并且没有还原配置&lt;/strong>，&lt;strong>然后我浏览器有很久没有重启&lt;/strong>，导致浏览器的&lt;code>sslkeylogfile&lt;/code> 文件变得很大，而 Wireshark 开始抓包的时候会循环读取&lt;code>sslkeylogflie&lt;/code> 的内容，所以就出现卡死与崩溃的情况。&lt;/p>
+&lt;h3 id="解决方法">解决方法&lt;/h3>
+&lt;h4 id="方法一">方法一&lt;/h4>
+&lt;p>重启浏览器，删除 &lt;code>sslkeylogflie&lt;/code> 文件。这是临时解决方法，当 &lt;code>sslkeylogflie&lt;/code> 文件变大后还是会出现这个问题。&lt;/p>
+&lt;h4 id="方法二">方法二&lt;/h4>
+&lt;p>还原 Wireshark 中关于 TLS 的配置。配置路径 &lt;code>编辑&lt;/code>-&amp;gt;&lt;code>首选项&lt;/code>-&amp;gt;&lt;code>Protocols&lt;/code>-&amp;gt;&lt;code>TLS&lt;/code> 。&lt;/p>
+&lt;h3 id="参考资料">参考资料&lt;/h3>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/33240824" target="_blank" rel="noopener"
+>《Dive into Windbg系列》Wireshark的卡死与崩溃&lt;/a>&lt;/p></description></item><item><title>在系统服务中执行 Shell 脚本报错</title><link>https://coderqs.github.io/2019/03/%E5%9C%A8%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E4%B8%AD%E6%89%A7%E8%A1%8C-shell-%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/%E5%9C%A8%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E4%B8%AD%E6%89%A7%E8%A1%8C-shell-%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99/</guid><description>&lt;h1 id="脚本可单独执行在-service-文件中使用就报错">脚本可单独执行，在 .service 文件中使用就报错&lt;/h1>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>想要给树莓派添加个服务，每次开机后把 ip 发送到指定邮箱。结果配置好了后总是启动不起来，查看日志发现没有权限 &lt;code>Failed to execute command: Permission denied&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>-- Unit send_ip.service has begun starting up.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[11178]: send_ip.service: Failed to execute command: Permission denied
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[11178]: send_ip.service: Failed at step EXEC spawning /usr/bin/script/send_ip.sh: Permission denied
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Subject: Process /usr/bin/script/send_ip.sh could not be executed
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Defined-By: systemd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Support: https://access.redhat.com/support
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>--
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- The process /usr/bin/script/send_ip.sh could not be executed and failed.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>--
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- The error number returned by this process is 13.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[1]: send_ip.service: Control process exited, code=exited status=203
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[1]: send_ip.service: Failed with result &amp;#39;exit-code&amp;#39;.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Sep 14 16:33:01 bogon systemd[1]: Failed to start 开机后向管理员发送本机的ip.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Subject: Unit send_ip.service has failed
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Defined-By: systemd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Support: https://access.redhat.com/support
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>--
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-- Unit send_ip.service has failed.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>已确认脚本确实是正确的，service 文件如下&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-service" data-lang="service">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Unit]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Description&lt;/span>=&lt;span style="color:#ed9d13">开机后向管理员发送本机的ip&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">After&lt;/span>=&lt;span style="color:#ed9d13">network.target&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Service]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Type&lt;/span>=&lt;span style="color:#ed9d13">forking&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">User&lt;/span>=&lt;span style="color:#ed9d13">root&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">ExecStart&lt;/span>=&lt;span style="color:#ed9d13">/usr/bin/script/send_ip.sh&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">PrivateTmp&lt;/span>=&lt;span style="color:#ed9d13">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Install]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">WantedBy&lt;/span>=&lt;span style="color:#ed9d13">multi-user.target&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查了下 &lt;code>code=exited status=203&lt;/code> 表示 &lt;a class="link" href="https://blog.csdn.net/shangyexin/article/details/80968202" target="_blank" rel="noopener"
+>systemctl 执行脚本时需要知道脚本的解释器&lt;/a>，可脚本前面明明有写 &lt;code>#!/bin/bash&lt;/code>&lt;/p>
+&lt;h2 id="原因">原因&lt;/h2>
+&lt;p>203 的错误提示没有错，确实是系统不知道脚本的解释，只是这里不应该是在脚本开头加 &lt;code>#!/bin/bash&lt;/code>，而是在 &lt;code>ExecStart&lt;/code> 里声明使用的解释器，将 &lt;code>ExecStart=/usr/bin/script/send_ip.sh&lt;/code> 修改为 &lt;code>ExecStart=/bin/bash /usr/bin/script/send_ip.sh&lt;/code>&lt;br>
+修改后的 service 文件应该如下&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-service" data-lang="service">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Unit]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Description&lt;/span>=&lt;span style="color:#ed9d13">开机后向管理员发送本机的ip&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">After&lt;/span>=&lt;span style="color:#ed9d13">network.target&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Service]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">Type&lt;/span>=&lt;span style="color:#ed9d13">forking&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">User&lt;/span>=&lt;span style="color:#ed9d13">root&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">ExecStart&lt;/span>=&lt;span style="color:#ed9d13">/bin/bash /usr/bin/script/send_ip.sh&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">PrivateTmp&lt;/span>=&lt;span style="color:#ed9d13">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6ab825;font-weight:bold">[Install]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">WantedBy&lt;/span>=&lt;span style="color:#ed9d13">multi-user.target&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://stackoverflow.com/questions/45776003/fixing-a-systemd-service-203-exec-failure-no-such-file-or-directory" target="_blank" rel="noopener"
+>修复systemd服务203 EXEC故障（无此类文件或目录）&lt;/a>&lt;/p></description></item></channel></rss>

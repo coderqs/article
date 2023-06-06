@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dokuwiki on 清松小站</title><link>https://coderqs.github.io/tags/dokuwiki/</link><description>Recent content in dokuwiki on 清松小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://coderqs.github.io/tags/dokuwiki/index.xml" rel="self" type="application/rss+xml"/><item><title>[dokuwiki]安装与部署</title><link>https://coderqs.github.io/2019/03/dokuwiki%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/dokuwiki%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/</guid><description>&lt;h1 id="dokuwiki-的安装与部署">dokuwiki 的安装与部署&lt;/h1>
+&lt;h2 id="系统要求">系统要求&lt;/h2>
+&lt;ol>
+&lt;li>支持 PHP 的 Web 服务器&lt;/li>
+&lt;li>PHP &lt;strong>至少是 5.6 版本&lt;/strong>以上的，最好是最新的版本，详细要求可参阅&lt;a class="link" href="https://www.dokuwiki.org/requirements" target="_blank" rel="noopener"
+>官网的相关说明&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h2 id="下载">下载&lt;/h2>
+&lt;p>在&lt;a class="link" href="https://download.dokuwiki.org" target="_blank" rel="noopener"
+>官网&lt;/a>下载最新稳定版的压缩包&lt;br>
+&lt;img src="https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/dokuwiki_%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.png"
+loading="lazy"
+alt="dokuwiki_下载页面"
+>&lt;/p>
+&lt;h2 id="web-服务的配置">Web 服务的配置&lt;/h2>
+&lt;p>在&lt;a class="link" href="https://www.dokuwiki.org/install" target="_blank" rel="noopener"
+>官网中的 Webserver Specifics&lt;/a>有提供了几款常见的 web 服务器的配置，在这里只展示了我用的 nginx 的配置&lt;/p>
+&lt;h3 id="nginx">nginx&lt;/h3>
+&lt;p>添加配置文件 &lt;code>/etc/nginx/conf.d/dokuwiki.conf&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">36
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">37
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">38
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">39
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">40
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">41
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">42
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">43
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">44
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">45
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">46
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">47
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">48
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">49
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">50
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">51
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">52
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">53
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">54
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">55
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">56
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">57
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">58
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">59
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">60
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-txt" data-lang="txt">&lt;span style="display:flex;">&lt;span>server {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> listen 443 ssl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> server_name wiki.mydomain.com;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> root /var/www/html/dokuwiki;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> index index.html index.php doku.php;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> access_log /var/log/nginx/dokuwiki.access.log;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> error_log /var/log/nginx/dokuwiki.error.log;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl on;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl_certificate /etc/letsencrypt/live/wiki.mydomain.com/fullchain.pem;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl_certificate_key /etc/letsencrypt/live/wiki.mydomain.com/privkey.pem;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl_session_timeout 5m;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl_ciphers &amp;#39;AES128+EECDH:AES128+EDH:!aNULL&amp;#39;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ssl_prefer_server_ciphers on;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> location / {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> try_files $uri $uri/ @dokuwiki;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> location @dokuwiki {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> rewrite ^/_media/(.*) /lib/exe/fetch.php?media=$1 last;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> rewrite ^/_detail/(.*) /lib/exe/detail.php?media=$1 last;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> rewrite ^/_export/([^/]+)/(.*) /doku.php?do=export_$1&amp;amp;id=$2 last;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> rewrite ^/(.*) /doku.php?id=$1 last;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> location ~ /(data|conf|bin|inc)/ {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> deny all;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> location ~* \.(css|js|gif|jpe?g|png)$ {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> expires 1M;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> add_header Pragma public;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> add_header Cache-Control &amp;#34;public, must-revalidate, proxy-revalidate&amp;#34;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> location ~ \.php$ {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_split_path_info ^(.+\.php)(/.+)$;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_index index.php;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> include fastcgi_params;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_intercept_errors off;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_buffer_size 16k;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fastcgi_buffers 4 16k;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> location ~ /\.ht {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> deny all;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>server {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> listen 80;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> server_name wiki.mydomain.com;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> add_header Strict-Transport-Security max-age=2592000;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> rewrite ^ https://wiki.mydomain.com$request_uri? permanent;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注：要记得修改配置中的证书和密钥的路径&lt;/strong>&lt;/p>
+&lt;h2 id="php-fpm">php-fpm&lt;/h2>
+&lt;p>将配置文件&lt;code>/etc/php-fpm.d/www.conf&lt;/code>中的下列项修改一致&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>user = nginx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>group = nginx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>listen = /var/run/php-fpm/php-fpm.sock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>listen.owner = nginx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>listen.group = nginx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>listen.mode = 0660
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注：&lt;code>listen&lt;/code>的配置要与 nginx 配置中的 &lt;code>fastcgi_pass unix&lt;/code> 一致&lt;/strong>&lt;/p>
+&lt;h2 id="启动">启动&lt;/h2>
+&lt;p>执行下面命令启动 php-fpm、nginx 服务&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>systemctl start php-fpm nginx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>systemctl enable php-fpm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注：要记得配置防火墙开放对应的端口或者关闭防火墙&lt;/strong>&lt;/p>
+&lt;h2 id="部署脚本">部署脚本&lt;/h2>
+&lt;p>详见&lt;a class="link" href="https://coderqs.github.io/%e8%84%9a%e6%9c%ac%e7%ae%a1%e7%90%86/dokuwiki_deploy#dokuwiki_deploy.sh" >dokuwiki_deploy#dokuwiki_deploy.sh&lt;/a>&lt;/p>
+&lt;h2 id="备份">备份&lt;/h2>
+&lt;p>dokuwiki 的备份比较简单，可以只备份以下目录即可&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>data/pages&lt;/code> -包含您当前的页面&lt;/li>
+&lt;li>&lt;code>data/meta&lt;/code> -包含有关您的页面的元信息（例如最初创建者，订阅者等等）&lt;/li>
+&lt;li>&lt;code>data/media&lt;/code> -包含您当前的媒体（图像，PDF等）&lt;/li>
+&lt;li>&lt;code>data/media_meta&lt;/code> -媒体的元数据&lt;/li>
+&lt;li>&lt;code>data/attic&lt;/code> -页面的所有旧版本&lt;/li>
+&lt;li>&lt;code>data/media_attic&lt;/code> -媒体的所有旧版本&lt;/li>
+&lt;li>&lt;code>conf&lt;/code> -配置设置&lt;/li>
+&lt;/ul>
+&lt;p>以上出自官网的&lt;a class="link" href="https://www.dokuwiki.org/faq:backup" target="_blank" rel="noopener"
+>备份教程&lt;/a>。&lt;/p>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/install:nginx" target="_blank" rel="noopener"
+>使用 Nginx 的 DokuWiki - 官网&lt;/a>&lt;/p></description></item><item><title>[dokuwiki]部署时的常见问题</title><link>https://coderqs.github.io/2019/03/dokuwiki%E9%83%A8%E7%BD%B2%E6%97%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/dokuwiki%E9%83%A8%E7%BD%B2%E6%97%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid><description>&lt;h1 id="dokuwiki-部署时的常见问题">dokuwiki 部署时的常见问题&lt;/h1>
+&lt;h2 id="禁止您无权访问此服务器上的dokuwiki">禁止您无权访问此服务器上的/dokuwiki&lt;/h2>
+&lt;p>权限问题，检查以下两点&lt;/p>
+&lt;ol>
+&lt;li>注意下dokuwiki下文件的权限（nginx的执行用户是nginx）&lt;/li>
+&lt;li>dokuwiki.conf的中指定的路径是否正确&lt;/li>
+&lt;/ol>
+&lt;h2 id="because-search-permissions-are-missing-on-a-component-of-the-path">&lt;code>because search permissions are missing on a component of the path&lt;/code>&lt;/h2>
+&lt;p>关闭 SELinux 即可，关闭命令&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>setenforce 0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="访问网页返回-502-bad-gateway">访问网页返回 &lt;code>502 bad gateway&lt;/code>&lt;/h2>
+&lt;p>nginx 找不到 php 了，检查下 nginx 对应的服务的配置中的
+&lt;code>fastcgi_pass unix&lt;/code> 项和 php 的 &lt;code>www.conf&lt;/code> 配置文件中的 &lt;code>listen&lt;/code>
+的值是否一致&lt;/p>
+&lt;h2 id="中文文件名乱码">中文文件名乱码&lt;/h2>
+&lt;p>在网页创建的中文名字空间和页面后，在服务器上全都显示的都是乱码 在文件
+&lt;code>conf/local.php&lt;/code> 最后添加&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>$conf[&amp;#39;fnencode&amp;#39;] = &amp;#39;utf-8&amp;#39;;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改 &lt;code>inc/pageutils.php&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">31
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>function utf8_encodeFN($file,$safe=true){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> global $conf;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> if($conf[&amp;#39;fnencode&amp;#39;] == &amp;#39;utf-8&amp;#39;) return $file;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> if($safe &amp;amp;&amp;amp; preg_match(&amp;#39;#^[a-zA-Z0-9/_\-\.%]+$#&amp;#39;,$file)){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return $file;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> if($conf[&amp;#39;fnencode&amp;#39;] == &amp;#39;safe&amp;#39;){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return SafeFN::encode($file);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // 注释掉下面两行
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // $file = urlencode($file);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // $file = str_replace(&amp;#39;%2F&amp;#39;,&amp;#39;/&amp;#39;,$file);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return $file;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>function utf8_decodeFN($file){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> global $conf;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> if($conf[&amp;#39;fnencode&amp;#39;] == &amp;#39;utf-8&amp;#39;) return $file;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> if($conf[&amp;#39;fnencode&amp;#39;] == &amp;#39;safe&amp;#39;){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return SafeFN::decode($file);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // 注释掉下面一行
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // return urldecode($file);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> // 加上下面这行
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return $file;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>参考自：&lt;a class="link" href="https://www.wangbin.io/blog/it/wiki-dokuwiki-utf8.html" target="_blank" rel="noopener"
+>dokuwiki：解决中文乱码问题&lt;/a>&lt;/p>
+&lt;h2 id="php-函数xml_parser_create不可用也许您的托管服务提供商出于某种原因禁用了它">PHP 函数xml_parser_create不可用。也许您的托管服务提供商出于某种原因禁用了它&lt;/h2>
+&lt;p>没有安装 xml 模块，搜索安装对应的模块即可&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> yum install -y php-xml.x86_64
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="重定向的次数过多">重定向的次数过多&lt;/h2>
+&lt;p>因为给网站套上了 cdn，其中的 ssl 设置不正确，详细原因和解决方法请参考《&lt;a class="link" href="https://coderqs.github.io/%e7%bd%91%e7%bb%9c/%e4%bd%bf%e7%94%a8cloudflare%e5%90%8e%e6%97%a0%e9%99%90%e8%b7%b3%e8%bd%ac" >使用cloudflare后无限跳转&lt;/a>》&lt;/p></description></item><item><title>[dokuwiki]插件使用 - indexmenu</title><link>https://coderqs.github.io/2019/03/dokuwiki%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8-indexmenu/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/dokuwiki%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8-indexmenu/</guid><description>&lt;h1 id="indexmenu">indexmenu&lt;/h1>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:indexmenu" target="_blank" rel="noopener"
+>indexmenu&lt;/a>
+可以插入完全可自定义的索引或从指定名称空间开始的页面列表。&lt;/p>
+&lt;h2 id="基本语法">基本语法&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;ns[#n] [ns1[#n] ns2[#n] …] | [js[#theme]] [tsort] … }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>&lt;code>[]&lt;/code> 内的是可选项&lt;/strong>&lt;/p>
+&lt;h2 id="常用的几种语句">常用的几种语句&lt;/h2>
+&lt;h3 id="从根名称空间显示">从根名称空间显示&lt;/h3>
+&lt;p>全部展开&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;:}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="从当前名称空间">从当前名称空间&lt;/h3>
+&lt;p>仅显示当前级别，不展开任何节点&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;.#1}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="展开当前页面的父名称空">展开当前页面的父名称空&lt;/h3>
+&lt;p>显示父名称空间（“上行链路”）和当前级别，不展开任何节点&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;..:#1}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="展开包含指定的名称空间">展开包含指定的名称空间&lt;/h3>
+&lt;p>以展开包含 wiki 的名称空间为例，语法如下：&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;:wiki#1|js}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="不显示指定的名字空间">不显示指定的名字空间&lt;/h3>
+&lt;p>以不显示 &lt;code>users&lt;/code> 名字空间为例，语法如下：&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;.:#1|js skipns=/^users$/}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="不显示指定页面">不显示指定页面&lt;/h3>
+&lt;p>以不显示 &lt;code>start&lt;/code> 和 &lt;code>sidebar&lt;/code> 页面为例，语法如下：&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{{indexmenu&amp;gt;.:#1|js skipfile+/(^|:)(start|sidebar)$/}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="遇到的问题">遇到的问题&lt;/h2>
+&lt;h3 id="indexmenu-id-conflict">Indexmenu id conflict&lt;/h3>
+&lt;p>这个问题是因为页面中有多个 Indexmenu 生成的索引。&lt;br>
+我遇见这个问题是因为我打开了 &lt;code>sidebar&lt;/code> 页面，页面与侧边栏都渲染了一遍导致的，并不影响使用，关掉 &lt;code>sidebar&lt;/code> 页面就行了。&lt;/p></description></item><item><title>[dokuwiki]个性化设置</title><link>https://coderqs.github.io/2019/03/dokuwiki%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/dokuwiki%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</guid><description>&lt;h1 id="dokuwiki-的个性化设置">dokuwiki 的个性化设置&lt;/h1>
+&lt;h2 id="添加侧边栏">添加侧边栏&lt;/h2>
+&lt;p>有的主题是默认带有侧边栏的，而我使用的 Bootstrap3 主题带有右侧边栏，其显示当前文章的内容的索引，想要显示整个 wiki 的索引还需要使用插件&lt;a class="link" href="https://coderqs.github.io/%e5%b7%a5%e5%85%b7/%e6%9c%8d%e5%8a%a1/dokuwiki/%e6%8f%92%e4%bb%b6%e4%b8%8e%e4%b8%bb%e9%a2%98/start#IndexMenu" >start#IndexMenu&lt;/a>。插件的添加与使用请参考其文档，这里介绍如何使其成为独立的侧边栏。&lt;/p>
+&lt;ol>
+&lt;li>添加一个名为 &lt;code>sidebar&lt;/code> 的页面。&lt;strong>注：这是默认的名字，如果修改了配置中的 &lt;code>基本配置&lt;/code>-&amp;gt;&lt;code>sidebar&lt;/code> 的配置，需要与其修改后的名字一致&lt;/strong>&lt;/li>
+&lt;li>编辑该页面，添加如下语句，保存即可。&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> {{indexmenu&amp;gt;..#1|js navbar nocookie}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="在侧边栏中隐藏-sidebar-和-start-页面">在侧边栏中隐藏 &lt;code>sidebar&lt;/code> 和 &lt;code>start&lt;/code> 页面&lt;/h2>
+&lt;p>上面方法添加的侧边栏中会把 &lt;code>sidebar&lt;/code> 和 &lt;code>start&lt;/code>
+页面显示出来，如果不想显示，则将 &lt;code>sidebar&lt;/code> 页面中的语句修改成下面的即可&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> {{indexmenu&amp;gt;..#1 |js#bj-tango.png navbar max#3#2 skipfile+/(^|:)(start|sidebar)$/ skipns=/^users$/}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注：上面的语句还隐藏了 users 名字空间，如果想显示，则将&lt;code>skipns=/^users$/&lt;/code> 删掉即可&lt;/strong>。&lt;/p>
+&lt;h2 id="修改上传附件大小为2m限制">修改上传附件大小为2M限制&lt;/h2>
+&lt;p>修改 &lt;code>/etc/php.ini&lt;/code> 中的两个参数&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> upload_max_filesize = 10M
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> post_max_size = 10M
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注&lt;/strong>: Windows环境中尽管会提示上传文件过大，但好像实际并不会限制上传。&lt;/p>
+&lt;h2 id="替换图标">替换图标&lt;/h2>
+&lt;p>替换 &lt;code>dokuwiki/lib/tpl/dokuwiki/images/&lt;/code> 路径下的文件：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>logo.png&lt;/code> 界面的图标&lt;/li>
+&lt;li>&lt;code>favicon.ico&lt;/code> 浏览器标签上的图标&lt;/li>
+&lt;/ul>
+&lt;h2 id="修改页脚">修改页脚&lt;/h2>
+&lt;p>修改文件 &lt;code>dokuwiki/lib/tpl/dokuwiki/tpl_footer.php&lt;/code>&lt;/p>
+&lt;h2 id="修改时区">修改时区&lt;/h2>
+&lt;h3 id="dokuwiki">dokuwiki&lt;/h3>
+&lt;p>修改 &lt;code>dokuwiki/inc/init.php&lt;/code> 文件中的&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> date_default_timezone_set(&amp;#39;PRC&amp;#39;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注&lt;/strong>：&lt;code>PRC&lt;/code> 标识中国时区&lt;/p>
+&lt;h3 id="php">php&lt;/h3>
+&lt;p>修改 &lt;code>php.ini&lt;/code> 文件，找到下面部分&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>[Date]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; Defines the default timezone used by the date functions
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; http://php.net/date.timezone
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;date.timezone =
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>date.timezone = Asia/Shanghai
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启 web 服务即可。&lt;/p>
+&lt;h2 id="修改上传文件格式的限制">修改上传文件格式的限制&lt;/h2>
+&lt;ul>
+&lt;li>系统默认支持类型：修改 &lt;code>dokuwiki/conf/mime.conf&lt;/code>，在里面增加或注释掉对应的文件格式即可。&lt;/li>
+&lt;li>用户自定义类型：修改 &lt;code>dokuwiki/conf/mime.local.conf&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用自定义的邮箱发送邮件">使用自定义的邮箱发送邮件&lt;/h2>
+&lt;h3 id="使用-php-内置的邮箱功能">使用 php 内置的邮箱功能&lt;/h3>
+&lt;ol>
+&lt;li>勾选&lt;code>管理&lt;/code> &amp;ndash;&amp;gt; &lt;code>配置设置&lt;/code> &amp;ndash;&amp;gt; &lt;code>通知设置&lt;/code> 中 &lt;code>启用页面订阅支持&lt;/code>&lt;/li>
+&lt;li>在 &lt;code>自动发送邮件时使用的邮件地址&lt;/code> 中输入要使用的邮箱，例：email@email.com&lt;/li>
+&lt;li>也可以增加配置 &lt;code>自动发送邮件时使用的邮件地址前缀&lt;/code>，使其在所有发送邮件的主题添加这个前缀，方便过滤邮件。&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用插件的邮箱功能">使用插件的邮箱功能&lt;/h3>
+&lt;p>上面的配置使用的是 php 的内置邮件功能，当其不可用时可以添加插件 &lt;a class="link" href="https://coderqs.github.io/%e5%b7%a5%e5%85%b7/%e6%9c%8d%e5%8a%a1/dokuwiki/%e6%8f%92%e4%bb%b6%e4%b8%8e%e4%b8%bb%e9%a2%98/start#smtp" >smtp&lt;/a> 来提供邮件功能&lt;/p>
+&lt;ol>
+&lt;li>添加插件 smtp。&lt;/li>
+&lt;li>设置 smtp，设置的路径为 &lt;code>管理&lt;/code> &amp;ndash;&amp;gt; &lt;code>配置设置&lt;/code> &amp;ndash;&amp;gt; &lt;code>Smtp&lt;/code>
+&lt;ol>
+&lt;li>在邮箱运营商那里找到相应的 stmp 地址、端口与加密方式，将其分别填入&lt;code>您的 SMTP 发送服务器&lt;/code>、&lt;code>您的 SMTP 服务器监听端口&lt;/code>、&lt;code>您的 SMTP 服务器所用的加密类型&lt;/code>&lt;/li>
+&lt;li>在 &lt;code>如果需要认证，在这里输入您的用户名&lt;/code> 中输入邮箱email@email.com，&lt;strong>注意：此用户名必须与上面的&lt;code>自动发送邮件时使用的邮件地址&lt;/code> 中的设置的邮箱相同&lt;/strong>&lt;/li>
+&lt;li>&lt;code>对应上面用户名的密码&lt;/code> 为 password 保存即可。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h1 id="参考资料">参考资料&lt;/h1>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/leekwen/article/details/54907445" target="_blank" rel="noopener"
+>dokuwiki插件的常用配置及其他Tips&lt;/a>&lt;br>
+&lt;a class="link" href="https://www.dokuwiki.org/start?id=zh:manual" target="_blank" rel="noopener"
+>DokuWiki 用户手册&lt;/a>&lt;br>
+&lt;a class="link" href="https://blog.csdn.net/dclingcloud/article/details/86727132" target="_blank" rel="noopener"
+>玩转Dokuwiki&lt;/a>&lt;br>
+&lt;a class="link" href="https://www.dazhuanlan.com/2019/09/24/5d89567416891/" target="_blank" rel="noopener"
+>DokuWiki相关&lt;/a>&lt;/p></description></item><item><title>[dokuwiki]使用主题与插件列表</title><link>https://coderqs.github.io/2019/03/dokuwiki%E4%BD%BF%E7%94%A8%E4%B8%BB%E9%A2%98%E4%B8%8E%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0800</pubDate><guid>https://coderqs.github.io/2019/03/dokuwiki%E4%BD%BF%E7%94%A8%E4%B8%BB%E9%A2%98%E4%B8%8E%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8/</guid><description>&lt;h2 id="当前使用的主题">当前使用的主题&lt;/h2>
+&lt;h3 id="bootstrap3">Bootstrap3&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/template:bootstrap3" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+&lt;img src="http://lotar.altervista.org/dokuwiki/_media/wiki/template/bootstrap3-template.png"
+loading="lazy"
+alt="Bootstrap3-printscreen"
+>&lt;/p>
+&lt;h2 id="当前使用的插件">当前使用的插件&lt;/h2>
+&lt;h3 id="add-new-page">Add New Page&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:addnewpage" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+创建新的 wiki 页面&lt;/p>
+&lt;h3 id="move">move&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:move" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+移动页面和名字空间&lt;/p>
+&lt;h3 id="indexmenu">IndexMenu&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:indexmenu" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+显示全局的索引。&lt;/p>
+&lt;h3 id="nspages">nspages&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:nspages" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+显示页面列表。&lt;/p>
+&lt;h3 id="smtp">smtp&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:smtp" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+使用自定义的邮箱发送邮件。&lt;/p>
+&lt;h3 id="fastwiki">fastwiki&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:fastwiki" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+提供快速编辑功能，能在页面中只修改一部分，不用渲染整个页面&lt;/p>
+&lt;h3 id="mathjax">mathjax&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:mathjax" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+支持 mathjax
+数学公式的语法，目前不怎么用数学公式，使用率低暂时先关闭了。&lt;/p>
+&lt;h3 id="dw2pdf">dw2pdf&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:dw2pdf" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+提供 pdf 下载的功能，在个人知识库中没有使用这个功能。&lt;/p>
+&lt;h3 id="vshare">vshare&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.dokuwiki.org/plugin:vshare" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;br>
+可以嵌入来自其他视频网站的视频。&lt;/p></description></item></channel></rss>

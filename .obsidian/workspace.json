@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "3dba9dd5f92b2e40",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a9027061de7cd09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb23938d5e075dbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工具/Git-配置代理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "15d466a19d816e70",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d4bca390b31fae5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e50eebb2f57fae39",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0b04b4dbc24b37db",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:CI",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "33313981cd848a47",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2f9cd58d57fec504",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc5aabd5219e39fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abf7767914ba3702",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "工具/Git-配置代理.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dc6d917b011e2c00",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "工具/Git-配置代理.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9698afd98bff6f09",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a2bdda143b2e5b0b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "工具/Git-配置代理.md"
+              }
+            }
+          },
+          {
+            "id": "18bc69b331117af9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "bb23938d5e075dbd",
+  "lastOpenFiles": [
+    "方法/工程目录结构设计.md",
+    "工具/SVN-忽略指定的文件或目录.md",
+    "工具/Git-常用命令.md",
+    "工具/Git-配置代理.md",
+    "工具/Gitea的安装与部署.md",
+    "工具/Git-编译安装.md",
+    "工具/Jenkins配置SVN持续集成环境.md",
+    "工具/Jenkins的安装与部署.md",
+    "技术/Mailx安装与使用.md",
+    "应用/小米路由器mini刷openwrt.md",
+    "方法/文章的分类方法与标准.md",
+    "工具/firewalld的规则配置.md",
+    "工具/v2ray的安装与配置.md",
+    "工具/Pandoc的使用.md",
+    "应用/Centos7挂载windows的共享目录.md",
+    "应用/网站无限301跳转.md",
+    "工具/使用CMake生成XCode工程.md",
+    "方法/软件版本号风格.md",
+    "方法/单元测试规范.md",
+    "方法/跨平台项目的结构设计.md",
+    "方法/搜索引擎的使用技巧.md",
+    "工具/VisualStudio/VSCode-插件remote_ssh的使用.md",
+    "工具/VisualStudio/VSCode-设置用户代码片段.md",
+    "技术/Shell脚本遇到event not found问题的解决方法.md",
+    "技术/在Linux系统服务中调用Shell脚本报错.md",
+    "工具/CMake介绍与安装.md",
+    "工具/VisualStudio",
+    "应用/树莓派",
+    "操作系统/linux",
+    "操作系统",
+    "template",
+    "emplate",
+    "作品",
+    "其他",
+    "杂谈",
+    "工具"
+  ]
+}

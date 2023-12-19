@@ -5,11 +5,6 @@ author: 清松
 date: 2023-12-07T23:39:15+08:00
 categories:
   - 技术
-  - 工具
-  - 应用
-  - 方法
-  - 杂项
-  - 作品
 tags:
   - Shell
   - Linux

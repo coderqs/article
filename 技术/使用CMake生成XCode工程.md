@@ -4,7 +4,7 @@ description:
 author: 清松
 date: 2023-12-10T23:06:02+08:00
 categories:
-  - 工具
+  - 技术
 tags:
   - CMake
   - XCode

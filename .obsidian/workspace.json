@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9a9027061de7cd09",
+        "id": "35fb1db84fee7c44",
         "type": "tabs",
         "children": [
           {
-            "id": "bb23938d5e075dbd",
+            "id": "0537b02869050eb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具/Git-配置代理.md",
+                "file": "应用/树莓派/一些遇到的问题的解决方法.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "efa7da7c5ee3747f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工具/Pandoc的使用.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:CI",
+                "query": "检查OpenSSL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具/Git-配置代理.md",
+                "file": "工具/Pandoc的使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具/Git-配置代理.md",
+                "file": "工具/Pandoc的使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具/Git-配置代理.md"
+                "file": "工具/Pandoc的使用.md"
               }
             }
           },
@@ -135,7 +148,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -157,34 +172,37 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "bb23938d5e075dbd",
+  "active": "efa7da7c5ee3747f",
   "lastOpenFiles": [
-    "方法/工程目录结构设计.md",
-    "工具/SVN-忽略指定的文件或目录.md",
-    "工具/Git-常用命令.md",
-    "工具/Git-配置代理.md",
-    "工具/Gitea的安装与部署.md",
-    "工具/Git-编译安装.md",
-    "工具/Jenkins配置SVN持续集成环境.md",
-    "工具/Jenkins的安装与部署.md",
-    "技术/Mailx安装与使用.md",
-    "应用/小米路由器mini刷openwrt.md",
-    "方法/文章的分类方法与标准.md",
-    "工具/firewalld的规则配置.md",
-    "工具/v2ray的安装与配置.md",
-    "工具/Pandoc的使用.md",
-    "应用/Centos7挂载windows的共享目录.md",
-    "应用/网站无限301跳转.md",
-    "工具/使用CMake生成XCode工程.md",
-    "方法/软件版本号风格.md",
-    "方法/单元测试规范.md",
-    "方法/跨平台项目的结构设计.md",
-    "方法/搜索引擎的使用技巧.md",
-    "工具/VisualStudio/VSCode-插件remote_ssh的使用.md",
-    "工具/VisualStudio/VSCode-设置用户代码片段.md",
+    "技术/使用openssl自签证书.md",
+    "技术/免费ssl证书申请与续期.md",
+    "工具/Jsoncpp的使用.md",
+    "工具/Clang-Tidy使用.md",
+    "工具/adb的使用.md",
+    "技术/Wireshark解决选择网卡时卡死的问题.md",
+    "工具/Wireshark常用过滤条件.md",
+    "技术/VMware繁忙无法关机的问题解决.md",
+    "工具/Nginx安装与部署.md",
+    "工具/Mediasoup安装与部署.md",
     "技术/Shell脚本遇到event not found问题的解决方法.md",
-    "技术/在Linux系统服务中调用Shell脚本报错.md",
+    "技术/Linux下Shell介绍.md",
     "工具/CMake介绍与安装.md",
+    "技术/Linux下用户相关的的问题解决方法.md",
+    "技术/Linux下系统相关的问题及解决方法.md",
+    "技术/Linux下查看库的符号.md",
+    "方法/单元测试规范.md",
+    "技术/Linux设置系统时区.md",
+    "技术/Linux下GCC升级.md",
+    "工具/CMake-生成XCode工程.md",
+    "方法/文章的分类方法与标准.md",
+    "技术/GUN_C++_编译的换名规则.md",
+    "方法/C++代码风格.md",
+    "方法/C++代码风格_注释.md",
+    "工具/firewalld的规则配置.md",
+    "工具/Jenkins配置SVN持续集成环境.md",
+    "脚本管理",
+    "工具/DokuWiki",
+    "未命名.canvas",
     "工具/VisualStudio",
     "应用/树莓派",
     "操作系统/linux",
@@ -192,8 +210,6 @@
     "template",
     "emplate",
     "作品",
-    "其他",
-    "杂谈",
-    "工具"
+    "其他"
   ]
 }

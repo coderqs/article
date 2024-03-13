@@ -1,6 +1,6 @@
 ---
 title: 'Shell 脚本遇到 "-bash: !": event not found 问题的解决方法'
-description: 
+description: '在 Shell 脚本中使用 ! 来获取历史命令，但却返回 "-bash: !": event not found'
 author: 清松
 date: 2020-09-07T23:34:52+08:00
 categories:

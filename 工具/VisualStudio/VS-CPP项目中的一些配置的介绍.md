@@ -34,59 +34,23 @@ vc++ 的包含目录，代表的是全局项目的包含目录。配置过VC++�
 ## 多张属性表叠加
 多张属性表一起使用时，两张表定义了相同的属性，后面的表的配置优先。  
 例如，当两张表同时定义了 **"附加包含目录"**，在没有选择继承的情况下，则只有后面导入的属性表的该项配置生效，如果选择了继承则同时生效（因为后一张属性表将前一张属性表的该项配置继承了，本质上还是后一张属性表的配置生效）  
-> Property sheets are a nice way to set up properties to projects. Each
-property sheet is a collection of properties for a project. One can
-attach arbitrarily many property sheets to each project, and the
-property sheets can be shared between projects. The latter feature is
-the essential one. 
+> Property sheets are a nice way to set up properties to projects. Each property sheet is a collection of properties for a project. One can attach arbitrarily many property sheets to each project, and the property sheets can be shared between projects. The latter feature is the essential one. 
 >
-> In my solutions at least, the projects share very similar properties.
-> Now I can create just one property sheet for the whole solution and
-> apply that to each project. If I want to change the properties, I will
-> do so in the property sheet.
+> In my solutions at least, the projects share very similar properties. Now I can create just one property sheet for the whole solution and apply that to each project. If I want to change the properties, I will do so in the property sheet.
 >
-> What’s more, multiple property sheets can be layered so that the union
-> of their properties applies. The sheets are given an order. If two
-> sheets define the same property, then the later one takes priority.
+> What’s more, multiple property sheets can be layered so that the union of their properties applies. The sheets are given an order. If two sheets define the same property, then the later one takes priority.
 >
-> The strategy is to give each solution a property sheet in which to
-> configure output directories, disable warnings, and disable secure-stl
-> etc. You will then make this property sheet part of your solution, in
-> the sense of carrying it around in the version control.
+> The strategy is to give each solution a property sheet in which to configure output directories, disable warnings, and disable secure-stl etc. You will then make this property sheet part of your solution, in the sense of carrying it around in the version control.
 >
-> There are also special global property sheets called
-> Microsoft.Cpp.Win32.user and Microsoft.Cpp.Win64.user which are
-> automatically added to each configuration of each project. These will
-> apply properties globally on your computer. If you change to another
-> computer, these settings are lost. These property sheets are ideal for
-> specifying include and library directories for external libraries
-> (which are of course computer-specific). While the former works on
-> 32-bit builds, the latter works on 64-bit builds. Of course, you will
-> want to choose different directories for them.
+> There are also special global property sheets called Microsoft.Cpp.Win32.user and Microsoft.Cpp.Win64.user which are automatically added to each configuration of each project. These will apply properties globally on your computer. If you change to another computer, these settings are lost. These property sheets are ideal for specifying include and library directories for external libraries (which are of course computer-specific). While the former works on 32-bit builds, the latter works on 64-bit builds. Of course, you will want to choose different directories for them.
 >
-> A bit odd feature of the property sheets is that they won’t get save
-> automatically when you change a property. You must either Save All, or
-> right click on the property sheet and save it. This is unintuitive and
-> causes unnecessary confusion from time to time.
+> A bit odd feature of the property sheets is that they won’t get save automatically when you change a property. You must either Save All, or right click on the property sheet and save it. This is unintuitive and causes unnecessary confusion from time to time.
 >
-> It is useful to notice that a property sheet can be added to all
-> projects and configuration at the same time. Simply select the desired
-> projects or configurations and right click to add an existing property
-> sheet. Unfortunately, it seems a given property sheet can not be
-> removed from all projects at once.
+> It is useful to notice that a property sheet can be added to all projects and configuration at the same time. Simply select the desired projects or configurations and right click to add an existing property sheet. Unfortunately, it seems a given property sheet can not be removed from all projects at once.
 > 
-> If you need to set project-specific properties, do note that you must
-> explicitly bring in the inherited properties. For example, in the
-> Preprocessor definitions property, this is done by
+> If you need to set project-specific properties, do note that you must explicitly bring in the inherited properties. For example, in the Preprocessor definitions property, this is done by
 > %(PreprocessorDefinitions).
 > 
-> There is a trap in the command-line settings. If you specify
-> Additional Options in a project, then those will not be unioned with
-> the additional options in the property sheets. Unless I am mistaken,
-> it is missing a way to bring in the inherited options. Therefore, you
-> should use the other options explicitly instead. For example, if you
-> need a preprocessor definition, do it in the Preprocessor definitions
-> property instead of as a /D switch in Additional Options.
-
+> There is a trap in the command-line settings. If you specify Additional Options in a project, then those will not be unioned with the additional options in the property sheets. Unless I am mistaken, it is missing a way to bring in the inherited options. Therefore, you should use the other options explicitly instead. For example, if you need a preprocessor definition, do it in the Preprocessor definitions property instead of as a /D switch in Additional Options.
 ### 参考资料
 [Property sheets in Visual Studio 2010](https://kaba.hilvi.org/homepage/blog/shorties-2012.htm)  

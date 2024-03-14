@@ -60,3 +60,24 @@ namespace threedog {
 已经在命名空间中，却又在声明中加上了限定符。去掉错误信息中提示的限定符即可。
 ### 参考资料
 [C++编译错误 ：error: explicit qualification in declaration of xxx](https://blog.csdn.net/Three_dog/article/details/96133220)  
+
+## expected primary-expression before ')' token
+在使用宏 `__VA_ARGS__` 提示 `expected primary-expression before ')' token`。  
+#### 原因
+没有传入参数时`__VA_ARGS__`，参数列表最后面就成了逗号了。
+```
+#define LOG_MSG(MSG, ...) \
+    printf("[log][%s]" MSG, __FUNCTION__, ## __VA_ARGS__);
+```
+#### 解决方法
+在 `__VA_ARGS__` 前加上 `## ` 来消除逗号
+### 参考资料
+[How to define same macro function based on different parameters](https://stackoverflow.com/questions/10480858/how-to-define-same-macro-function-based-on-different-parameters)
+
+## 在注释中遇到意外的文件结束
+官方给出的错误原因是缺少注释终结器 (`*/`)，实际查找并未找到缺少`*/`的错误。
+### 原因与解决方法
+utf8 格式出错，有一个注释是`/* 中文*/`，这里由于编码问题，中文和英文联合起来，吞掉了注释的`*/`，导致 bug。只需要改为 `/* 中文 */`。
+**建议中文注释可能应该前后加英文字符，如前面加空格，后面加 `.` 号（英文句号）。
+### 参考资料
+[“在注释中遇到意外的文件结束”--记一个令人崩溃的bug](https://www.cnblogs.com/huipengly/p/10473288.html)

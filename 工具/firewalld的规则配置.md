@@ -5,7 +5,10 @@ author: 清松
 date: 2023-12-10T22:52:08+08:00
 categories:
   - 工具
-tags: 
+tags:
+  - Linux
+  - 防火墙
+  - 命令
 math: true
 url: 
 draft: false

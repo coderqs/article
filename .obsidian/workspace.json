@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "35fb1db84fee7c44",
+        "id": "f1ab8eaf63e0fec9",
         "type": "tabs",
         "children": [
           {
-            "id": "0537b02869050eb8",
+            "id": "14be373fd6c0fd39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用/树莓派/一些遇到的问题的解决方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "efa7da7c5ee3747f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工具/Pandoc的使用.md",
+                "file": "技术/Xshell 和 Xftp 提示“要继续使用此程序，您必须应用最新的更新或使用新版本”.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "检查OpenSSL",
+                "query": "curl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具/Pandoc的使用.md",
+                "file": "技术/Xshell 和 Xftp 提示“要继续使用此程序，您必须应用最新的更新或使用新版本”.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具/Pandoc的使用.md",
+                "file": "技术/Xshell 和 Xftp 提示“要继续使用此程序，您必须应用最新的更新或使用新版本”.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具/Pandoc的使用.md"
+                "file": "技术/Xshell 和 Xftp 提示“要继续使用此程序，您必须应用最新的更新或使用新版本”.md"
               }
             }
           },
@@ -172,34 +159,37 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "efa7da7c5ee3747f",
+  "active": "14be373fd6c0fd39",
   "lastOpenFiles": [
-    "技术/使用openssl自签证书.md",
-    "技术/免费ssl证书申请与续期.md",
-    "工具/Jsoncpp的使用.md",
-    "工具/Clang-Tidy使用.md",
-    "工具/adb的使用.md",
-    "技术/Wireshark解决选择网卡时卡死的问题.md",
+    "杂项/国内做脑机接口的公司.md",
+    "技术/Xshell 和 Xftp 提示“要继续使用此程序，您必须应用最新的更新或使用新版本”.md",
+    "杂项/删除 Leetcode 的账号.md",
+    "技术/身份验证错误 要求的函数不受支持Windows远程桌面连接.md",
+    "杂项/几款 Linux 系统对比.md",
+    "杂项/一些挖掘市场需求的方法.md",
+    "技术/Linux下GCC头文件搜索路径.md",
+    "技术/Gitea 修改文件上传大小限制.md",
+    "工具/未命名.md",
+    "工具/Curl命令常用场景速查.md",
+    "工具/DokuWiki/DokuWiki部署时的常见问题.md",
+    "工具/Gitea的安装与部署.md",
+    "技术/关于“.bash_profile”和“.bashrc”区别的总结.md",
+    "技术/清除Github提交历史记录.md",
     "工具/Wireshark常用过滤条件.md",
-    "技术/VMware繁忙无法关机的问题解决.md",
-    "工具/Nginx安装与部署.md",
-    "工具/Mediasoup安装与部署.md",
-    "技术/Shell脚本遇到event not found问题的解决方法.md",
-    "技术/Linux下Shell介绍.md",
-    "工具/CMake介绍与安装.md",
+    "工具/Git-配置代理.md",
+    "工具/VisualStudio/VSCode-插件remote_ssh的使用.md",
     "技术/Linux下用户相关的的问题解决方法.md",
-    "技术/Linux下系统相关的问题及解决方法.md",
-    "技术/Linux下查看库的符号.md",
-    "方法/单元测试规范.md",
-    "技术/Linux设置系统时区.md",
+    "未命名.md",
+    "技术/程序的子进程莫名增加的排查方法.md",
     "技术/Linux下GCC升级.md",
-    "工具/CMake-生成XCode工程.md",
+    "技术/没有参数时可变长参数宏编译错误.md",
     "方法/文章的分类方法与标准.md",
-    "技术/GUN_C++_编译的换名规则.md",
-    "方法/C++代码风格.md",
-    "方法/C++代码风格_注释.md",
-    "工具/firewalld的规则配置.md",
-    "工具/Jenkins配置SVN持续集成环境.md",
+    "技术/Linux下yum针对软件包操作常用命令.md",
+    "应用/Centos7挂载windows的共享目录.md",
+    "技术/Linux下gzip命令速查.md",
+    "杂项",
+    "新建文件夹",
+    "工具/Obsidian",
     "脚本管理",
     "工具/DokuWiki",
     "未命名.canvas",
@@ -207,9 +197,6 @@
     "应用/树莓派",
     "操作系统/linux",
     "操作系统",
-    "template",
-    "emplate",
-    "作品",
-    "其他"
+    "template"
   ]
 }

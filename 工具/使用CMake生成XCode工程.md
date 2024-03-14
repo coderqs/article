@@ -1,5 +1,5 @@
 ---
-title: CMake-生成XCode工程
+title: 使用CMake生成XCode工程
 description: 在 Mac 环境下，CMake 默认生成的是 Makefile，这篇文章主要是他介绍在 Mac 下如何生成 XCode 工程
 author: 清松
 date: 2021-03-13T14:55:41+08:00

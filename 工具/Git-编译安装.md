@@ -22,7 +22,7 @@ yum install -y gcc perl-ExtUtils-MakeMaker
 ``` shell
 git clone https://github.com/git/git.git
 ```
-**注：如果没有给 git [配置代理](/工具/编程工具/版本控制/git/配置代理)的话，建议直接下载压缩包会更快些。**  
+**注：如果没有给 git [配置代理](/工具/Git-配置代理)的话，建议直接下载压缩包会更快些。**  
 
 ## 编译
 ### 编译命令

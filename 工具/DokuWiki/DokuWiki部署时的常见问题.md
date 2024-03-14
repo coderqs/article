@@ -78,7 +78,7 @@ function utf8_decodeFN($file){
 ```
 
 ## 重定向的次数过多
-因为给网站套上了 cdn，其中的 ssl 设置不正确，详细原因和解决方法请参考《[使用cloudflare后无限跳转](/网络/使用cloudflare后无限跳转)》
+因为给网站套上了 cdn，其中的 ssl 设置不正确，详细原因和解决方法请参考《[使用cloudflare后无限跳转](/应用/网站无限301跳转)》
 
 ## dw2pdf 不能导出 pdf
 查看 nginx 中 dokuwiki 的日志(`dokuwiki.error.log`)发现了这么一段

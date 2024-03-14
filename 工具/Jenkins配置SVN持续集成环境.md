@@ -19,7 +19,7 @@ series:
 安装 Jenkins 插件 Subversion
 
 ## 配置
-1.  将 SVN 的用户名和密码添加到[凭证](/工具/编程工具/ci_cd/jenkins/)中;
+1.  将 SVN 的用户名和密码添加到[凭证](/工具/Jenkins的安装与部署)中;
 2.  创建一个新的任务;
     1.  勾选 `General` 中的 `限制项目的运行节点` 并指定节点(无需要可以跳过这步);
     2.  `源码管理` 中勾选 `Subversion`，在 `Repository URL` 中添加仓库的地址，`Credentials` 选择第 1 步中配置的凭证;  

@@ -37,7 +37,7 @@ npm install
 cd server
 cp config.example.js config.js
 ```
-因为新版本demo没有生成了证书，所以需要[自行生成证书](/工具/其他/openssl自签证书)并且放置相对应的目录(以 server 目录为根的相对路径，如果想使用绝对路径则需要将配置项中的 `${__ dirname}` 删掉).  
+因为新版本demo没有生成了证书，所以需要[自行生成证书](/技术/使用openssl自签证书)并且放置相对应的目录(以 server 目录为根的相对路径，如果想使用绝对路径则需要将配置项中的 `${__ dirname}` 删掉).  
 
 #### 修改 config.js 文件
 ```

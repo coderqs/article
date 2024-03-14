@@ -154,7 +154,7 @@ Markdown列表有有序列表、无序列表、任务列表、嵌套列表四种
     [百度](www.baidu.com) |- 这里有填写前面要显示的文字   
     [](www.baidu.com) |- 这里没有填写前面要显示的文字  
 
-[百度](www.baidu.com) |- 这里有填写前面要显示的文字\
+[百度](www.baidu.com) www.baidu.com|- 这里有填写前面要显示的文字\
 &#x20;\|- 这里没有填写前面要显示的文字
 
 ### 图片
@@ -167,7 +167,7 @@ Markdown列表有有序列表、无序列表、任务列表、嵌套列表四种
 
 ### 自动链接/邮箱
 
-自动链接直接用一对尖括号包围即可，`<https://wiki2.codeqs.com>`，显示<https://wiki2.codeqs.com>
+自动链接直接用一对尖括号包围即可，`<https://wiki2.codeqs.com>`，显示<https://wiki.codeqs.com>
 
 ## 代码
 

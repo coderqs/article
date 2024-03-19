@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: checkout themes and merge article repo to themes
         run: |
+          git config --global user.email "coderqs@coderqs.com"
+          git config --global user.name "coderqs"
           git clone -b main https://github.com/coderqs/eureka-prsnl.git 
           cd eureka-prsnl/
           git remote add article https://github.com/coderqs/article.git

@@ -9,7 +9,7 @@ tags:
   - Linux
   - 防火墙
   - 命令
-math: true
+enableMath: true
 url: 
 draft: false
 series:

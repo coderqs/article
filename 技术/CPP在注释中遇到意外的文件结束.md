@@ -7,7 +7,7 @@ categories:
   - 技术
 tags:
   - C/CPP
-math: true
+enableMath: true
 url: 
 draft: false
 series:

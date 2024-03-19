@@ -7,7 +7,7 @@ categories:
   - 工具
 tags:
   - VisualStudio
-math: true
+enableMath: true
 url: 
 draft: false
 series:

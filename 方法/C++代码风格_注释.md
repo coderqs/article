@@ -8,7 +8,7 @@ categories:
 tags:
   - C/CPP
   - 规范设计
-math: true
+enableMath: true
 url: 
 draft: false
 series:

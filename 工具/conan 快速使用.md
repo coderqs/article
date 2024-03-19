@@ -7,7 +7,7 @@ categories:
   - 工具
 tags:
   - 制品库
-math: true
+enableMath: true
 url: 
 draft: false
 series:

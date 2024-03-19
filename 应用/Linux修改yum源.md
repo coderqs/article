@@ -7,7 +7,7 @@ categories:
   - 应用
 tags:
   - Linux
-math: true
+enableMath: true
 url: 
 draft: false
 series:

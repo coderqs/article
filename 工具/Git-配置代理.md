@@ -10,7 +10,7 @@ tags:
   - 代理
   - Github
   - 科学上网
-math: true
+enableMath: true
 url: 
 draft: false
 series: Git及衍生品

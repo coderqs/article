@@ -7,7 +7,7 @@ categories:
   - 工具
 tags:
   - Android
-math: true
+enableMath: true
 url: 
 draft: false
 series:

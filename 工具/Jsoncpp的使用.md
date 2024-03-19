@@ -8,7 +8,7 @@ categories:
 tags:
   - 开源库
   - jsoncpp
-math: true
+enableMath: true
 url: 
 draft: false
 series:

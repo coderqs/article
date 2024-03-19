@@ -10,13 +10,14 @@ jobs:
       TZ: Asia/Shanghai
 
     steps:
-      - name: checkout themes
+      - name: checkout themes and merge article repo to themes
         run: |
-          git clone https://github.com/coderqs/eureka-prsnl.git main
-      
-      - name: merge article repo to themes
-        run: |
-          git merge 
+          git clone -b main https://github.com/coderqs/eureka-prsnl.git 
+          cd eureka-prsnl/
+          git remote add article https://github.com/coderqs/article.git
+          git fetch article
+          git merge --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
+          git read-tree --prefix=content/post/ -u article/main
 
       - name: Read Hugo info
         id: hugo-info

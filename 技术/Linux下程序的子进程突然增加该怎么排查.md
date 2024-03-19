@@ -8,7 +8,7 @@ categories:
 tags:
   - 问题排查
   - Linux
-math: true
+enableMath: true
 url: 
 draft: false
 series:

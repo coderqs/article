@@ -7,7 +7,7 @@ categories:
   - 工具
 tags:
   - Markdown
-math: true
+enableMath: true
 url: 
 draft: false
 series:

@@ -8,7 +8,7 @@ categories:
 tags:
   - CMake
   - XCode
-math: true
+enableMath: true
 url: 
 draft: false
 series:

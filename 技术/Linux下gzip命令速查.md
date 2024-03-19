@@ -8,7 +8,7 @@ categories:
 tags:
   - 命令
   - Linux
-math: true
+enableMath: true
 url: 
 draft: false
 series:

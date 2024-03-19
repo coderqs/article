@@ -7,7 +7,7 @@ categories:
   - 技术
 tags:
   - 问题排查
-math: true
+enableMath: true
 url: 
 draft: false
 series:

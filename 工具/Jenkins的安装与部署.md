@@ -9,7 +9,7 @@ tags:
   - CI/CD
   - 自动化
   - Jenkins
-math: true
+enableMath: true
 url: 
 draft: false
 series:

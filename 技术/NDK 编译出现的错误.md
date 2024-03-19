@@ -9,7 +9,7 @@ tags:
   - 问题排查
   - Android
   - C/CPP
-math: true
+enableMath: true
 url: 
 draft: false
 series:

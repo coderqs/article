@@ -8,7 +8,7 @@ categories:
 tags:
   - GCC
   - Linux
-math: true
+enableMath: true
 url: 
 draft: false
 series:

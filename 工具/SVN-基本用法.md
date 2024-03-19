@@ -6,7 +6,7 @@ date: 2024-03-14T14:25:18+08:00
 categories:
   - 工具
 tags: 
-math: true
+enableMath: true
 url: 
 draft: false
 series:

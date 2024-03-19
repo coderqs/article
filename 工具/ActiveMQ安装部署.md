@@ -9,7 +9,7 @@ tags:
   - MQ
   - Linux
   - Ubuntu
-math: true
+enableMath: true
 url: 
 draft: false
 series:

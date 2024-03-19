@@ -9,7 +9,7 @@ tags:
   - Linux
   - 命令
   - 笔记草稿
-math: true
+enableMath: true
 url: 
 draft: false
 series:

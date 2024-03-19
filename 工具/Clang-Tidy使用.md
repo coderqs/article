@@ -8,7 +8,7 @@ categories:
 tags:
   - Clang-Tidy
   - Linux
-math: true
+enableMath: true
 url: 
 draft: false
 series:

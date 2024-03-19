@@ -8,7 +8,7 @@ categories:
 tags:
   - openwrt
   - v2ray
-math: true
+enableMath: true
 url: 
 draft: false
 series:

@@ -8,7 +8,7 @@ categories:
 tags:
   - C/CPP
   - VisualStudio
-math: true
+enableMath: true
 url: 
 draft: false
 series:

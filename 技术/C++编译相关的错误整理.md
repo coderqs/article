@@ -8,7 +8,7 @@ categories:
 tags:
   - C/CPP
   - 故障解决
-math: true
+enableMath: true
 url: 
 draft: false
 series:

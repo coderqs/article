@@ -6,7 +6,7 @@ date: 2021-10-19T17:55:48+08:00
 categories:
   - 杂项
 tags: 
-math: true
+enableMath: true
 url: 
 draft: false
 series:

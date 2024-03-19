@@ -7,7 +7,7 @@ categories:
   - 应用
 tags:
   - vscode
-math: true
+enableMath: true
 url: 
 draft: false
 series: VisualStudio

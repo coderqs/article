@@ -8,7 +8,7 @@ categories:
 tags:
   - VMware
   - 故障解决
-math: true
+enableMath: true
 url: 
 draft: false
 series:

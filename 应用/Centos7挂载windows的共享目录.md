@@ -8,7 +8,7 @@ categories:
 tags:
   - Linux
   - Centos
-math: true
+enableMath: true
 url: 
 draft: false
 series:

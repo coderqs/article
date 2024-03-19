@@ -10,7 +10,7 @@ tags:
   - CI/CD
   - 自动化
   - SVN
-math: true
+enableMath: true
 url: 
 draft: false
 series:

@@ -7,7 +7,7 @@ categories:
   - 工具
 tags:
   - Linux
-math: true
+enableMath: true
 url: 
 draft: false
 series:

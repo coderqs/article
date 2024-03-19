@@ -8,7 +8,7 @@ categories:
 tags:
   - v2ray
   - 科学上网
-math: true
+enableMath: true
 url: 
 draft: false
 ---

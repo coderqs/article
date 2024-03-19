@@ -7,7 +7,7 @@ categories:
   - 工具
 tags:
   - Pandoc
-math: true
+enableMath: true
 url: 
 draft: false
 series:

@@ -8,7 +8,7 @@ categories:
 tags:
   - 笔记草稿
   - Github
-math: true
+enableMath: true
 url: 
 draft: false
 series:

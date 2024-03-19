@@ -8,7 +8,7 @@ categories:
 tags:
   - 制品库
   - Docker
-math: true
+enableMath: true
 url: 
 draft: false
 series:

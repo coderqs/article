@@ -9,7 +9,7 @@ tags:
   - GCC
   - C/CPP
   - 问题排查
-math: true
+enableMath: true
 url: 
 draft: false
 series:

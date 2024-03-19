@@ -9,7 +9,7 @@ tags:
   - 交叉编译
   - Android
   - CMake
-math: true
+enableMath: true
 url: 
 draft: false
 series:

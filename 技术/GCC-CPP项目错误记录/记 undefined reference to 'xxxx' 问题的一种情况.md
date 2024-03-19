@@ -11,7 +11,7 @@ categories:
   - 杂项
   - 作品
 tags: 
-math: true
+enableMath: true
 url: 
 draft: false
 series:

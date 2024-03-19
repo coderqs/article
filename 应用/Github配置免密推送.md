@@ -8,7 +8,7 @@ categories:
 tags:
   - Git
   - Github
-math: true
+enableMath: true
 url: 
 draft: false
 series:

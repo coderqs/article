@@ -7,7 +7,7 @@ categories:
   - 杂项
 tags:
   - 随记
-math: true
+enableMath: true
 url: 
 draft: false
 series:

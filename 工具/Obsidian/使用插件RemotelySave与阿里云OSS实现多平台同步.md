@@ -8,7 +8,7 @@ categories:
 tags:
   - Obsidian
   - 多平台同步
-math: true
+enableMath: true
 url: 
 draft: false
 series: Obsidian

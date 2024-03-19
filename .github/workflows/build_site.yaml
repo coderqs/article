@@ -14,13 +14,14 @@ jobs:
         run: |
           git config --global user.email "coderqs@coderqs.com"
           git config --global user.name "coderqs"
-          git clone -b main https://github.com/coderqs/eureka-prsnl.git 
-          cd eureka-prsnl/
+          git clone -b main https://github.com/coderqs/eureka-prsnl.git .
           git remote add article https://github.com/coderqs/article.git
           git fetch article
           git merge --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
-          git read-tree --prefix=content/post/ -u article/main
-          ls
+          git read-tree --prefix=content/posts/ -u article/main
+          echo --- show all ---
+          ls -al  
+          echo --- show end ---
 
       - name: Read Hugo info
         id: hugo-info
@@ -35,8 +36,27 @@ jobs:
           hugo-version: '${{ steps.hugo-info.outputs.HUGO_VERSION }}' #"latest"
           extended: ${{ steps.hugo-info.outputs.HUGO_EXTENDED }} #true 
 
-      - name: Build
-        run: hugo --minify --gc
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          # The action defaults to search for the dependency file (package-lock.json,
+          # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
+          # hash as a part of the cache key.
+          # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
+          cache-dependency-path: '**/package-lock.json'
+      - run: |
+          cp themes/hugo-eureka/package*.json .
+          npm ci
+          echo --- hugo version ---
+          hugo version
+          echo --- end ---
+          hugo --minify --gc
+          echo --- show all file ---
+          ls -al 
+          echo ---
+          ls -al public
+          echo --- end ---
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -49,4 +69,3 @@ jobs:
           user_email: <coderqs@coderqs.com>
           publish_branch: gh-pages
           cname: coderqs.com
-          timezone: 'Asia/Shanghai'

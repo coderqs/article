@@ -20,6 +20,7 @@ jobs:
           git fetch article
           git merge --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
           git read-tree --prefix=content/post/ -u article/main
+          ls
 
       - name: Read Hugo info
         id: hugo-info

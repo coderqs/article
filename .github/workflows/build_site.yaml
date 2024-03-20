@@ -68,4 +68,4 @@ jobs:
           user_name: coderqs
           user_email: <coderqs@coderqs.com>
           publish_branch: gh-pages
-          cname: coderqs.com
+          cname: blog.coderqs.com

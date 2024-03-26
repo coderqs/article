@@ -17,7 +17,7 @@ jobs:
           git clone -b main https://github.com/coderqs/eureka-prsnl.git .
           git remote add article https://github.com/coderqs/article.git
           git fetch article
-          git merge --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
+          git merge --no-commit --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
           git read-tree --prefix=content/posts/ -u article/main
           rm -rf content/posts/template
           echo --- show all ---

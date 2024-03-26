@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY4KSCZD1FY4MXXMSKZ6
 ---
 ## 发送 get 请求
 默认就会使用 get 请求，直接使用即可

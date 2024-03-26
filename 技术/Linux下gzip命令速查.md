@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXPZZ0C0HJDRT5A6F8M8
 ---
 ## 压缩
 ### 压缩文件

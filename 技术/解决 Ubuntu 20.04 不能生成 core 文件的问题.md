@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXH40N1DQJ6EE7NDS6Y3
 ---
 # 解决 Ubuntu 20.04 不能生成 core 文件
 ## 背景

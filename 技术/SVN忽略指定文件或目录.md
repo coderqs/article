@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXKT8XMWRW29T9BTHEGA
 ---
 和 Git 中的 `.gitignore` 的功能基本一致。
 

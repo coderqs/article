@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXQQHCS60M2QPHJ4PSYS
 ---
 ### 全局变量
 不做任何修改

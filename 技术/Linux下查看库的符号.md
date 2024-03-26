@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXNRP0PQ55BTG41GAEZM
 ---
 ## 查看生成的 so 是否存在符号未定义的内容
 ``` shell

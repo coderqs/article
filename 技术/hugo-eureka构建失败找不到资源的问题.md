@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXQHSDGZNMVG4BW89P47
 ---
 ## 背景
 本人在 Github Actions + Hugo 构建网站时，出现了错误
@@ -22,7 +23,7 @@ Error building site: POSTCSS: failed to transform "css/eureka.css" (text/css): r
 ## 解决过程
 
 问题看起来不难理解，就是找不到文件了嘛，但是为什么会找不到呢？我没搞过前端的和 go ，也不清楚它是怎么个生成逻辑，就只能一步一步找资料来分析了呗。
-这种高频出现的问题一般都会有人在主题的 ISSUES 中反映，也确实找到了，从作者 Wangchucheng 的回答来看([issues#186](issues/186))，这应该跟 Hugo 有关
+这种高频出现的问题一般都会有人在主题的 ISSUES 中反映，也确实找到了，从作者 Wangchucheng 的回答来看([issues#186](https://github.com/wangchucheng/hugo-eureka/issues/186))，这应该跟 Hugo 有关
 > [@Flashpok](https://github.com/Flashpok)看来这是 Hugo 引起的问题，这里已经打开了一个问题：[gohugoio/hugo#9787](https://github.com/gohugoio/hugo/issues/9787)。您可能会在任何使用资源缓存的主题中遇到此问题，尤其是 PostCSS 主题。
 >
 > 临时解决方法是将[此处的](https://github.com/wangchucheng/hugo-eureka/tree/master/resources/_gen/assets/css)文件夹和文件复制到项目的`resources/_gen/assets/css/<base-path>/`. 然后 Hugo 就可以在 中找到资源缓存`resources/_gen/assets/css/<base-path>/css/...`。如果`baseURL`设置为`example.com/test/`，则`base-path`这里是`test`。

@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY03NDQY2FBR8K2KP0D2
 ---
 [Mysql常用语句大全](https://zhuanlan.zhihu.com/p/91032512)  
 [MySQL常用语句](https://blog.csdn.net/weixin_57109262/article/details/122368376)  

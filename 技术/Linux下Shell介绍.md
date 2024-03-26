@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXPMC0FD7Q2GXCY2NWP3
 ---
 ## 基础语法
 

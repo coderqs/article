@@ -12,6 +12,7 @@ enableMath: true
 url: 
 draft: false
 series: VisualStudio
+slug: 01HSXACXX5RWKGX13PHRTG4CJZ
 ---
 ## 安装
 - 在 vscode 的扩展里搜索 `Remote-SSH`  

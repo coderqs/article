@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXGDXC8HNDVSZVGQNG81
 ---
 
 这是基于 Google 发布的 C++

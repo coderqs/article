@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXW84Z079JBHXY7NNEPH
 ---
 ## 部署脚本
 ``` shell

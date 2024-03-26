@@ -12,7 +12,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY1HF14THEQZJWEJC8AB
 ---
 ## 准备
 ### 硬件要求

@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACWDHASM199AMZ0JX0GJ2
 ---
 ## 前言
 因为 Centos 宣布停止发布，改为 Centos stream（相当于从原来的发布顺序`Fedora –> RHEL –> CentOS` 改为 `Fedora –> CentosStream –> RHEL`，缺点就是不如 Centos 稳定了），所以要考虑选择一个替补的系统。

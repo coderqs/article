@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY0RQN4989C2RJQDW4G7
 ---
 # 管道的使用
 管道在 Linux 命令中使用频率很高，常见的用法是与 `grep` 命令结合使用，例如 `ls -l | grep xxx`、`netstat -nlp | grep 443` 等。但是与其他命令结合使用的时候比较少，而且也不一定能得到想要的结果，例如 `find . -name ".txt" | rm`。这是因为管道是将第一个命令的输出发送到第二个命令的标准输入，而 `rm` 不接受标准输入，因此无法的得到想要的结果，需要结合 `xargs`

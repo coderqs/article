@@ -11,6 +11,7 @@ enableMath: true
 url: 
 draft: false
 series: Git及衍生品
+slug: 01HSXACY29Z35R4G0R9CVE5YN8
 ---
 ## 本地
 ### 基础命令
@@ -43,20 +44,42 @@ git commit -m "提交内容的描述"
 ``` 
 #### 提交所有追踪的文件
 ```
-git commit -am ""
+git commit -am "提交内容的描述"
+```
+此命令前可以不执行 `add` 直接将发生变更的已跟踪的文件提交
+
+#### 提交时现实所有差异信息
+```
+git commit -v
 ```
 
-此命令前可以不执行 `add` 直接将发生变更的已跟踪的文件提交
 #### 比较差异
 ``` shell
 git diff filename
 ```
+##### 比较暂存区的差异
+```
+git diff --cached <file_name>
+```
 #### 查看提交记录
 ``` shell
 git log
-
-# 简版记录
+```
+##### 查看指定作者的提交记录
+```
+git log --author=<author_name>
+```
+##### 查看指定文件的提交记录
+```
+git log -p <filename>
+```
+##### 简版记录
+```
 git log --pretty=oneline
+```
+##### 查看某次提交具体修改内容
+```
+git show <commit_name>
 ```
 #### 查看执行命令的记录
 ``` shell
@@ -75,8 +98,13 @@ git reset --mixed
 ```
 撤销 add 操作，但文件的修改还在
 #### 撤销修改
+##### 撤销指定文件的修改
 ```
 git checkout <filename>
+```
+##### 撤销所有文件的修改
+```
+git checkout .
 ```
 #### 撤销跟踪
 ##### 撤销跟踪，同时递归删除文件
@@ -92,6 +120,15 @@ git rm -r --cached <filename>
 git restore --staged <filename>
 ```
 
+### 储藏区
+#### 将未提交的修改放到储藏区
+```
+git stash
+```
+#### 将储藏区的内容放回到工作区
+```
+git stash pop
+```
 ### 追加提交
 将这次的提交追加到上次提交中，只产生一次提交记录，一般是用于上次提交有遗漏的文件追加用的，也会用于修改提交记录的说明。有远程仓库的时候，有可能会同时使用到强制推送。
 #### 未推送
@@ -129,39 +166,59 @@ git checkout <filename>
 ```
 **参考自:**《[git 如何回退单个文件](https://zhuanlan.zhihu.com/p/87158334)》
 
-
 ### 分支操作
 #### 查看分支
 ```
 git branch
 ```
-#### 创建分支
+查看本地和远程所有分支
 ```
-git branch <name>
+git branch -a
+```
+#### 创建分支
+创建分支，但留在当前分支
+```
+git branch <branch_name>
 ```
 #### 切换分支
 ```
-git checkout <name>`或者`git switch <name>
+git checkout <branch_name>
 ```
-#### 创建+切换分支
+或者
 ```
-git checkout -b <name>`或者`git switch -c <name>
+git switch <branch_name>
+```
+#### 创建并切换到分支
+```
+git checkout -b <branch_name>
+```
+或者
+```
+git switch -c <name>
 ```
 #### 合并某分支到当前分支
 ```
-git merge <name>
+git merge <branch_name>
 ```
 #### 删除分支
 ```
-git branch -d <name>
+git branch -d <branch_name>
 ```
 #### 强制删除分支
 ```
-git branch -D <name>
+git branch -D <branch_name>
+```
+#### 删除远程分支
+```
+git push <remote> --delete <branch_name>
+```
+简短命令
+```
+git push <remote> :<branch_name>
 ```
 #### 创建一个空的分支
 ```
-git checkout --orphan <nwe_branch_name>
+git checkout --orphan <new_branch_name>
 ```
 这条命令可以创建一个没有提交历史的分支，创建完成后将其余文件删除掉即可 `git rm -rf *`\
 **参考自：**《[在GIT中创建一个空分支](https://segmentfault.com/a/1190000004931751)》
@@ -178,6 +235,15 @@ git reset --hard <用来覆盖的分支>
 **参考自:** [Git 分支合并覆盖主分支问题](https://blog.51cto.com/u_15127619/4349938)
 
 ## 远程
+### 查看
+#### 显示所有远程仓库
+```
+git remote -v
+```
+#### 显示指定的远程仓库信息
+```
+git remote show <remote>
+```
 ### 强制推送（覆盖远端的代码）
 ```
 git push -f <local_branch>:<remote_branch>
@@ -252,3 +318,7 @@ git config --global  --list
 ```
 git config --local  --list
 ```
+
+
+## 参考资料
+[**从 SVN 到 Git** - 知乎@腾讯技术工程](https://www.zhihu.com/question/25491925/answer/2471516234)

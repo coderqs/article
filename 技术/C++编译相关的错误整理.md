@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXSES7Y5B8715FAM6WM2
 ---
 ## undefined reference to XXX
 这是非常常见的一个问题，原因差不多有以下三点：

@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXTJKS6GWS9XGVT5J9ZD
 ---
 ## github https 免密 push
 ### 用git证书

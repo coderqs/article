@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXQCV4EWE7R9GFGRDNVG
 ---
 ## 编译安装 GCC
 ### 下载源码

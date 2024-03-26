@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXZPTB4T1ZG2MRXBA77E
 ---
 ## Post 返回静态内容
 因为 Nginx 有着**无法根据 POST

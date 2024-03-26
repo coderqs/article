@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXKEF1141D1X3TCE007Y
 ---
 ## 背景
 在选择网卡后 Wireshark 就会卡死，然后进程未响应，重新打开又重复的卡死无响应的过程。打开任务管理器发现 Wireshark 内存占用迅速上涨，我这里是上涨了 1G 多。  

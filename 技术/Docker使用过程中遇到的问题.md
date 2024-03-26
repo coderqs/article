@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXS2J2Q0XSZ8H5GKR3TE
 ---
 ## docker run后 logs报/docker-entrypoint.sh: 38: exec: -p: not found
 ### 背景

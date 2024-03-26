@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXRAP19MR6Y72033C36M
 ---
 ## 前言
 Gitea默认上传文件大小限制为3MB，所以一些文件文档上传不了

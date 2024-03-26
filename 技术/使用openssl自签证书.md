@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXJP8MKH3GWFG8H8Q1QW
 ---
 ## 检查OpenSSL
 检查是否已经安装openssl：

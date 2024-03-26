@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXKKDJKQC4267HP2G18W
 ---
 ## 原因
 这种问题出现的原因不明（有看到一些说法是 Windows 10 的某些版本和 VMware 兼容性的问题导致的，但也没找到明确的证据证明，都是凭感觉……

@@ -11,6 +11,7 @@ enableMath: true
 url: 
 draft: false
 series: Git及衍生品
+slug: 01HSXACY22VRSXGT3V16KBHAA2
 ---
 ## 准备
 ### 安装依赖

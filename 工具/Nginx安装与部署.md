@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXZW2TX2PRCS02QFAHYF
 ---
 ## 命令安装
 先安装

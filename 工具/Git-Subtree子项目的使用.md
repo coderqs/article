@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY2DDEE3Z4HCBQXHGKJG
 ---
 `subtree` 可以实现一个仓库作为其他仓库的子仓库，对于主项目来说，另一个项目只作为主项目的一个子目录而存在。
 与 `subtree` 类似的还有 `submodule`，但不同的是 `submodule` 依旧是已一个仓库的身份存在，如果需要更新，在拉取过后还需要在主项目上提交一次。而 `subtree` 只需要拉取更新即可。

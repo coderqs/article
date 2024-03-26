@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXMS5XWR1EH0BK8PE14M
 ---
 ## 方法一：timedatectl
 `timedatectl` 是一个命令行工具，它允许你查看并且修改系统时间和日期。它在所有现代的基于 `systemd` 的 Linux 系统中都可以使用。

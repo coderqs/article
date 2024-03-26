@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXNWSGGG8ZJ1NSWP51CV
 ---
 ## 常用命令
 1. 使用YUM查找软件包 

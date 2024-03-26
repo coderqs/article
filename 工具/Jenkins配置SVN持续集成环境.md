@@ -13,7 +13,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY1AY4P252Z6KKFWTY8T
 ---
 ## 准备
 安装 Jenkins 插件 Subversion

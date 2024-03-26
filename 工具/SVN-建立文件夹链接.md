@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXYMS6QHR5RJ03V24QAE
 ---
 这个功能和 git 的 submodle 类似，是将其他的外部仓库在自己的仓库里建立一个映射关系，当外部仓库更新后在自己的仓库更新一下就可以了，不用到处复制文件来维护多个版本的文件。
 ## 添加方法

@@ -12,7 +12,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY2MA0VYFQDQ7F9TFYFF
 ---
 ## 基本功能
 #### 查看防火墙

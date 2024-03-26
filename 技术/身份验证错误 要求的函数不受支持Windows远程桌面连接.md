@@ -10,6 +10,7 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXGW24NG70Y2AA00EMA4
 ---
 [身份验证错误 要求的函数不受支持 Windows远程桌面连接](https://blog.csdn.net/veloi/article/details/80333457)

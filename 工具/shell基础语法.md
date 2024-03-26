@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXZ0988SDZZHZYVP0S5M
 ---
 ## 变量 
 ### 动态变量

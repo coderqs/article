@@ -7,5 +7,21 @@
       ],
       "key": "T"
     }
+  ],
+  "obsidian-version-history-diff:open-recovery-diff-view": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "guid-front-matter:add-ids-to-all-notes": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
+    }
   ]
 }

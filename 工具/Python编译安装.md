@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXZ4E9K3M9SMQ419NJM4
 ---
 ## 准备
 访问[官网](https://www.python.org/downloads/source/)找到对应版本（以Python 3.6.5为例）如图：  

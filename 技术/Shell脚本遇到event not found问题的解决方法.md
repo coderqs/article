@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXMC3CERE8WZ1P1RY09M
 ---
 ## 原因
 `!` 是 bash 的特殊字符，用于引用之前以!后面字符串开头的最后一个的命令。  

@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY079R380ZHT3SFADJH4
 ---
 ## 环境要求
 官方要求：

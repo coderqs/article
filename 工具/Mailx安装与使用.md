@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY0KGXACWM2ATY5D6PJX
 ---
 ## Mailx 安装
 ### 安装

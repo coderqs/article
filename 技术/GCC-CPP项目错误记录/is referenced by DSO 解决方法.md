@@ -12,7 +12,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXRWWNWGK6XJ6VE41T42
 ---
 ## 背景
 由我输出了一个动态库(m.so)，其他同事在编译可执行文件(t.out)时链接这个库报的这个错误，大意就是我引用了我依赖的一个动态库(g.a)的符号被隐藏了，但是各个库编译的时候并没有添加选项 `-fvisibility=hidden`，把 t.out 编译时所添加的 g.a 删除掉(t.out 本身不依赖 g.a)后，却又报 m.so 中未定义 xxx 符号(符号是 g.a 中的)，通过 `readelf -a` 查看符号确实未定义。

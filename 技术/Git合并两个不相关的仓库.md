@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXQY9CEHFJ15BECDB73T
 ---
 ## 前言
 做出这种操作的原因是因为在使用 Hugo 做网站，但是 Hugo 的文章和主题是放在一起的，如果分成两个仓库放，生成的时候就得拷贝过去，这样 git 的提交记录就都没了，就不可以使用 git 的最后提交时间作为文章的最后修改时间了。曾经也试过 submodule 和 sub tree，可 Hugo 不能识别，也达不到效果，最后找来找去才找到合并的方式来解决。

@@ -14,7 +14,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXRPAHGXEHMFYF60ZMQ5
 ---
 ## 概述
 在重新输出版本的时候修改了下编译选项，结果之前还能正常编译的库突然就编不过去了，还提示了大量的 `undefined reference to` 错误，发现报错的都来自一个库，但库并没有更新过。

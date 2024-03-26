@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXJXJWKMY4HTPT8S8994
 ---
 ## 方法
 cmake 的构建命令增加参数 \`-G "Xcode"\`，例如  

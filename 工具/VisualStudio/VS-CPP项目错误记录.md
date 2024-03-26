@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXXYV3J3TAY7CN663Q50
 ---
 记录了一些遇到的错误
 

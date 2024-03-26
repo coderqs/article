@@ -11,6 +11,7 @@ enableMath: true
 url: 
 draft: false
 series: CMake
+slug: 01HSXACY5492H0877Y09WKK0CZ
 ---
 ## CMake 介绍
 [CMake](https://cmake.org/)是一个跨平台的开源的元构建系统，可以构建，测试和打包软件。它可以用于支持多个本机构建环境，包括

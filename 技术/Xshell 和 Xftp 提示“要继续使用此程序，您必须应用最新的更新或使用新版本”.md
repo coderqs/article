@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXK8W1XE138N6BHSRAPP
 ---
 ## 背景
 打开 Xshell 突然间提示 “要继续使用此程序，您必须应用最新的更新或使用新版本”，但是点击确定后又提示已经是最新版，就这么进入了死循环。重启了也不生效，也不想重新安装，因为已有的会话会没掉。因此找了一些解决方法，在此记录下。

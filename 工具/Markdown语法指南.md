@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY0DRH2416SMCV834BHN
 ---
 ## 简介
 > Markdown是为网络书写者而生的方便“text-to-HTML”工具，它允许人们用一种易读易写的纯文本格式进行书写，然后将其转化成XHTML（或HTML）。
@@ -151,11 +152,11 @@ Markdown列表有有序列表、无序列表、任务列表、嵌套列表四种
 
 `[要显示的文字](链接的地址)`，例：
 
-    [百度](www.baidu.com) |- 这里有填写前面要显示的文字   
-    [](www.baidu.com) |- 这里没有填写前面要显示的文字  
+    [百度](http://www.baidu.com) |- 这里有填写前面要显示的文字   
+    [](http://www.baidu.com) |- 这里没有填写前面要显示的文字  
 
-[百度](www.baidu.com) www.baidu.com|- 这里有填写前面要显示的文字\
-&#x20;\|- 这里没有填写前面要显示的文字
+[百度](http://www.baidu.com) |- 这里有填写前面要显示的文字
+[](http://www.baidu.com) |- 这里没有填写前面要显示的文字
 
 ### 图片
 

@@ -13,6 +13,7 @@ url:
 draft: false
 series: Obsidian
 slug: 01HGVT9S7D91RNDE5HED6XWDNN
+slug: 01HSXACXZH3S8ZBPY2G0YFSE3H
 ---
 
 Remotely Save 是 Obsidian 的一个第三方同步插件。Obsidian 用户和社区开发者发掘了不少官方同步以外的同步方式，不过大多需要在移动端借助第三方工具如 Syncing 或 Folder Sync。这次的 Remotely Save 在移动端不需要第三方工具辅助，仅插件本身即可实现同步，我认为是一个非常好的插件。

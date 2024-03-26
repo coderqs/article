@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY5FCWBZAZ897Z9YS5HD
 ---
 ## 简介
 clang-tidy 是一个基于 clang 的 C++ “linter” 工具。其目的是提供一个可扩展的框架，用于诊断和修复典型的编程错误，例如样式违规、接口滥用或可以通过静态分析推断出的错误。clang-tidy 是模块化的，并提供了一个方便的界面来编写新的检查。  

@@ -11,6 +11,7 @@ enableMath: true
 url: 
 draft: false
 series: DokuWiki
+slug: 01HSXACY2ZEY141TEAE9C08GFD
 ---
 ## 添加侧边栏
 有的主题是默认带有侧边栏的，而我使用的 Bootstrap3 主题带有右侧边栏，其显示当前文章的内容的索引，想要显示整个 wiki 的索引还需要使用插件[start#IndexMenu](/工具/服务/dokuwiki/插件与主题/start#IndexMenu)。插件的添加与使用请参考其文档，这里介绍如何使其成为独立的侧边栏。

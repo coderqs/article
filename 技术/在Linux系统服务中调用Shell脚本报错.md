@@ -12,7 +12,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXHW6PB07EHXQ5R3E5X0
 ---
 ## 背景
 想要给树莓派添加个服务，每次开机后把 ip 发送到指定邮箱。结果配置好了后总是启动不起来，查看日志发现没有权限 `Failed to execute command: Permission denied`  

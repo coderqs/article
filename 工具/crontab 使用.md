@@ -12,7 +12,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY4Q3MSYPYFF6AZ85TNN
 ---
 ## 基本教程
 

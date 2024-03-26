@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXYG42D6BG8CKQJW070C
 ---
 ## 背景
 有时候想固定忽略一些特定的文件不提交，但是因为公司使用的 SVN，所以需要找到和 Git 中的 `.gitignore` 类似的功能

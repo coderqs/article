@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXJ3RHHVRKPSR4V3P8GD
 ---
 ## 背景
 某个输出的库 \*\*\*.so，同事在依赖这个库的时候链接不过去，提示：

@@ -12,6 +12,7 @@ enableMath: true
 url: 
 draft: false
 series: DokuWiki
+slug: 01HSXACY2TE5WHBZEKP7GGKB7R
 ---
 ## 禁止您无权访问此服务器上的/dokuwiki
 权限问题，检查以下两点  

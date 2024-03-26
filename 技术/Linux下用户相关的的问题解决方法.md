@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXNHYH8TN9PAPDHKKH1V
 ---
 ## 登录用户出现`-bash-4.2$`
 

@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXG85PAB0APKVBAYNR8K
 ---
 平时大家大都只要求代码风格，对注释这部分倒是不怎么看重，一般来说只要注释写清楚了就行。不过个人认为注释如果没有章法的随便写的话反而会对维护代码起到负面作用，因此在这记录三种个人比较认同的注释风格。
 ## doxygen 风格

@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY16PVN3RWGATNM8TYNC
 ---
 ## 使用 docker 安装
 ### 拉取镜像

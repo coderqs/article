@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACY4D1XBHFK2599H89S4B
 ---
 ## 安装
 

@@ -14,6 +14,7 @@ enableMath: true
 url: 
 draft: false
 series: Git及衍生品
+slug: 01HSXACY1WH1270VXZX63TNYZ8
 ---
 ## 背景
 在 "科学上网" 后使用 git 克隆 github 上的项目速度还是很慢。后来发现 git clone 时并没有走 "科学上网" 的代理，需要在 git 中设置一下代理才会使用。

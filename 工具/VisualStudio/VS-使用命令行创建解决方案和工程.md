@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXXQRC4668R02MH2WMZ2
 ---
 下面是来自 openai chatgpt 的回答
 > 是的，Visual Studio（VS）可以通过命令行来创建解决方案和项目。VS提供了名为 `dotnet` 的命令行工具，它是一个跨平台的工具集，用于创建、构建和管理.NET项目。

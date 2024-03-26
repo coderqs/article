@@ -10,7 +10,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXN0S36R8WVDD61626NB
 ---
 ## 背景
 买的 VPS 内存太小只有 1G，不少服务根本跑不起来，因此要设置一下交换空间。VPS 系统是 Debian，这篇笔记就以这个系统为基础。

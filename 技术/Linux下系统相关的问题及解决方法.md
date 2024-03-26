@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXN63CS0BB9YPZFKMJ1H
 ---
 ## 防火墙已开启但没有开放 22 端口，却依然可以使用 ssh 连接
 #### 原因

@@ -11,7 +11,8 @@ tags:
 enableMath: true
 url: 
 draft: false
-series:
+series: 
+slug: 01HSXACXTS11TGNME8FR4DGSMS
 ---
 ## 步骤
 ### 1. 在windows上创建一个共享目录

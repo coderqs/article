@@ -11,7 +11,7 @@ tags:
 enableMath: true
 url: 
 draft: false
-series: 
+series: Git及衍生品
 slug: 01HSXACXQY9CEHFJ15BECDB73T
 ---
 ## 前言
@@ -28,6 +28,6 @@ slug: 01HSXACXQY9CEHFJ15BECDB73T
 git clone -b main https://github.com/<xxx>/hugo-themes.git .
 git remote add article https://github.com/<xxx>/article.git
 git fetch article
-git merge --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
+git merge --no-commit --strategy=ours  article/main --allow-unrelated-histories -m "GA auto-merge for release"
 git read-tree --prefix=content/posts/ -u article/main
 ```

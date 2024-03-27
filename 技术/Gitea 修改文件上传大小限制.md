@@ -33,5 +33,5 @@ MAX_FILES = 5
 ```
 保存重启 Gitea。
 ## 参考资料
-[Gitea修改文件上传大小限制](https://www.lyile.cn/articles/2021/03/04/1614841417314.html)\
-[Gitea - 配置说明](https://docs.gitea.io/zh-cn/config-cheat-sheet/#attachment-attachment)
+[Gitea修改文件上传大小限制](https://www.lyile.cn/articles/2021/03/04/1614841417314.html)   
+[Gitea - 配置说明](https://docs.gitea.io/zh-cn/config-cheat-sheet/#attachment-attachment)   

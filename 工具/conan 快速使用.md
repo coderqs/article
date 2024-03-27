@@ -22,7 +22,7 @@ slug: 01HSXACY4Y66J6J0PHRWQX90GB
 - **channel** \[**可选**\]一般用来区分制品的成熟度,比如 `stable`(稳定版本),`testing`(测试版本)
 在向制品仓库上传包时，包名中package_name/version是必须要有的字段.user,channel都是可选字段，上传用户在上传包时可以不指定。
 ### 参考资料
-[conan入门(四):conan 引用第三方库示例](https://blog.csdn.net/10km/article/details/122988626)  
+[conan入门(四):conan 引用第三方库示例](https://blog.csdn.net/10km/article/details/122988626)    
 
 
 
@@ -95,6 +95,6 @@ conan upload <project_name>/<version_num> -r <repo_name> --all
 
 
 ## 参考资料
-[conan使用(一)--安装和应用](https://www.cnblogs.com/xl2432/p/11873394.html)
-[conan入门(一):conan 及 JFrog Artifactory 安装](https://blog.csdn.net/10km/article/details/122987204)  
-[conan入门(四):conan 引用第三方库示例](https://blog.csdn.net/10km/article/details/122988626)  
+[conan使用(一)--安装和应用](https://www.cnblogs.com/xl2432/p/11873394.html)   
+[conan入门(一):conan 及 JFrog Artifactory 安装](https://blog.csdn.net/10km/article/details/122987204)    
+[conan入门(四):conan 引用第三方库示例](https://blog.csdn.net/10km/article/details/122988626)    

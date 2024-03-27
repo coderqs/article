@@ -21,9 +21,9 @@ slug: 01HSXACXZPTB4T1ZG2MRXBA77E
     error_page 405 =200 $uri
 ```
 ### 参考资料
-[POST 请求出现 405（不允许）](https://serverfault.com/questions/854425/405-not-allowed-on-post-request)  
-[不允许 POST 请求 - 405 Not Allowed -nginx，即使包含标头](https://stackoverflow.com/questions/24415376/post-request-not-allowed-405-not-allowed-nginx-even-with-headers-included)  
-[Serving Static Content Via POST From Nginx](http://invalidlogic.com/2011/04/12/serving-static-content-via-post-from-nginx/)  
+[POST 请求出现 405（不允许）](https://serverfault.com/questions/854425/405-not-allowed-on-post-request)    
+[不允许 POST 请求 - 405 Not Allowed -nginx，即使包含标头](https://stackoverflow.com/questions/24415376/post-request-not-allowed-405-not-allowed-nginx-even-with-headers-included)    
+[Serving Static Content Via POST From Nginx](http://invalidlogic.com/2011/04/12/serving-static-content-via-post-from-nginx/)    
 
 ## 接收 Post 请求参数
 在文件 `nginx.conf` 中 `http` 的配置里添加下面的内容  
@@ -37,4 +37,4 @@ http{
 }
 ```
 ### 参考资料
-[nginx 配置接收 post 请求参数](https://blog.csdn.net/qq_16142851/article/details/79957532)  
+[nginx 配置接收 post 请求参数](https://blog.csdn.net/qq_16142851/article/details/79957532)    

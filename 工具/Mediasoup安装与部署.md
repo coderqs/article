@@ -133,4 +133,4 @@ pm2 start npm -- start
 详细介绍请[参考这里](https://blog.csdn.net/pintu274111451/article/details/81843623)
 
 ## 参考资料
-[【流媒体服务器Mediasoup】环境部署与demo搭建(二)](https://blog.csdn.net/gjy_it/article/details/104423353)  
+[【流媒体服务器Mediasoup】环境部署与demo搭建(二)](https://blog.csdn.net/gjy_it/article/details/104423353)    

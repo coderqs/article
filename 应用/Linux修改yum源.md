@@ -130,11 +130,11 @@ nameserver 114.114.114.114
 ```
 保存
 
-[epel是什么](https://www.cnblogs.com/fps2tao/p/7580188.html)  
-[阿里云 Centos8 报错“Error: Failed to synchronize cache for repo 'epel-modular'”解决方案](https://blog.csdn.net/h2511425100/article/details/104169013)
+[epel是什么](https://www.cnblogs.com/fps2tao/p/7580188.html)    
+[阿里云 Centos8 报错“Error: Failed to synchronize cache for repo 'epel-modular'”解决方案](https://blog.csdn.net/h2511425100/article/details/104169013)    
 
 
 # 参考资料
-[修改CentOS的yum源为国内yum镜像源](http://www.mamicode.com/info-detail-2281451.html)  
-[CentOS配置本地yum源/阿里云yum源/163yuan源并配置yum源的优先级](https://www.cnblogs.com/wzhc/p/11556119.html)  
-[linux yum 使用epel源](https://www.cnblogs.com/chengege/p/11128650.html)
+[修改CentOS的yum源为国内yum镜像源](http://www.mamicode.com/info-detail-2281451.html)    
+[CentOS配置本地yum源/阿里云yum源/163yuan源并配置yum源的优先级](https://www.cnblogs.com/wzhc/p/11556119.html)    
+[linux yum 使用epel源](https://www.cnblogs.com/chengege/p/11128650.html)   

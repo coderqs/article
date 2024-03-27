@@ -99,6 +99,6 @@ Jenkins master 附带 Jenkins 的基本安装，在此配置中，master
 - 把刚下载的文件放到从节点机器上，并执行页面中的命令(**注：需要 java 环境，要提前装好，版本最好与主节点上的一致**+);  
 
 ## 参考资料
-[官网 - 安装 Jenkins](https://www.jenkins.io/doc/book/installing/)  
-[Jenkins 配置主从节点](https://dzone.com/articles/jenkins-03-configure-master-and-slave)  
-[jenkins 配置windows节点实现自动化部署](https://www.cnblogs.com/xiaomifeng0510/p/11848834.html)  
+[官网 - 安装 Jenkins](https://www.jenkins.io/doc/book/installing/)    
+[Jenkins 配置主从节点](https://dzone.com/articles/jenkins-03-configure-master-and-slave)    
+[jenkins 配置windows节点实现自动化部署](https://www.cnblogs.com/xiaomifeng0510/p/11848834.html)    

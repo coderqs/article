@@ -39,6 +39,7 @@ slug: 01HSXACXX5RWKGX13PHRTG4CJZ
 ![连接成功](https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/IDE/vscode/%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png)  
 
 ## 参考资料
-[使用 SSH 进行远程开发](https://code.visualstudio.com/docs/remote/ssh#_getting-started)  
-[玩转VSCode插件之Remote-SSH](https://www.cnblogs.com/liyufeia/p/11405779.html)  
-[VSCode:Remote-SSH配置实录](https://blog.csdn.net/sixdaycoder/article/details/89947893)  
+[使用 SSH 进行远程开发](https://code.visualstudio.com/docs/remote/ssh#_getting-started)    
+[玩转VSCode插件之Remote-SSH](https://www.cnblogs.com/liyufeia/p/11405779.html)    
+[VSCode:Remote-SSH配置实录](https://blog.csdn.net/sixdaycoder/article/details/89947893)    
+ 

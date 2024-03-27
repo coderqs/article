@@ -25,5 +25,5 @@ Visual Studio 2017 15.7 Preview 1 为 C++ 开发人员提供了内置的 [ClangF
 ![ClangFormat-Options.png](/工具/visual_studio/ClangFormat-Options.png)
 
 #### 参考资料
-[Visual Studio 2017 中的 ClangFormat 支持](https://devblogs.microsoft.com/cppblog/clangformat-support-in-visual-studio-2017-15-7-preview-1/)  
-[Visual Studio和VS Code使用clang-format自定义C++代码默认格式化样式](https://blog.csdn.net/xy1157/article/details/93224422)  
+[Visual Studio 2017 中的 ClangFormat 支持](https://devblogs.microsoft.com/cppblog/clangformat-support-in-visual-studio-2017-15-7-preview-1/)    
+[Visual Studio和VS Code使用clang-format自定义C++代码默认格式化样式](https://blog.csdn.net/xy1157/article/details/93224422)    

@@ -4,24 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6d9c017c6e97783d",
+        "id": "8132bf8ce7d63c8a",
         "type": "tabs",
         "children": [
           {
-            "id": "91aac658421908ec",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "2a5d6ab1da6bb6ef",
+            "id": "3903e816229ec11f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "方法/C++代码风格.md",
+                "file": "template/hugo_new_article.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Hugo",
+                "query": "系统",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "template/hugo_new_article.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "template/hugo_new_article.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "template/hugo_new_article.md"
+              }
             }
           },
           {
@@ -150,7 +146,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "template/hugo_new_article.md"
+              }
             }
           },
           {
@@ -180,33 +178,34 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "91aac658421908ec",
+  "active": "3903e816229ec11f",
   "lastOpenFiles": [
-    "应用/树莓派/进不去系统的解决方法.md",
-    "template/hugo_new_article.md",
-    "技术/动态库链接时提示 elf section name out of range.md",
-    "技术/GCC-CPP项目错误记录/is referenced by DSO 解决方法.md",
-    "工具/DokuWiki/DokuWiki的个性化设置.md",
-    "工具/DokuWiki/DokuWiki安装与部署.md",
-    "工具/DokuWiki/DokuWiki部署时的常见问题.md",
-    "技术/Linux下GCC升级.md",
-    "方法/C++代码风格.md",
-    "方法/单台编译机下多种编译环境管理方法.md",
-    "方法/单元测试规范.md",
-    "方法/版本号规范.md",
+    "杂项/一些挖掘市场需求的方法.md",
+    "杂项/删除 Leetcode 的账号.md",
+    "杂项/几款 Linux 系统对比.md",
     "杂项/国内做脑机接口的公司.md",
-    "技术/Linux设置交换空间.md",
-    "技术/身份验证错误 要求的函数不受支持Windows远程桌面连接.md",
-    "技术/hugo-eureka构建失败找不到资源的问题.md",
-    "技术/从码流SPS中获取媒体的宽高和帧率.md",
-    "工具/crontab 使用.md",
-    "方法/写作过程中的规范.md",
-    "工具/Git-常用命令.md",
-    "技术/gcc四级优化选项及每级分别做什么优化.md",
-    "技术/关于“.bash_profile”和“.bashrc”区别的总结.md",
-    "工具/Beyond Compare4 永久无限使用.md",
-    "工具/使用cloudflare_r2搭建图床.md",
-    "2024-03-25.md",
+    "应用/Linux修改yum源.md",
+    "应用/Github配置免密推送.md",
+    "应用/Centos7挂载windows的共享目录.md",
+    "应用/小米路由器mini刷openwrt.md",
+    "应用/网站无限301跳转.md",
+    "应用/树莓派/系统的烧录.md",
+    "应用/树莓派/进不去系统的解决方法.md",
+    "技术/Xshell 和 Xftp 提示“要继续使用此程序，您必须应用最新的更新或使用新版本”.md",
+    "技术/Wireshark解决选择网卡时卡死的问题.md",
+    "技术/VMware繁忙无法关机的问题解决.md",
+    "技术/SVN建立文件夹连接.md",
+    "技术/SVN忽略指定文件或目录.md",
+    "技术/so链接时报错elf section name out of range.md",
+    "技术/Shell脚本遇到event not found问题的解决方法.md",
+    "技术/NDK 编译出现的错误.md",
+    "技术/Linux下yum针对软件包操作常用命令.md",
+    "技术/Linux下Shell介绍.md",
+    "技术/Linux下scp命令速查.md",
+    "技术/Linux下gzip命令速查.md",
+    "技术/Linux下GCC头文件搜索路径.md",
+    "技术/Linux下GCC升级.md",
+    "技术/Linux下用户相关的的问题解决方法.md",
     "attachment/创建kv并设置-01.png",
     "attachment/重试部署.png",
     "attachment/创建r2并设置自定义域_07.png",
@@ -217,7 +216,6 @@
     "attachment/创建r2并设置自定义域_02.png",
     "attachment/创建r2并设置自定义域_01.png",
     "attachment/创建pages项目_06.png",
-    "工具/Wireshark常用过滤条件.md",
     "脚本管理",
     "工具/服务/dokuwiki/插件与主题",
     "工具/服务/dokuwiki",

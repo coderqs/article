@@ -54,6 +54,6 @@ yum install cifs-utils
 ```
 
 ## 参考
-[Windows共享文件夹权限设置](https://blog.csdn.net/kingzone_2008/article/details/8677166)  
-[CentOS7挂载Windows下的共享文件夹](https://blog.csdn.net/wm6752062/article/details/80724520)  
-[CentOS7挂载windows共享时提示写保护](http://www.voidcn.com/article/p-fkgygbkn-bdw.html)  
+[Windows共享文件夹权限设置](https://blog.csdn.net/kingzone_2008/article/details/8677166)    
+[CentOS7挂载Windows下的共享文件夹](https://blog.csdn.net/wm6752062/article/details/80724520)    
+[CentOS7挂载windows共享时提示写保护](http://www.voidcn.com/article/p-fkgygbkn-bdw.html)    

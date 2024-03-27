@@ -26,7 +26,7 @@ error C2275: 'UNICODE_STRING' : illegal use of this type as an expression
 ### 解决方法
 把变量的声明全部放在变量的生存块的开始
 ### 参考资料
-[error C2275 将此类型用作表达式非法](https://blog.csdn.net/tkp2014/article/details/47048417)
+[error C2275 将此类型用作表达式非法](https://blog.csdn.net/tkp2014/article/details/47048417)  
 
 
 ## \[warning C4727\] 具有相同时间戳的名为 xxx.pch 的 PCH 已存在于 aaa.obj 和 bbb.obj 中。
@@ -42,7 +42,7 @@ LINK : warning C4727: 具有相同时间戳的名为 xxx.pch 的 PCH 已存在�
 2. 找到文件 `stdafx.h` 将其预编译头改为`创建(/Yc)`
 3. 清理一下重新编译即可。
 ### 参考资料
-[LINK : warning C4727](https://blog.csdn.net/wuan584974722/article/details/80668186)  
+[LINK : warning C4727](https://blog.csdn.net/wuan584974722/article/details/80668186)    
 
 ## \[error c10100b1\] Failed to load file
 ### 背景
@@ -77,14 +77,14 @@ error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”�
 ```
 原因是 Release 下使用了 Debug 的库文件
 ### 参考资料
-[检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”](https://blog.csdn.net/caimagic/article/details/51055988)
+[检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”](https://blog.csdn.net/caimagic/article/details/51055988)  
 
 ## \[error LNK2001\] 无法解析的外部符号
 在类内添加了内联静态成员函数并实现了之后（之前也有一样的成员函数，但没有报错）编译时报了该错误
 ```
 错误	1	error LNK2001: 无法解析的外部符号 "public: static void __cdecl BaseTestFixtures::NormalParamPublishResource(void)" (?NormalParamPublishResource@BaseTestFixtures@@SAXXZ)	F:\share\butelmeetingsdk_29166\pjsip-apps\libbutelmeeting\ut_case_publish_resource.obj
 ```
-[Error LNK2001 无法解析的外部符号 的几种情况及解决办法](https://blog.csdn.net/shufac/article/details/52041758)
+[Error LNK2001 无法解析的外部符号 的几种情况及解决办法](https://blog.csdn.net/shufac/article/details/52041758)  
 
 ## \[error C1189\] Building MFC application with  MD\[d\]
 ```
@@ -116,7 +116,7 @@ class B : public A, public testing::WithParamInterface<T> {}
 ### 解决方法
 因为 c++ 默认的是 private 继承，所以显示声明成 public 即可
 ### 参考资料
-[error c2243:"类型转换" 转换存在，但无法访问](https://blog.csdn.net/vsooda/article/details/7874835d)
+[error c2243:"类型转换" 转换存在，但无法访问](https://blog.csdn.net/vsooda/article/details/7874835d)  
 
 ## \[error C4430\] 缺少类型说明符
 ### 问题描述
@@ -163,4 +163,4 @@ error executing link.exe;
 2. 在左边栏中依次选择：Configuration Properties->C/C++->Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_WINDOWS, 添加_CONSOLE.
 3. 在左边栏中依次选择：Configuration Properties->Linker->System,然后在右边栏的SubSystem对应的项改为CONSOLE(/SUBSYSTEM:CONSOLE)
 ### 参考资料
-[MSVCRT.lib(crtexew.obj) : error LNK2001: 无法解析的外部符号](http://msuyu.lofter.com/post/1d4c6221_bce2f00)
+[MSVCRT.lib(crtexew.obj) : error LNK2001: 无法解析的外部符号](http://msuyu.lofter.com/post/1d4c6221_bce2f00)  

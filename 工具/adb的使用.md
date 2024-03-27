@@ -84,6 +84,6 @@ adb install --no-streaming test.apk
 ``` 
 
 ## 参考资料
-[Android Studio - Android 调试桥(adb)](https://developer.android.google.cn/studio/command-line/adb)  
-[adb 发送文件到Android设备和从Android手机复制文件](https://blog.csdn.net/ezconn/article/details/85682916)  
-[adb安装apk](https://blog.csdn.net/wqq1027/article/details/105510152)  
+[Android Studio - Android 调试桥(adb)](https://developer.android.google.cn/studio/command-line/adb)    
+[adb 发送文件到Android设备和从Android手机复制文件](https://blog.csdn.net/ezconn/article/details/85682916)    
+[adb安装apk](https://blog.csdn.net/wqq1027/article/details/105510152)    

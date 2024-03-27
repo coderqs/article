@@ -29,5 +29,5 @@ slug: 01HSXACXK8W1XE138N6BHSRAPP
 4.  重启 xshell 即可
 
 ## 参考资料
-[Xshell提示更新并且已经是最新版](https://blog.csdn.net/hanhandehanpi/article/details/121392530)
-[Xshell 6 提示 “要继续使用此程序,您必须应用最新的更新或使用新版本”](https://vegetable-chicken.blog.csdn.net/article/details/120002352)
+[Xshell提示更新并且已经是最新版](https://blog.csdn.net/hanhandehanpi/article/details/121392530)   
+[Xshell 6 提示 “要继续使用此程序,您必须应用最新的更新或使用新版本”](https://vegetable-chicken.blog.csdn.net/article/details/120002352)  

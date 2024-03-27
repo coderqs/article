@@ -46,6 +46,6 @@ git subtree split --rejoin --prefix=<cloned_name> --branch <branch>
 git push <sub_item_uri> <sub_item_uri>:<branch>
 ```
 ## 参考资料
-1.  [Git 进阶 - 子仓库 subtree](https://www.jianshu.com/p/e9f6ff4e09dc)
-2.  [如何在Github上使用Git subtree来管理父子项目](https://segmentfault.com/a/1190000009695399)
+1.  [Git 进阶 - 子仓库 subtree](https://www.jianshu.com/p/e9f6ff4e09dc)   
+2.  [如何在Github上使用Git subtree来管理父子项目](https://segmentfault.com/a/1190000009695399)   
 

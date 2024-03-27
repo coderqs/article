@@ -47,7 +47,7 @@ PdgCntEditor 是一款好用的图形化目录文件编辑器，它能够支持P
 如果上面两种方法都搞不定的话，建议就不要弄了，忍忍看完就得了。
   
 ## 参考资料
-[PDF目录编辑软件-PdgCntEditor](https://www.jianshu.com/p/498b0f8bb650)
-[PdgCntEditor系列教程一：基础知识](https://www.cnblogs.com/stronghorse/p/11519730.html)
-[【工具】FreePic2PDF+PdgCntEditor｜PDF批量添加书签（Windows）]()
-[PDF目录编辑软件-PdgCntEditor](https://www.jianshu.com/p/498b0f8bb650)
+[PDF目录编辑软件-PdgCntEditor](https://www.jianshu.com/p/498b0f8bb650)    
+[PdgCntEditor系列教程一：基础知识](https://www.cnblogs.com/stronghorse/p/11519730.html)    
+[【工具】FreePic2PDF+PdgCntEditor｜PDF批量添加书签（Windows）](https://blog.csdn.net/qq_46106285/article/details/134104985)    
+[PDF目录编辑软件-PdgCntEditor](https://www.jianshu.com/p/498b0f8bb650)   

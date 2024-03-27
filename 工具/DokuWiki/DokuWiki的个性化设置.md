@@ -83,7 +83,7 @@ date.timezone = Asia/Shanghai
     3. `对应上面用户名的密码` 为 password 保存即可。
 
 # 参考资料
-[dokuwiki插件的常用配置及其他Tips](https://blog.csdn.net/leekwen/article/details/54907445)  
-[DokuWiki 用户手册](https://www.dokuwiki.org/start?id=zh:manual)  
-[玩转Dokuwiki](https://blog.csdn.net/dclingcloud/article/details/86727132)  
-[DokuWiki相关](https://www.dazhuanlan.com/2019/09/24/5d89567416891/)  
+[dokuwiki插件的常用配置及其他Tips](https://blog.csdn.net/leekwen/article/details/54907445)    
+[DokuWiki 用户手册](https://www.dokuwiki.org/start?id=zh:manual)    
+[玩转Dokuwiki](https://blog.csdn.net/dclingcloud/article/details/86727132)    
+[DokuWiki相关](https://www.dazhuanlan.com/2019/09/24/5d89567416891/)    

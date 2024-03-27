@@ -21,5 +21,5 @@ slug: 01HSXACXMMHSYZJ5GEFZC1C5TW
 ### 解决方法
 将 `Application.mk` 中的 `APP_STL := c++_shared` 替换为 `APP_STL := gnustl_static`，删除缓存重新编译。
 ### 参考资料
-[Error Undefined reference to 'std::__ndk1::locale::~locale()'](https://stackoverflow.com/questions/49183886/error-undefined-reference-to-std-ndk1localelocale)   
-[Android NDK 链接器错误：错误：对 std::basic_string 的未定义引用](https://stackoverflow.com/questions/38274943/android-ndk-linker-errorerror-undefined-reference-to-stdbasic-string)  
+[Error Undefined reference to 'std::__ndk1::locale::~locale()'](https://stackoverflow.com/questions/49183886/error-undefined-reference-to-std-ndk1localelocale)     
+[Android NDK 链接器错误：错误：对 std::basic_string 的未定义引用](https://stackoverflow.com/questions/38274943/android-ndk-linker-errorerror-undefined-reference-to-stdbasic-string)    

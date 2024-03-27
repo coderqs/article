@@ -59,4 +59,4 @@ export PATH=$PYTHON_HOME/bin:$PATH
 保存并执行 `source ~/.bash_profile`，查看是否生效。  
 
 ## 参考资料
-[Linux系统安装Python3环境（超详细](https://blog.csdn.net/L_15156024189/article/details/84831045)  
+[Linux系统安装Python3环境（超详细](https://blog.csdn.net/L_15156024189/article/details/84831045)    

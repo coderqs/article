@@ -303,8 +303,8 @@ UsePAM yes
 ```
 重启 ssh 服务  
 
-参考自[https://wiki.archlinux.org/title/Gitea#Enable_SSH_Support#Enable SSH Support](https://wiki.archlinux.org/title/Gitea#Enable_SSH_Support#Enable%20SSH%20Support)
+参考自[https://wiki.archlinux.org/title/Gitea#Enable_SSH_Support#Enable SSH Support](https://wiki.archlinux.org/title/Gitea#Enable_SSH_Support#Enable%20SSH%20Support)  
 
 ## 参考资料
-[install-from-binary](https://docs.gitea.io/en-us/install-from-binary/)  
-[Run Gitea as Linux service](https://docs.gitea.io/en-us/linux-service/)  
+[install-from-binary](https://docs.gitea.io/en-us/install-from-binary/)    
+[Run Gitea as Linux service](https://docs.gitea.io/en-us/linux-service/)    

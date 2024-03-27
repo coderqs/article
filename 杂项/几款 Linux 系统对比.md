@@ -66,5 +66,5 @@ Ubuntu 可以说是最受欢迎的基于 Linux 的操作系统。Ubuntu 背后�
 
 
 ## 参考资料
-[Debian 与 Ubuntu：你需要知道的一切来选择](https://www.fosslinux.com/40109/debian-vs-ubuntu-everything-you-need-to-know-to-choose.htm)  
-[Debian 与 Ubuntu：在选择最佳之前需要了解的 15 件事](https://www.ubuntupit.com/debian-vs-ubuntu-top-things-to-know-before-choosing-the-best-one/)
+[Debian 与 Ubuntu：你需要知道的一切来选择](https://www.fosslinux.com/40109/debian-vs-ubuntu-everything-you-need-to-know-to-choose.htm)    
+[Debian 与 Ubuntu：在选择最佳之前需要了解的 15 件事](https://www.ubuntupit.com/debian-vs-ubuntu-top-things-to-know-before-choosing-the-best-one/)   

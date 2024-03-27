@@ -16,8 +16,8 @@ series:
 slug: 01HSXACY59DJ263YME5GHV2PWQ
 ---
 ## 参考资料
-[【Cmake】利用NDK进行Android的交叉编译（附实例）](https://blog.csdn.net/qq_38410730/article/details/103622813)  
-[在命令行下用cmake交叉编译可在android中运行的so包](https://blog.csdn.net/MingHuang2017/article/details/78938852)  
+[【Cmake】利用NDK进行Android的交叉编译（附实例）](https://blog.csdn.net/qq_38410730/article/details/103622813)    
+[在命令行下用cmake交叉编译可在android中运行的so包](https://blog.csdn.net/MingHuang2017/article/details/78938852)    
 
 ## 遇到的问题
 ### is not able to compile a simple test program.

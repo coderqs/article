@@ -21,5 +21,5 @@ slug: 01HSXACWDASA7FX6VXY3MTY480
 4. 提交工单
 
 ## 参考资料
-[How To Delete LeetCode Account | Cancel Account](https://www.loginhit.com.ng/how-to-delete-leetcode-account-cancel-account/)  
+[How To Delete LeetCode Account | Cancel Account](https://www.loginhit.com.ng/how-to-delete-leetcode-account-cancel-account/)    
 

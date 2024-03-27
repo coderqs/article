@@ -14,4 +14,4 @@ draft: false
 series: 
 slug: 01HSXACXHHN8H6TVEJ9BSAMCM1
 ---
-[清除Github提交历史记录](https://zhuanlan.zhihu.com/p/35078876)
+[清除Github提交历史记录](https://zhuanlan.zhihu.com/p/35078876)  

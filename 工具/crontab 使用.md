@@ -17,8 +17,8 @@ slug: 01HSXACY4Q3MSYPYFF6AZ85TNN
 ---
 ## 基本教程
 
-参考 [《crontab 定时任务》](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/crontab.html)
+参考 [《crontab 定时任务》](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/crontab.html)  
 
 ## 验证 crontab 是否有效
 
-[验证crontab是否有效](https://ubuntuqa.com/article/1805.html)
+[验证crontab是否有效](https://ubuntuqa.com/article/1805.html)   

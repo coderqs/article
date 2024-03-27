@@ -60,4 +60,4 @@ nano /etc/fstab
 退出 ctrl+x，是否保存y，确定路径，直接enter
 
 ## 参考资料
-[debian11设置系统交换区Swap_debian11设置虚拟内存](https://www.rezhuji.com/os/debian11/system/how_to_set_swap_on_debian11.html)  
+[debian11设置系统交换区Swap_debian11设置虚拟内存](https://www.rezhuji.com/os/debian11/system/how_to_set_swap_on_debian11.html)    

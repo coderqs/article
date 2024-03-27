@@ -133,5 +133,5 @@ opkg install luci luci-base luci-compat
 执行 `opkg update` 后再安装一下
 
 #### 参考资料
-[编译Openwrt固件安装软件内核版本不一致问题解决](https://www.haiyun.me/archives/1075.html)  
-[OpenWRT内核不符合依赖](https://github.com/kuoruan/luci-app-v2ray/issues/116)
+[编译Openwrt固件安装软件内核版本不一致问题解决](https://www.haiyun.me/archives/1075.html)   
+[OpenWRT内核不符合依赖](https://github.com/kuoruan/luci-app-v2ray/issues/116)   

@@ -68,5 +68,5 @@ mail -s "subject" qs@coderqs.com -a attachment.tar.gz
 ```
 
 ## 参考资料
-[Linux发邮件之mail命令详解](https://www.jb51.net/article/100630.htm)  
-[mail 参数详解](https://blog.csdn.net/cioujie8131/article/details/100350985)
+[Linux发邮件之mail命令详解](https://www.jb51.net/article/100630.htm)    
+[mail 参数详解](https://blog.csdn.net/cioujie8131/article/details/100350985)   

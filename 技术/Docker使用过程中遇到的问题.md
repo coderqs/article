@@ -42,7 +42,7 @@ slug: 01HSXACXS2J2Q0XSZ8H5GKR3TE
     -d nginx:latest 
 ```
 ### 参考资料
-[docker run后 logs报/docker-entrypoint.sh: 38: exec: -p: not found](https://blog.csdn.net/weixin_43895897/article/details/127944602?spm=1001.2101.3001.6650.3\&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-127944602-blog-80617448.235%5Ev36%5Epc_relevant_default_base3\&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-127944602-blog-80617448.235%5Ev36%5Epc_relevant_default_base3\&utm_relevant_index=6)
+[docker run后 logs报/docker-entrypoint.sh: 38: exec: -p: not found](https://blog.csdn.net/weixin_43895897/article/details/127944602?spm=1001.2101.3001.6650.3\&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-127944602-blog-80617448.235%5Ev36%5Epc_relevant_default_base3\&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-127944602-blog-80617448.235%5Ev36%5Epc_relevant_default_base3\&utm_relevant_index=6)   
 
 ## 安装docker-compose后没有docker了
 ### 原因
@@ -50,5 +50,5 @@ slug: 01HSXACXS2J2Q0XSZ8H5GKR3TE
 ### 解决方法
 将docker清理干净再重新安装
 ### 参考资料
-[安装完docker-compose后，docker没了](http://linuxcpp.0voice.com/?id=38263)\
-[Docker与Docker-Compose详解](https://blog.csdn.net/qq_44973159/article/details/121357388)
+[安装完docker-compose后，docker没了](http://linuxcpp.0voice.com/?id=38263)   
+[Docker与Docker-Compose详解](https://blog.csdn.net/qq_44973159/article/details/121357388)   

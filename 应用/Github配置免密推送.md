@@ -24,11 +24,11 @@ git config credential.helper store
 git config --global credential.helper store
 ```
 #### 参考资料
-[github https免密push](https://blog.csdn.net/u010563350/article/details/106965461?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.not_use_machine_learn_pai&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.not_use_machine_learn_pai)  
-[git配置免密登录](https://liqing.blog.csdn.net/article/details/79065095?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai)  
+[github https免密push](https://blog.csdn.net/u010563350/article/details/106965461?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.not_use_machine_learn_pai&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.not_use_machine_learn_pai)    
+[git配置免密登录](https://liqing.blog.csdn.net/article/details/79065095?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai)    
 
 ### ssh 免密
-[github本地git push ssh方式免用户名和密码配置相关问题](https://blog.csdn.net/lonyw/article/details/75392410?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai)  
+[github本地git push ssh方式免用户名和密码配置相关问题](https://blog.csdn.net/lonyw/article/details/75392410?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.not_use_machine_learn_pai)    
 
 ## 将存储库和 ssh key 放在 U 盘里
 ### 生成新的 SSH 密钥
@@ -65,9 +65,9 @@ Host github.com-jexchan
 - IdentityFile： 公钥文件所在的绝对路径；
 
 #### 参考资料
-[不同github帐户的多个SSH密钥设置](https://gist.github.com/jexchan/2351996)  
-[多个SSH密钥并存且连接到Github](https://kangzhiheng.top/post/11-more-ssh-in-one-laptop/)  
-[Could not open a connection to your authentication agent](https://blog.csdn.net/argleary/article/details/100638560)
+[不同github帐户的多个SSH密钥设置](https://gist.github.com/jexchan/2351996)    
+[多个SSH密钥并存且连接到Github](https://kangzhiheng.top/post/11-more-ssh-in-one-laptop/)    
+[Could not open a connection to your authentication agent](https://blog.csdn.net/argleary/article/details/100638560)   
 
 ## 遇到的问题
 ### github 已配置了 ssl 但每次 push 仍需要输入用户名/密码

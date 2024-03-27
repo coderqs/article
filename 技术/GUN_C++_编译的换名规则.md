@@ -85,4 +85,4 @@ slug: 01HSXACXQQHCS60M2QPHJ4PSYS
     - 如果是函数的话，所有的参数按照前后出现的顺序进行改编。
 
 ## 参考资料
-[GNU C++的符号改编机制介绍](https://blog.csdn.net/Roland_Sun/article/details/43233565)
+[GNU C++的符号改编机制介绍](https://blog.csdn.net/Roland_Sun/article/details/43233565)  

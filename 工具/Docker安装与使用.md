@@ -15,7 +15,7 @@ slug: 01HSXACY4D1XBHFK2599H89S4B
 ---
 ## 安装
 
-这是[官网提供的在 Ubuntu 上的安装方法](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+这是[官网提供的在 Ubuntu 上的安装方法](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)  
 ```
 sudo apt-get update
 sudo apt-get install -y \
@@ -65,5 +65,5 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 ```
 ## 参考资料
 
-[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)\
-[如何删除 Docker 镜像和容器](https://chinese.freecodecamp.org/news/how-to-remove-images-in-docker/)
+[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)  
+[如何删除 Docker 镜像和容器](https://chinese.freecodecamp.org/news/how-to-remove-images-in-docker/)  

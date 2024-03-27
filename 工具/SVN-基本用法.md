@@ -24,4 +24,4 @@ slug: 01HSXACXYS90Z4VMQ71VC7B0M8
 1. 首先用SVN最新代码更新本地代码，保证本地代码和SVN仓库最新的代码一致
 2. 然后选中要更新的文件或文件夹，右键调出SVN选项后选择 `update to version` 这里可以点击 `show log` 来找到自己要回退到的修订号或者直接输出修订号，点击 OK
 #### 参考资料
-[SVN 将代码回滚到之前的版本的方法](https://blog.csdn.net/weixin_48853167/article/details/114869092)
+[SVN 将代码回滚到之前的版本的方法](https://blog.csdn.net/weixin_48853167/article/details/114869092)   

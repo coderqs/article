@@ -423,4 +423,4 @@ chgrp nginx -R . && chown nginx -R .
 ```
 
 ## 参考资料
-[使用 Nginx 的 DokuWiki - 官网](https://www.dokuwiki.org/install:nginx)  
+[使用 Nginx 的 DokuWiki - 官网](https://www.dokuwiki.org/install:nginx)    

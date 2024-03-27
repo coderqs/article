@@ -43,7 +43,7 @@ clang-tidy -list-checks -checks='google' test.cpp --
 - `--`: 表示这个文件不在compilation database里面，可以直接单独编译;  
 
 ## 参考资料
-[clang-tidy](https://clang.llvm.org/extra/clang-tidy/)  
-[深入研究Clang(十三)clang-tidy简介](https://zhuanlan.zhihu.com/p/102248131)  
-[clang-tidy使用总结](https://blog.csdn.net/ypshowm/article/details/100040729)  
-[深入研究Clang(十四)clang-tidy的使用](https://blog.csdn.net/snsn1984/article/details/104220921)  
+[clang-tidy](https://clang.llvm.org/extra/clang-tidy/)    
+[深入研究Clang(十三)clang-tidy简介](https://zhuanlan.zhihu.com/p/102248131)    
+[clang-tidy使用总结](https://blog.csdn.net/ypshowm/article/details/100040729)    
+[深入研究Clang(十四)clang-tidy的使用](https://blog.csdn.net/snsn1984/article/details/104220921)    

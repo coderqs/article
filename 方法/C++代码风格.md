@@ -520,5 +520,5 @@ slug: 01HSXACXGDXC8HNDVSZVGQNG81
 
 # 参考资料
 
-[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html#Header_Files)  
-[Google 开源项目风格指南(中文版)](https://google-styleguide.readthedocs.io/zh_CN/latest/google-cpp-styleguide/scoping.html)  
+[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html#Header_Files)    
+[Google 开源项目风格指南(中文版)](https://google-styleguide.readthedocs.io/zh_CN/latest/google-cpp-styleguide/scoping.html)    

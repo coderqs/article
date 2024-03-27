@@ -25,4 +25,4 @@ Remotely Save 支持 OneDrive、Dropbox、webdav、S3 服务，前两者因为�
 注：此方法会丢失笔记真实的**最后修改时间**，会改变为最后一次上传到 oss 的时间
 
 ## 参考资料
-[使用 Remotely Save + 阿里云 OSS 实现多平台同步](https://forum-zh.obsidian.md/t/topic/5362)
+[使用 Remotely Save + 阿里云 OSS 实现多平台同步](https://forum-zh.obsidian.md/t/topic/5362)  

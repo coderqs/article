@@ -56,4 +56,4 @@ git config --global --get https.proxy
 ``` 
 
 ## 参考资料
-[知乎 - git clone一个github上的仓库，太慢，经常连接失败，但是github官网流畅访问，为什么？@汪小九](https://www.zhihu.com/question/27159393)
+[知乎 - git clone一个github上的仓库，太慢，经常连接失败，但是github官网流畅访问，为什么？@汪小九](https://www.zhihu.com/question/27159393)  

@@ -27,4 +27,5 @@ pandoc -f markdown_github -t dokuwiki in_filename.md -o out_filename.txt
 **注：markdown 的语法分支比较多，要选对自己使用的是那种 markdown语法。**
 
 ## 参考资料
-[Pandoc 用户指南](https://www.pandoc.org/MANUAL.html)  
+[Pandoc 用户指南](https://www.pandoc.org/MANUAL.html)    
+ 

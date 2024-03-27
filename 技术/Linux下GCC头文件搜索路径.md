@@ -74,7 +74,7 @@ gcc -xc++ -E -v -
 **注意：在 Linux 中动态库搜寻路径并不包括当前文件夹**
 
 ## 参考资料
-[linux gcc头文件搜索路径](https://blog.csdn.net/andy205214/article/details/77091871)  
-[Search-Path](https://gcc.gnu.org/onlinedocs/cpp/Search-Path.html)  
-[关于GCC头文件默认搜索路径](https://www.jianshu.com/p/a6d5879ee4e2)  
+[linux gcc头文件搜索路径](https://blog.csdn.net/andy205214/article/details/77091871)    
+[Search-Path](https://gcc.gnu.org/onlinedocs/cpp/Search-Path.html)    
+[关于GCC头文件默认搜索路径](https://www.jianshu.com/p/a6d5879ee4e2)    
 

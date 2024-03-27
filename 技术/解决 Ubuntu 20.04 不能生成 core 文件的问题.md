@@ -41,5 +41,5 @@ sysctl -p
 ```
 
 ## 参考资料
-[核心转储，但核心文件不在当前目录中？](https://stackoverflow.com/questions/2065912/core-dumped-but-core-file-is-not-in-the-current-directory)  
-[解决Ubuntu重启后，core_pattern失效问题——手动关闭apport](https://www.cnblogs.com/faithfu/p/11933780.html)  
+[核心转储，但核心文件不在当前目录中？](https://stackoverflow.com/questions/2065912/core-dumped-but-core-file-is-not-in-the-current-directory)   
+[解决Ubuntu重启后，core_pattern失效问题——手动关闭apport](https://www.cnblogs.com/faithfu/p/11933780.html)    

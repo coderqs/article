@@ -18,7 +18,7 @@ c/c++ 附加包含目录，代表的是c/c++文件编译时所需要的头文件
 vc++ 的包含目录，代表的是全局项目的包含目录。配置过VC++里面的库，C/C++里面的就可以不用配置。  
 
 ### 参考资料
-[VC包含目录和c/c++附加包含目录的区别](https://blog.csdn.net/qq_35608277/article/details/80768660)  
+[VC包含目录和c/c++附加包含目录的区别](https://blog.csdn.net/qq_35608277/article/details/80768660)   
 
 ## 默认的属性文件
 ### vs2017
@@ -30,7 +30,7 @@ vc++ 的包含目录，代表的是全局项目的包含目录。配置过VC++�
 1.  vs2019 相较于 vs2017 少了 Microsoft.Cpp.x64.user 多了 whole program optimization
 
 ### 参考资料
-[visual studio属性管理器（property manager）上各项的含义](https://blog.csdn.net/wu_nan_nan/article/details/70054845)
+[visual studio属性管理器（property manager）上各项的含义](https://blog.csdn.net/wu_nan_nan/article/details/70054845)  
 
 ## 多张属性表叠加
 多张属性表一起使用时，两张表定义了相同的属性，后面的表的配置优先。  
@@ -54,4 +54,4 @@ vc++ 的包含目录，代表的是全局项目的包含目录。配置过VC++�
 > 
 > There is a trap in the command-line settings. If you specify Additional Options in a project, then those will not be unioned with the additional options in the property sheets. Unless I am mistaken, it is missing a way to bring in the inherited options. Therefore, you should use the other options explicitly instead. For example, if you need a preprocessor definition, do it in the Preprocessor definitions property instead of as a /D switch in Additional Options.
 ### 参考资料
-[Property sheets in Visual Studio 2010](https://kaba.hilvi.org/homepage/blog/shorties-2012.htm)  
+[Property sheets in Visual Studio 2010](https://kaba.hilvi.org/homepage/blog/shorties-2012.htm)    

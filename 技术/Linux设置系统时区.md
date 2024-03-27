@@ -86,4 +86,4 @@ Fri Feb 19 17:50:00 CST 2021
 可以看到已经修改成功了。
 
 ## 参考资料
-[如何在 CentOS 8 设置或者修改时区](https://zhuanlan.zhihu.com/p/120861004)
+[如何在 CentOS 8 设置或者修改时区](https://zhuanlan.zhihu.com/p/120861004)   

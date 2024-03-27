@@ -121,8 +121,8 @@ npm ERR! Run "npm help ci" for more info
 按 `F12` 查看一下`.css`文件的路径就会发现，路径变成了`https://domian.com/domain.com/xxx/xxx.css`这个样子，这个好像跟 PostCSS 使用 `baseUrl` 做路径的方式有关，具体也不是很了解，**只要将 `baseUrl` 改为 `/` 就可以解决问题了**。
 
 ## 参考资料
-[Can not access assets when a path is set in baseURL #186](https://github.com/wangchucheng/hugo-eureka/issues/186)
-[Hugo can not find resource cache when setting a path in baseURL #9787](https://github.com/gohugoio/hugo/issues/9787)
-[Error building site: POSTCSS](https://discourse.gohugo.io/t/error-building-site-postcss/31766)
-[GitHub Actions for Hugo ### Workflow for autoprefixer and postcss-cli](https://github.com/peaceiris/actions-hugo/tree/main)
-[failed to transform "css/eureka.css" #228](https://github.com/wangchucheng/hugo-eureka/issues/228)
+[Can not access assets when a path is set in baseURL #186](https://github.com/wangchucheng/hugo-eureka/issues/186)   
+[Hugo can not find resource cache when setting a path in baseURL #9787](https://github.com/gohugoio/hugo/issues/9787)   
+[Error building site: POSTCSS](https://discourse.gohugo.io/t/error-building-site-postcss/31766)   
+[GitHub Actions for Hugo ### Workflow for autoprefixer and postcss-cli](https://github.com/peaceiris/actions-hugo/tree/main)   
+[failed to transform "css/eureka.css" #228](https://github.com/wangchucheng/hugo-eureka/issues/228)  

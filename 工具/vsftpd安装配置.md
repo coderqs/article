@@ -33,5 +33,5 @@ service vsftpd restart
 ```
 
 ## 遇见错误
-[vsftpd：500 OOPS: vsftpd: refusing to run with writable root inside chroot ()错误的解决方法](https://blog.csdn.net/bluishglc/article/details/42399439)  
-[vsftpd 服务器报错：500 OOPS: vsftpd: refusing to run with writable root inside chroot()](https://blog.51cto.com/kisuntech/1308314)
+[vsftpd：500 OOPS: vsftpd: refusing to run with writable root inside chroot ()错误的解决方法](https://blog.csdn.net/bluishglc/article/details/42399439)   
+[vsftpd 服务器报错：500 OOPS: vsftpd: refusing to run with writable root inside chroot()](https://blog.51cto.com/kisuntech/1308314)   

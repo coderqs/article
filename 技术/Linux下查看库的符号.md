@@ -48,5 +48,5 @@ nm xxx.so
 |    S    | 未初始化的符号，比如全局变量int s;则s的符号就是此类型                                                           |
 
 ## 参考资料
-[Linux下使用nm命令排查和解决“undefined referenceto”](https://blog.csdn.net/acs713/article/details/13505931)  
-[undefined symbol问题的查找、定位与解决方法](https://blog.csdn.net/buknow/article/details/96130049)
+[Linux下使用nm命令排查和解决“undefined referenceto”](https://blog.csdn.net/acs713/article/details/13505931)    
+[undefined symbol问题的查找、定位与解决方法](https://blog.csdn.net/buknow/article/details/96130049)   

@@ -24,4 +24,4 @@ slug: 01HSXACXYMS6QHR5RJ03V24QAE
 1. 在自己仓库中修改外部仓库的内容是无法提交的，需要进入外部仓库在本地仓库的文件夹中才可以提交
 2. 在自己仓库中使用 `Update` 也会同时更新外部仓库
 ## 参考资料
-[使用svn:externals建立SVN文件(夹)链接](https://blog.csdn.net/aosica321/article/details/51165618)  
+[使用svn:externals建立SVN文件(夹)链接](https://blog.csdn.net/aosica321/article/details/51165618)    

@@ -46,5 +46,5 @@ Password: `password`
 
 ## 参考资料
 
-[Artifactory 单节点安装方法](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-DockerInstallation)\
-[JFrog Artifactory CE docker 安装使用记录](https://codeantenna.com/a/WxVpHo0tcG)
+[Artifactory 单节点安装方法](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-DockerInstallation)  
+[JFrog Artifactory CE docker 安装使用记录](https://codeantenna.com/a/WxVpHo0tcG)   

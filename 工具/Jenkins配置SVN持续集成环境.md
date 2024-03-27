@@ -47,9 +47,9 @@ slug: 01HSXACY1AY4P252Z6KKFWTY8T
     4. `-p:Configuration=Release`: 生成 Release 版本;  
 
 ## 参考资料
-[【手把手】10分钟搭建Jenkins+SVN持续集成环境](https://zhuanlan.zhihu.com/p/145361830)  
-[jenkins_windows(七)：SVN自动触发项目构建的配置](https://blog.csdn.net/kongsuhongbaby/article/details/100170537)  
-[Jenkins 配置svn自动部署](https://blog.csdn.net/Jasonliujintao/article/details/70812639)  
-[命令行上的 MSBuild - C++](https://docs.microsoft.com/en-us/cpp/build/msbuild-visual-cpp?view=msvc-160)  
-[MSBuild 命令行参考](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2019#arguments)  
-[使用msbuild指定解决方案的项目文件](https://www.it-swarm.cn/zh/build/%E4%BD%BF%E7%94%A8msbuild%E6%8C%87%E5%AE%9A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6/1070142712/)  
+[【手把手】10分钟搭建Jenkins+SVN持续集成环境](https://zhuanlan.zhihu.com/p/145361830)    
+[jenkins_windows(七)：SVN自动触发项目构建的配置](https://blog.csdn.net/kongsuhongbaby/article/details/100170537)    
+[Jenkins 配置svn自动部署](https://blog.csdn.net/Jasonliujintao/article/details/70812639)    
+[命令行上的 MSBuild - C++](https://docs.microsoft.com/en-us/cpp/build/msbuild-visual-cpp?view=msvc-160)    
+[MSBuild 命令行参考](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2019#arguments)    
+[使用msbuild指定解决方案的项目文件](https://www.it-swarm.cn/zh/build/%E4%BD%BF%E7%94%A8msbuild%E6%8C%87%E5%AE%9A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6/1070142712/)    

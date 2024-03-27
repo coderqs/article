@@ -35,4 +35,4 @@ slug: 01HSXACXG85PAB0APKVBAYNR8K
 - 多人协作最好在注释后加签名和时间，例如：`/// Fix bug #12345 [coderqs@20200101]`  
 
 ## 参考资料
-[C++注释规范是什么？](https://www.zhihu.com/question/371144076)
+[C++注释规范是什么？](https://www.zhihu.com/question/371144076)   

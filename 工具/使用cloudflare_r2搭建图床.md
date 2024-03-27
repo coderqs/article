@@ -86,6 +86,6 @@ import zhCn from "element-plus/es/locale/lang/zh-cn";
 参考自: [vue2👉vue3 一些版本问题记录](https://zhuanlan.zhihu.com/p/675006386)
 
 ## 参考资料
-[白嫖 CloudFlare R2 搭建个人图床](https://testerhome.com/topics/36077)
-[Github roim-picx](https://github.com/roimdev/roim-picx?tab=readme-ov-file)
-[使用R2+Page部署免费的图床【白嫖Cloudflare】](https://blog.lianglianglee.com/2024/01/15/cloudflare-r2-page-image-server/)
+[白嫖 CloudFlare R2 搭建个人图床](https://testerhome.com/topics/36077)   
+[Github roim-picx](https://github.com/roimdev/roim-picx?tab=readme-ov-file)   
+[使用R2+Page部署免费的图床【白嫖Cloudflare】](https://blog.lianglianglee.com/2024/01/15/cloudflare-r2-page-image-server/)   

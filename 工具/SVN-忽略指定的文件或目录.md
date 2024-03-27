@@ -29,4 +29,4 @@ slug: 01HSXACXYG42D6BG8CKQJW070C
     ![选择global_ignores](https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/svn/%E9%80%89%E6%8B%A9global_ignores.jpg)  
 
 ## 参考资料
-[【全网独家】SVN 实现和 Git .gitignore一样的全局忽略文件和文件夹](https://zhuanlan.zhihu.com/p/371201105)  
+[【全网独家】SVN 实现和 Git .gitignore一样的全局忽略文件和文件夹](https://zhuanlan.zhihu.com/p/371201105)    

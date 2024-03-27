@@ -13,8 +13,8 @@ draft: false
 series: 
 slug: 01HSXACY03NDQY2FBR8K2KP0D2
 ---
-[Mysql常用语句大全](https://zhuanlan.zhihu.com/p/91032512)  
-[MySQL常用语句](https://blog.csdn.net/weixin_57109262/article/details/122368376)  
+[Mysql常用语句大全](https://zhuanlan.zhihu.com/p/91032512)   
+[MySQL常用语句](https://blog.csdn.net/weixin_57109262/article/details/122368376)   
 ## 遇到的问题
 ### 在命令行中输入了密码了，执行起来后还要输入密码
 `mysql -u root -p passwd` 执行后还是要求输入密码，这是因为 `-p passwd`之间多了个空格，改为 `-ppasswd` 即可。
@@ -47,4 +47,4 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
 flush privileges;
 ```
 #### 参考资料
-[出现ERROR 1698 (28000): Access denied for user ‘root‘@‘localhost‘ 的解决方法](https://blog.csdn.net/weixin_47872288/article/details/122281840)
+[出现ERROR 1698 (28000): Access denied for user ‘root‘@‘localhost‘ 的解决方法](https://blog.csdn.net/weixin_47872288/article/details/122281840)  

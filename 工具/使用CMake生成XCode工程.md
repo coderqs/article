@@ -44,4 +44,4 @@ sudo xcode-select --switch /Applications/Xcode.app/
 **注：**执行完命令后要清空 cmake 生成的缓存文件。
 
 ## 参考资料
-[Mac cmake生成xcode项目工程](https://blog.csdn.net/song_esther/article/details/105419945)  
+[Mac cmake生成xcode项目工程](https://blog.csdn.net/song_esther/article/details/105419945)    

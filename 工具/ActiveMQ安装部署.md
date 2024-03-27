@@ -79,6 +79,6 @@ WantedBy=multi-user.target
 **注：其中的`Environment=JAVA_HOME=/usr/lib/java/jdk-11`需要根据自己的实际路径配置**
 
 ## 参考资料
-[如何在 Ubuntu 22.04 上安装 Apache ActiveMQ](https://tecadmin.net/how-to-install-apache-activemq-on-ubuntu-22-04/)  
-[Linux 系统中安装配置Active MQ](https://blog.csdn.net/xingzhe08/article/details/123712035)  
-[linux上安装并启动activeMq](https://blog.csdn.net/qq_41793064/article/details/114656001)  
+[如何在 Ubuntu 22.04 上安装 Apache ActiveMQ](https://tecadmin.net/how-to-install-apache-activemq-on-ubuntu-22-04/)    
+[Linux 系统中安装配置Active MQ](https://blog.csdn.net/xingzhe08/article/details/123712035)    
+[linux上安装并启动activeMq](https://blog.csdn.net/qq_41793064/article/details/114656001)    

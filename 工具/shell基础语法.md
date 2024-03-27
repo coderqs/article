@@ -137,4 +137,4 @@ for语句效率最高，而在while循环中读写文件式执行效率最高。
 
 ## 遇到的错误
 ### bad substitution
-参考 [Bash 错误替换语法错误：简单快速的修复](https://codefather.tech/blog/bash-error-bad-substitution/)
+参考 [Bash 错误替换语法错误：简单快速的修复](https://codefather.tech/blog/bash-error-bad-substitution/)  

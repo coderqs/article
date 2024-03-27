@@ -103,4 +103,4 @@ firewall-cmd --permanent --zone=public --add-service=ssh
 保存好文件后需要执行一次 `firewall-cmd --reload` 才能识别到
 
 ## 参考资料
-[如何在 CentOS7 上使用 FirewallD 设置防火墙](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7#getting-familiar-with-the-current-firewall-rules)  
+[如何在 CentOS7 上使用 FirewallD 设置防火墙](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7#getting-familiar-with-the-current-firewall-rules)    

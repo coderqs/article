@@ -146,8 +146,8 @@ Let's Encrypt 的证书有效期是 90 天，允许提前 30 天续签，执行�
 
 ## 参考资料
 
-[Let's Encrypt - 维基百科](https://en.wikipedia.org/wiki/wiki/Let%27s_Encrypt)  
-[Let's Encrypt免费申请SSL证书](https://jusene.github.io/2018/08/05/letsencrypt/)  
-[Nginx启用Let’s Encrypt SSL证书](https://www.4spaces.org/nginx-lets-encrypt-ssl/)  
-[在macOS平台下制作SSL证书，免费域名通配符证、单域名证书、多域名证书教程](https://www.bbsmax.com/A/ZOJPvy8Odv/)  
-[Letsencrypt通过DNS TXT记录来验证域名有效性](https://blog.csdn.net/u012291393/article/details/78768547?utm_source=blogxgwz0)  
+[Let's Encrypt - 维基百科](https://en.wikipedia.org/wiki/wiki/Let%27s_Encrypt)    
+[Let's Encrypt免费申请SSL证书](https://jusene.github.io/2018/08/05/letsencrypt/)    
+[Nginx启用Let’s Encrypt SSL证书](https://www.4spaces.org/nginx-lets-encrypt-ssl/)    
+[在macOS平台下制作SSL证书，免费域名通配符证、单域名证书、多域名证书教程](https://www.bbsmax.com/A/ZOJPvy8Odv/)    
+[Letsencrypt通过DNS TXT记录来验证域名有效性](https://blog.csdn.net/u012291393/article/details/78768547?utm_source=blogxgwz0)    

@@ -40,5 +40,5 @@ find . -name ".txt" | xargs -I {} mv {} dest_dir
 ```
 
 ## 参考资料
-[Linux为什么我不能管道找到rm的结果？](https://qa.1r1g.com/sf/ask/1421510961/)\
-[Linux xargs 命令](https://www.runoob.com/linux/linux-comm-xargs.html)
+[Linux为什么我不能管道找到rm的结果？](https://qa.1r1g.com/sf/ask/1421510961/)  
+[Linux xargs 命令](https://www.runoob.com/linux/linux-comm-xargs.html)   
